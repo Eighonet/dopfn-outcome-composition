@@ -1,0 +1,637 @@
+[
+  {
+    "id": "D01",
+    "track": "D",
+    "title": "Causal Inference and Uplift Modelling: A Review of the Literature",
+    "authors": "Pierre Gutierrez and Jean-Yves Gérardy",
+    "year": 2017,
+    "url": "https://proceedings.mlr.press/v67/gutierrez17a.html",
+    "venue_status": "PMLR 67, PAPIs 2017",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Organizes two-model, class-transformation and direct uplift approaches; connects transformed-outcome regression to effect-error objectives.",
+    "context_mechanism": "Foundational taxonomy, not a context selector.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Transformed causal supervision predates foundation models.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D02",
+    "track": "D",
+    "title": "A Literature Survey and Experimental Evaluation of the State-of-the-Art in Uplift Modeling: A Stepping Stone Toward the Development of Prescriptive Analytics",
+    "authors": "Floris Devriendt and Darie Moldovan and Wouter Verbeke",
+    "year": 2018,
+    "url": "https://doi.org/10.1089/big.2017.0104",
+    "venue_status": "Big Data 6(1)",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Reviews uplift estimators and evaluation metrics and compares methods on four real datasets.",
+    "context_mechanism": "No foundation-model context mechanism.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Application-specific evaluation and instability are established concerns.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D03",
+    "track": "D",
+    "title": "Metalearners for estimating heterogeneous treatment effects using machine learning",
+    "authors": "Sören R. Künzel and Jasjeet S. Sekhon and Peter J. Bickel and Bin Yu",
+    "year": 2019,
+    "url": "https://www.pnas.org/doi/10.1073/pnas.1804597116",
+    "venue_status": "PNAS 116(10), 4156–4165",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Meta-algorithm definitions; X-learner; field experiments"
+    ],
+    "code_url": null,
+    "specific_claims": "Studies S/T/X meta-learning, introduces the X-learner, and evaluates treatment heterogeneity including field experiments.",
+    "context_mechanism": "Meta-learning decomposes estimation into supervised tasks.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Strong S/T/X controls are required; no learner is uniformly best.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D04",
+    "track": "D",
+    "title": "Quasi-oracle estimation of heterogeneous treatment effects",
+    "authors": "Xinkun Nie and Stefan Wager",
+    "year": 2021,
+    "url": "https://doi.org/10.1093/biomet/asaa076",
+    "venue_status": "Biometrika 108(2), 299–319; online 2020",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Uses estimated outcome and treatment residuals to isolate a causal regression objective, with quasi-oracle results in specified settings.",
+    "context_mechanism": "R-learner objective rather than retrieval.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "A causal loss is a known component; compare teacher/R-learner policies.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D05",
+    "track": "D",
+    "title": "Towards optimal doubly robust estimation of heterogeneous causal effects",
+    "authors": "Edward H. Kennedy",
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2004.14497",
+    "venue_status": "Electronic Journal of Statistics 17(2), 3008–3049",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Analyzes two-stage doubly robust CATE regression and oracle-error behavior under nuisance estimation.",
+    "context_mechanism": "Regression using estimated pseudo-outcomes.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "DR supervision does not by itself constitute a new selector.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D06",
+    "track": "D",
+    "title": "Double/debiased machine learning for treatment and structural parameters",
+    "authors": "Victor Chernozhukov and Denis Chetverikov and Mert Demirer and Esther Duflo and Christian Hansen and Whitney Newey and James Robins",
+    "year": 2018,
+    "url": "https://doi.org/10.1111/ectj.12097",
+    "venue_status": "The Econometrics Journal 21(1), C1–C68",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Sections 1-3: regularization bias, sample splitting and orthogonality; Section 5: treatment effects"
+    ],
+    "code_url": null,
+    "specific_claims": "Combines Neyman-orthogonal scores and cross-fitting to limit nuisance regularization and overfitting bias for low-dimensional causal parameters.",
+    "context_mechanism": "Sample splitting, not context-memory selection.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Honest nuisance fitting is established scaffolding; cross-fitting or independent nuisance data may be appropriate depending on design.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D07",
+    "track": "D",
+    "title": "Orthogonal statistical learning",
+    "authors": "Dylan J. Foster and Vasilis Syrgkanis",
+    "year": 2023,
+    "url": "https://arxiv.org/abs/1901.09036",
+    "venue_status": "Annals of Statistics 51(3), 879–908",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Gives excess-risk guarantees for two-stage learning with a nuisance component when the population risk satisfies orthogonality.",
+    "context_mechanism": "General statistical-learning framework.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "A selector needs its own conditions; attaching DR labels is insufficient proof.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D08",
+    "track": "D",
+    "title": "Doubly Robust Policy Evaluation and Learning",
+    "authors": "Miroslav Dudík and John Langford and Lihong Li",
+    "year": 2011,
+    "url": "https://icml.cc/2011/papers/554_icmlpaper.pdf",
+    "venue_status": "ICML 2011, 1097–1104",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Sections 2-3: direct, IPS and DR policy evaluation; policy learning"
+    ],
+    "code_url": null,
+    "specific_claims": "Combines reward and logging-policy models for evaluation and optimization with logged contextual-bandit feedback.",
+    "context_mechanism": "Offline policy evaluation; context means decision covariates.",
+    "label_compute_budget": "Logged covariates, actions and factual rewards; offline evaluation/learning, no new reward acquisition.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "DR policy-value feedback and optimization are longstanding ideas.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D09",
+    "track": "D",
+    "title": "Who Should Be Treated? Empirical Welfare Maximization Methods for Treatment Choice",
+    "authors": "Toru Kitagawa and Aleksey Tetenov",
+    "year": 2018,
+    "url": "https://tetenov.com/Who_should_be_treated_Kitagawa_Tetenov.pdf",
+    "venue_status": "Econometrica 86(2), 591–616",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Empirical welfare criterion; capacity-constrained policy section; supplementary capacity analysis"
+    ],
+    "code_url": null,
+    "specific_claims": "Learns treatment rules by empirical welfare maximization and explicitly treats capacity constraints.",
+    "context_mechanism": "Policy choice with treatment-capacity restrictions.",
+    "label_compute_budget": "Experimental factual outcomes and known propensity; candidate treatment-rule class and capacity constraints.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Fixed treatment coverage and welfare maximization are established objectives.",
+    "checked_date": "2026-11-08",
+    "doi": "10.3982/ECTA13288"
+  },
+  {
+    "id": "D10",
+    "track": "D",
+    "title": "Policy Learning With Observational Data",
+    "authors": "Susan Athey and Stefan Wager",
+    "year": 2021,
+    "url": "https://arxiv.org/abs/1702.02896",
+    "venue_status": "Econometrica 89(1), 133–161",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Optimizes constrained treatment policies using semiparametrically motivated doubly robust evaluation and derives regret guarantees.",
+    "context_mechanism": "Policy class constraints, not FM row selection.",
+    "label_compute_budget": "Observational factual outcomes with nuisance estimation; constrained treatment-policy class.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Budgeted causal utility is known; a retrieval contribution must go beyond that objective.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D11",
+    "track": "D",
+    "title": "Evaluating Treatment Prioritization Rules via Rank-Weighted Average Treatment Effects",
+    "authors": "Steve Yadlowsky and Scott Fleming and Nigam Shah and Emma Brunskill and Stefan Wager",
+    "year": 2025,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002561/",
+    "venue_status": "JASA 120(549), 38–51; online 2024",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Section 2: TOC, RATE, weighted-ATE representation and estimation; Section 2.3 causal scores"
+    ],
+    "code_url": null,
+    "specific_claims": "Defines TOC/RATE, relates ranking metrics, and derives inference using causal scores for fixed prioritization rules.",
+    "context_mechanism": "Evaluation of a frozen ranking, not model fitting.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Use honest ranking evaluation; conditional inference does not cover training-seed variability.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D12",
+    "track": "D",
+    "title": "Rank-Learner: Orthogonal Ranking of Treatment Effects",
+    "authors": "Henri Arno and Dennis Frauen and Emil Javurek and Thomas Demeester and Stefan Feuerriegel",
+    "year": 2026,
+    "url": "https://proceedings.mlr.press/v306/arno26a.html",
+    "venue_status": "ICML 2026, PMLR 306, 3600–3632",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Sections 5-6: orthogonal loss and two-stage learner; Appendix F.3: sensitivity to pseudo-label clipping"
+    ],
+    "code_url": null,
+    "specific_claims": "Learns treatment-effect rankings with a pairwise orthogonal loss, cross-fitted nuisances and sampled training pairs.",
+    "context_mechanism": "Direct ranking model rather than context selector.",
+    "label_compute_budget": "Cross-fitted nuisance training and sampled pairs of observed training records; no oracle individual effects.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Orthogonal ranking itself is not new; use as a strong no-FM baseline.",
+    "checked_date": "2026-11-08",
+    "additional_urls": [
+      "https://arxiv.org/html/2602.03517v2"
+    ],
+    "version_date": "2026-05-26"
+  },
+  {
+    "id": "D13",
+    "track": "D",
+    "title": "Learning to Rank for Uplift Modeling",
+    "authors": "Floris Devriendt and Jente Van Belle and Tias Guns and Wouter Verbeke",
+    "year": 2022,
+    "url": "https://researchportal.vub.be/nl/publications/learning-to-rank-for-uplift-modeling/",
+    "venue_status": "IEEE TKDE 34(10), 4888–4904; preprint 2020 has a different author list",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Optimizes uplift rankings through LambdaMART and promoted cumulative gain; reports that targeting-depth optimization did not generalize in its experiments.",
+    "context_mechanism": "Direct learning-to-rank.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Direct uplift ranking predates Rank-Learner; its orthogonality is the newer distinction.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D14",
+    "track": "D",
+    "title": "Improving uplift model evaluation on randomized controlled trial data",
+    "authors": "Björn Bokelmann and Stefan Lessmann",
+    "year": 2024,
+    "url": "https://arxiv.org/html/2210.02152",
+    "venue_status": "European Journal of Operational Research 313(2); preprint 2022",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Sections 3-4: evaluation variance and outcome adjustment; Appendix C: metric families"
+    ],
+    "code_url": null,
+    "specific_claims": "Analyzes variance of uplift evaluation and develops outcome-adjustment procedures that can reduce it under stated conditions.",
+    "context_mechanism": "Evaluation adjustment, not selected training contexts.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Use variance reduction before launching noisy rare-outcome selector comparisons.",
+    "checked_date": "2026-11-08",
+    "doi": "10.1016/j.ejor.2023.09.018"
+  },
+  {
+    "id": "D15",
+    "track": "D",
+    "title": "Uplift Modeling with High Class Imbalance",
+    "authors": "Otto Nyberg and Tomasz Kuśmierczyk and Arto Klami",
+    "year": 2021,
+    "url": "https://proceedings.mlr.press/v157/nyberg21a.html",
+    "venue_status": "ACML 2021, PMLR 157, 315–330",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Sections 2-4: types of imbalance, undersampling and calibration"
+    ],
+    "code_url": null,
+    "specific_claims": "Introduces model-agnostic undersampling for rare conversion uplift and addresses calibration.",
+    "context_mechanism": "Outcome-dependent training-sample selection.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Outcome balancing is prior art and can alter calibration.",
+    "checked_date": "2026-11-08",
+    "additional_urls": [
+      "https://proceedings.mlr.press/v157/nyberg21a/nyberg21a.pdf"
+    ]
+  },
+  {
+    "id": "D16",
+    "track": "D",
+    "title": "Exploring uplift modeling with high class imbalance",
+    "authors": "Otto Nyberg and Arto Klami",
+    "year": 2023,
+    "url": "https://doi.org/10.1007/s10618-023-00917-9",
+    "venue_status": "Data Mining and Knowledge Discovery 37, 736–766",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Sections 1-2: distinction between outcome imbalance and treatment imbalance; undersampling and calibration method sections"
+    ],
+    "code_url": null,
+    "specific_claims": "Studies undersampling strategies for imbalanced uplift and corrections for their probability distortion.",
+    "context_mechanism": "Training distribution modification based on outcome.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Distinguish rare outcomes from unequal treatment-arm sizes and confounding.",
+    "checked_date": "2026-11-08",
+    "additional_urls": [
+      "https://link.springer.com/article/10.1007/s10618-023-00917-9"
+    ]
+  },
+  {
+    "id": "D17",
+    "track": "D",
+    "title": "Heteroscedasticity-aware stratified sampling to improve uplift modeling",
+    "authors": "Björn Bokelmann and Stefan Lessmann",
+    "year": 2025,
+    "url": "https://arxiv.org/html/2401.14294",
+    "venue_status": "European Journal of Operational Research 325(1), 118-131, 2025; preprint 2024",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Sections 3-4: variance components and HS-sampling; Appendix C: evaluation and confidence intervals"
+    ],
+    "code_url": null,
+    "specific_claims": "Uses heteroskedasticity-aware pre-experiment stratified sampling to improve treatment-effect estimation and uplift evaluation.",
+    "context_mechanism": "Experimental sample acquisition, not labelled inference memory.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Sampling by informativeness/noise already exists; adaptation to a frozen FM is a separate question.",
+    "checked_date": "2026-11-08",
+    "doi": "10.1016/j.ejor.2025.02.030"
+  },
+  {
+    "id": "D18",
+    "track": "D",
+    "title": "Rethinking Causal Ranking: A Balanced Perspective on Uplift Model Evaluation",
+    "authors": "Minqin Zhu and Zexu Sun and Ruoxuan Xiong and Anpeng Wu and Baohong Li and Caizhi Tang and Jun Zhou and Fei Wu and Kun Kuang",
+    "year": 2025,
+    "url": "https://proceedings.mlr.press/v267/zhu25s.html",
+    "venue_status": "ICML 2025, PMLR 267, 80134–80154",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": "https://github.com/euzmin/PUC",
+    "specific_claims": "Proposes PUC/PUL and PTONet, addressing treatment/outcome contributions in binary-outcome ranking metrics.",
+    "context_mechanism": "Alternative objective and metric, not context retrieval.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Metric choice can change model ranking; this is not a proof every conventional Qini estimand is invalid.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D19",
+    "track": "D",
+    "title": "Uplift Model Evaluation with Ordinal Dominance Graphs",
+    "authors": "Brecht Verbeken and Marie-Anne Guerry and Wouter Verbeke and Sam Verboven",
+    "year": 2025,
+    "url": "https://www.jmlr.org/papers/v26/22-1455.html",
+    "venue_status": "JMLR 26(90), 1–56",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Develops ROCini/pROCini via ordinal dominance graphs, incorporates negative outcomes and derives confidence bounds.",
+    "context_mechanism": "Uplift metric construction.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Include metric sensitivity as a diagnostic rather than choosing a favorable metric afterwards.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D20",
+    "track": "D",
+    "title": "Causal Isotonic Calibration for Heterogeneous Treatment Effects",
+    "authors": "Lars Van Der Laan and Ernesto Ulloa-Perez and Marco Carone and Alex Luedtke",
+    "year": 2023,
+    "url": "https://proceedings.mlr.press/v202/van-der-laan23a.html",
+    "venue_status": "ICML 2023, PMLR 202, 34831–34854",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Calibrates black-box heterogeneous-effect predictions using causal isotonic calibration and cross-calibration with doubly robust rates.",
+    "context_mechanism": "Post-processing of effect predictions.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Ranking quality and effect calibration are distinct; calibration alone is not new context selection.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D21",
+    "track": "D",
+    "title": "Empirical Analysis of Model Selection for Heterogeneous Causal Effect Estimation",
+    "authors": "Divyat Mahajan and Ioannis Mitliagkas and Brady Neal and Vasilis Syrgkanis",
+    "year": 2024,
+    "url": "https://arxiv.org/abs/2211.01939",
+    "venue_status": "ICLR 2024 Spotlight; arXiv v3, 2024-04-29",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Benchmarks surrogate CATE model-selection metrics with tuning and realistic generative datasets; considers causal ensembles.",
+    "context_mechanism": "Selection of estimators rather than donor subsets.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Selecting a context using observed validation outcomes is itself a causal model-selection problem.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D22",
+    "track": "D",
+    "title": "Do Contemporary Causal Inference Models Capture Real-World Heterogeneity? Findings from a Large-Scale Benchmark",
+    "authors": "Haining Yu and Yizhou Sun",
+    "year": 2025,
+    "url": "https://arxiv.org/abs/2410.07021v2",
+    "venue_status": "Preprint, v2 2025-02-20",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Benchmarks CATE estimators using observational sampling and a real-data statistic preserving MSE model rankings.",
+    "context_mechanism": "Real-outcome benchmarking.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Include zero and constant-effect controls; conclusions concern the tested design, not all causal estimators.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D23",
+    "track": "D",
+    "title": "UpliftBench: Revealing Outcome-Regime and Objective Mismatch in Uplift Evaluation",
+    "authors": "Binshuang Li",
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2608.00915",
+    "venue_status": "Preprint, 2026-08-02",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": "https://github.com/binshuangli/uplift-bench",
+    "specific_claims": "Examines effect-accuracy/ranking alignment and sign-threshold versus budgeted-value objectives; explicitly bounds findings to particular datasets and objectives.",
+    "context_mechanism": "Multi-objective evaluation protocol.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Do not generalize IHDP metric disagreement or Jobs threshold behavior to every uplift task.",
+    "checked_date": "2026-11-08",
+    "code_status": "primary arXiv outbound link opened; code not executed"
+  },
+  {
+    "id": "D24",
+    "track": "D",
+    "title": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
+    "authors": "Stefan Wager and Susan Athey",
+    "year": 2018,
+    "url": "https://doi.org/10.1080/01621459.2017.1319839",
+    "venue_status": "JASA 113(523), 1228–1242",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Develops causal forests with treatment-effect consistency and asymptotic inference under assumptions, comparing against matching in experiments.",
+    "context_mechanism": "Adaptive neighborhood estimation, not a pretrained FM.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "A learned neighborhood for causal estimation predates FM retrieval.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D25",
+    "track": "D",
+    "title": "Bridging the Gap: A Systematic Benchmarking of Uplift Modeling and Heterogeneous Treatment Effects Methods",
+    "authors": "Jannik Rößler and Detlef Schoder",
+    "year": 2022,
+    "url": "https://journals.sagepub.com/doi/10.1177/10949968221111083",
+    "venue_status": "Journal of Interactive Marketing 57(4), 629–650",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": [
+      "Benchmark evaluation protocol; discussion of unscaled Qini and practical targeting"
+    ],
+    "code_url": null,
+    "specific_claims": "Compares uplift and HTE methods under a common benchmark and discusses metrics and practical targeting.",
+    "context_mechanism": "Cross-method benchmark.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "A shared protocol and classical controls are established requirements, not standalone novelty.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D26",
+    "track": "D",
+    "title": "About evaluation metrics for contextual uplift modeling",
+    "authors": "Christophe Renaudin and Matthieu Martin",
+    "year": 2021,
+    "url": "https://arxiv.org/abs/2107.00537v3",
+    "venue_status": "Technical report/preprint, v3 2021-08-02",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Studies uplift evaluation with logged bandit data, variance reduction and propensity adjustments outside randomized trials.",
+    "context_mechanism": "Context means decision covariates, not FM demonstrations.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "Distinguish logged-policy selection bias from duplicate-vector leakage.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D27",
+    "track": "D",
+    "title": "In Search of Insights, Not Magic Bullets: Towards Demystification of the Model Selection Dilemma in Heterogeneous Treatment Effect Estimation",
+    "authors": "Alicia Curth and Mihaela van der Schaar",
+    "year": 2023,
+    "url": "https://arxiv.org/abs/2302.02923v2",
+    "venue_status": "ICML 2023; arXiv v2 2023-06-06",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Abstract and metadata"
+    ],
+    "code_url": null,
+    "specific_claims": "Investigates success and failure modes of CATE selection criteria and their dependence on candidate models and data.",
+    "context_mechanism": "Causal model selection rather than context-row selection.",
+    "label_compute_budget": "No frozen-FM context-memory budget specified; see original task scope.",
+    "limitations": "Does not itself establish a new causal-FM context selection algorithm.",
+    "relevance_to_novelty": "A universal selector or selection metric should not be assumed.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D28",
+    "track": "D",
+    "title": "Transformers Can Do Bayesian Inference",
+    "authors": "Samuel Müller and Noah Hollmann and Sebastian Pineda Arango and Josif Grabocka and Frank Hutter",
+    "year": 2022,
+    "url": "https://arxiv.org/abs/2112.10510",
+    "venue_status": "ICLR 2022; preprint 2021",
+    "additional_urls": [
+      "https://openreview.net/pdf?id=KSugKcbNf9"
+    ],
+    "code_url": "https://github.com/automl/TransformersCanDoBayesianInference",
+    "evidence_level": "abstract_only",
+    "evidence_sections": [
+      "Original primary abstract and official authors repository BibTeX"
+    ],
+    "specific_claims": "Introduces prior-data fitted networks trained on sampled supervised tasks to approximate posterior predictive inference from set-valued context.",
+    "context_mechanism": "Synthetic-prior meta-training and set-conditioned prediction.",
+    "label_compute_budget": "Large offline training precedes single-forward task prediction.",
+    "limitations": "Approximation depends on the sampled prior; not a causal-effect identification guarantee.",
+    "relevance_to_novelty": "Foundational source for the PFN context-conditioning paradigm.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D29",
+    "track": "D",
+    "title": "Vector Search As Nearest Neighbor Matching: RAG-based Policy Learning in Causal Inference",
+    "authors": "Masahiro Kato and Taka Kato",
+    "year": 2026,
+    "url": "https://arxiv.org/abs/2607.18225",
+    "full_text_url": "https://arxiv.org/html/2607.18225v1",
+    "venue_status": "arXiv preprint",
+    "version": "arXiv v1, submitted 2026-07-20",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": ["3.1", "4.7", "5", "6.1", "7", "Appendices C, F, G.5-G.7"],
+    "code_url": null,
+    "specific_claims": "Connects action-specific RAG to causal matching and decomposes policy regret.",
+    "context_mechanism": "Per-action embedding kNN, then generator or plug-in decision.",
+    "label_compute_budget": "Binary experiments use 6+6 retrieved reports; multi-action experiments use unequal additional evidence.",
+    "limitations": "Synthetic experiments; prediction-error assumptions do not guarantee arbitrary generators.",
+    "relevance_to_novelty": "Direct prior; does not learn cohort-budgeted context-swap utility.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D30",
+    "track": "D",
+    "title": "Learning Representations for Counterfactual Inference",
+    "authors": "Fredrik Johansson and Uri Shalit and David Sontag",
+    "year": 2016,
+    "url": "https://proceedings.mlr.press/v48/johansson16.html",
+    "full_text_url": "https://proceedings.mlr.press/v48/johansson16.pdf",
+    "venue_status": "ICML 2016; PMLR 48:3020-3029",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": ["Abstract", "Introduction: counterfactual inference as domain adaptation"],
+    "code_url": null,
+    "specific_claims": "Frames counterfactual inference through domain adaptation and representation learning.",
+    "context_mechanism": "Balances learned representations across treatment populations; not FM memory selection.",
+    "label_compute_budget": "Training estimator weights on observational data.",
+    "limitations": "Not a frozen-FM subset method; introduction inspected without independent proof audit.",
+    "relevance_to_novelty": "Causal balance and representation learning are established antecedents.",
+    "checked_date": "2026-11-08"
+  },
+  {
+    "id": "D31",
+    "track": "D",
+    "title": "Estimating individual treatment effect: generalization bounds and algorithms",
+    "authors": "Uri Shalit and Fredrik D. Johansson and David Sontag",
+    "year": 2017,
+    "url": "https://proceedings.mlr.press/v70/shalit17a.html",
+    "full_text_url": "https://proceedings.mlr.press/v70/shalit17a/shalit17a.pdf",
+    "venue_status": "ICML 2017; PMLR 70:3076-3085",
+    "evidence_level": "full_text_selected_sections",
+    "evidence_sections": ["Abstract", "Introduction", "Potential-outcome estimand and assumptions"],
+    "code_url": null,
+    "specific_claims": "Relates treatment-effect error to factual generalization and representation IPM, including MMD and Wasserstein, under stated assumptions.",
+    "context_mechanism": "Learned balanced representation and outcome prediction, not context/target herding.",
+    "label_compute_budget": "Estimator training and balancing penalty.",
+    "limitations": "Does not establish finite-context accuracy of an arbitrary frozen transformer; proofs not independently audited.",
+    "relevance_to_novelty": "MMD-based causal balance alone is not a new selection principle.",
+    "checked_date": "2026-11-08"
+  }
+]

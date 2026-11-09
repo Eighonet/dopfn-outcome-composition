@@ -1,0 +1,592 @@
+[
+  {
+    "id": "B01",
+    "title": "CausalPFN: Amortized Causal Effect Estimation via In-Context Learning",
+    "authors": "Vahid Balazadeh, Hamidreza Kamkari, Valentin Thomas, Benson Li, Junwei Ma, Jesse C. Cresswell, Rahul G. Krishnan",
+    "year": 2025,
+    "url": "https://arxiv.org/html/2506.07918v2",
+    "version": "arXiv v2",
+    "version_date": "2025-10-27",
+    "verified_date": "2026-11-08",
+    "venue_status": "NeurIPS 2025 main conference; venue record independently verified",
+    "venue_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/e3d3db07c1bfb63e1d0b998996de1d12-Abstract-Conference.html",
+    "code_url": "https://github.com/vdblm/CausalPFN",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Learns CEPO posteriors under an identifiable, ignorability-based prior; evaluates both treatment-effect accuracy and uplift."
+    ],
+    "context_mechanism": "For large tables: weak-CATE sorting and contiguous context windows for query batches.",
+    "label_compute_budgets": "Default K4096; marketing K50000; causal pretraining context2048.",
+    "limitations": "Authors conjecture retrieval explains full-table underperformance; this is not established causation.",
+    "novelty_relevance": "Our assessment: mandatory native-retrieval baseline, beyond random and feature-kNN.",
+    "evidence_sections": [
+      "Sections 4\u20135; Appendix D.2, D.6; Proposition 1"
+    ]
+  },
+  {
+    "id": "B02",
+    "title": "Do-PFN: In-Context Learning for Causal Effect Estimation",
+    "authors": "Jake Robertson, Arik Reuter, Siyuan Guo, Noah Hollmann, Frank Hutter, Bernhard Sch\u00f6lkopf",
+    "year": 2025,
+    "url": "https://arxiv.org/html/2506.06039v3",
+    "version": "arXiv v3",
+    "version_date": "2025-11-20",
+    "verified_date": "2026-11-08",
+    "venue_status": "NeurIPS 2025 main conference; supersedes earlier workshop version",
+    "venue_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/ff997469ac66cf893c4183efeb22212a-Abstract-Conference.html",
+    "code_url": "https://github.com/jr2021/Do-PFN",
+    "code_revision_verified": "90d67433b43c4d52d752dc336070f525ff856e0b, 2025-07-16",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Predicts CID and derives CATE; prior averages over potentially nonidentified SCMs."
+    ],
+    "context_mechanism": "Observational rows; treatment in first feature column.",
+    "label_compute_budgets": "Context10\u20132200; pretraining48/96 hours, RTX2080.",
+    "limitations": "Official README documents continuous X/Y and binary treatment.",
+    "novelty_relevance": "Our assessment: binary rare-outcome uplift extends documented scope.",
+    "evidence_sections": [
+      "Sections 2\u20134.4; Appendix C; README line9 at pinned revision"
+    ]
+  },
+  {
+    "id": "B03",
+    "title": "Foundation Models for Causal Inference via Prior-Data Fitted Networks",
+    "authors": "Yuchen Ma, Dennis Frauen, Emil Javurek, Stefan Feuerriegel",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2506.10914v3",
+    "version": "arXiv v3",
+    "version_date": "2026-02-24",
+    "verified_date": "2026-11-08",
+    "venue_status": "ICLR 2026 conference paper; initial preprint2025",
+    "venue_url": "https://openreview.net/pdf?id=d2L1ndOKjq",
+    "code_url": "https://github.com/yccm/CausalFM",
+    "toolkit_url": "https://github.com/yccm/CausalFM-toolkit",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Constructs setting-specific SCM priors and models for back-door, IV, and front-door estimation."
+    ],
+    "context_mechanism": "Observed support rows; query treatment/outcome masked; GMM causal-target head.",
+    "label_compute_budgets": "Sequence1024, support80%; approximately24 hours on one A100.",
+    "limitations": "Identification-compatible prior matters; checked experiments do not establish fixed-budget uplift-policy gains.",
+    "novelty_relevance": "Our assessment: important alternative causal backbone; changing context cannot fix unidentified targets.",
+    "evidence_sections": [
+      "Sections 3\u20136; Appendix A.1, D.2, E.3, E.7"
+    ]
+  },
+  {
+    "id": "B04",
+    "title": "Causal Foundation Models",
+    "authors": "Christopher Stith, Hossein Rahmani, Jesse C. Cresswell",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2609.03003v1",
+    "version": "arXiv v1",
+    "version_date": "2026-09-02",
+    "verified_date": "2026-11-08",
+    "venue_status": "Preprint/tutorial; no conference acceptance verified",
+    "code_url": "https://github.com/layer6ai-labs/cfms",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Explains CFMs and compares three released models with classical estimators on RealCause-Lalonde."
+    ],
+    "context_mechanism": "Observed dataset as context; no new retrieval algorithm.",
+    "label_compute_budgets": "Ten realizations; CPU runtime includes classical fitting/tuning but excludes CFM pretraining.",
+    "limitations": "PEHE/ATE evidence concerns semi-synthetic earnings, not binary-event marketing targeting.",
+    "novelty_relevance": "Our assessment: useful taxonomy and contrary evidence against universal CFM superiority.",
+    "evidence_sections": [
+      "Sections 3, 4.1\u20134.2, 5; Table3"
+    ]
+  },
+  {
+    "id": "B05",
+    "title": "A Foundation Model for Policy In-Context Longitudinal Causal Effect Estimation",
+    "authors": "Wenxin Chen, Kyra Gan, Mingyu Lu, Zilin Jing, Fei Wang, Hoifung Poon, Tristan Naumann, Peniel Argaw",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2610.32863v1",
+    "version": "arXiv v1",
+    "version_date": "2026-10-23",
+    "verified_date": "2026-11-08",
+    "venue_status": "Preprint; model named PICLE-PFN",
+    "code_url": null,
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Amortizes CAPO estimation for dynamic longitudinal treatment policies."
+    ],
+    "context_mechanism": "Factual trajectories plus history\u2013target-policy-action demonstrations; not learned support-row retrieval.",
+    "label_compute_budgets": "Synthetic rollout supervision; frozen deployment; context-size sensitivity tested.",
+    "limitations": "Sequential ignorability/positivity required; factual MIMIC prediction is not counterfactual validation.",
+    "novelty_relevance": "Our assessment: policy-conditioned context is already prior art; top-decile context selection remains a different problem.",
+    "evidence_sections": [
+      "Section3, Proposition3.1; Sections4\u20135; AppendixD.5, E"
+    ]
+  },
+  {
+    "id": "B06",
+    "title": "Causal Longitudinal Prior-Fitted Networks for Counterfactual Outcome Prediction",
+    "authors": "Amirhossein Zare, Amirhessam Zare, Herlock Rahimi, Reza Salarikia, Mohammad Kashkooli",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2606.05797v2",
+    "version": "arXiv v2",
+    "version_date": "2026-06-07",
+    "verified_date": "2026-11-08",
+    "venue_status": "Preprint; model named CausalLongPFN",
+    "code_url": "https://github.com/Amirhossein-Zare/causal-long-pfn",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Frozen support-conditioned prediction under planned longitudinal treatment sequences; recursive one-step rollout."
+    ],
+    "context_mechanism": "Support trajectories, query history, proposed future actions; temporal SCM pretraining.",
+    "label_compute_budgets": "Prior support3\u2013500 trajectories; benchmarks vary40\u2013500.",
+    "limitations": "Static planned sequences differ from dynamic policies; factual ICU forecasting cannot verify intervention effects.",
+    "novelty_relevance": "Our assessment: longitudinal support memory is established, but not per-query uplift retrieval.",
+    "evidence_sections": [
+      "Section2.2; Table4; AppendicesB\u2013C, H; code availability"
+    ]
+  },
+  {
+    "id": "B07",
+    "title": "Causal Foundation Models with Continuous Treatments",
+    "authors": "Christopher Stith, Medha Barath, Vahid Balazadeh, Jesse C. Cresswell, Rahul G. Krishnan",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2605.15133v2",
+    "version": "arXiv v2",
+    "version_date": "2026-07-13",
+    "verified_date": "2026-11-08",
+    "venue_status": "Preprint; model named CCPFN; workshop mention not independently venue-verified",
+    "code_url": "https://github.com/layer6ai-labs/CCPFN-inference",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Estimates individual treatment-response curves with a separate continuous-treatment encoder."
+    ],
+    "context_mechanism": "Observed rows and query treatment grid; randomized context/query pretraining split.",
+    "label_compute_budgets": "Frozen inference; scenario benchmark has8 validation and6 test scenarios.",
+    "limitations": "Back-door continuous-dose setting; does not validate binary-event top-decile policy optimization.",
+    "novelty_relevance": "Our assessment: context must preserve treatment-range support; binary arm balancing does not transfer directly.",
+    "evidence_sections": [
+      "Sections3\u20134; AppendixA.4; inference-code link"
+    ]
+  },
+  {
+    "id": "B08",
+    "title": "IV-ICL: Bounding Causal Effects with Instrumental Variables via In-Context Learning",
+    "authors": "Vahid Balazadeh, Hamidreza Kamkari, Medha Barath, Ricardo Silva, Rahul G. Krishnan",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2605.12924v1",
+    "version": "arXiv v1",
+    "version_date": "2026-05-13",
+    "verified_date": "2026-11-08",
+    "venue_status": "Preprint; acceptance not verified",
+    "code_url": null,
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Learns causal-effect posterior under IV partial identification and derives bounds from quantiles."
+    ],
+    "context_mechanism": "Observational IV dataset supplied to an amortized Bayesian estimator.",
+    "label_compute_budgets": "Synthetic pretraining; reported inference comparisons20\u2013500 times faster.",
+    "limitations": "Bounds are not point-identified uplift scores; IV assumptions and prior sensitivity remain relevant.",
+    "novelty_relevance": "Our assessment: demonstrates importance of estimand-specific context, not a competing row selector.",
+    "evidence_sections": [
+      "Sections4\u20137; prior-data generation; limitations"
+    ]
+  },
+  {
+    "id": "B09",
+    "title": "A Causal Foundation Model for Structure and Outcome Prediction",
+    "authors": "Max Zhu, Martino Mansoldo, Ching-Hao Wang, Stefan Groha",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2606.26467v1",
+    "version": "arXiv v1",
+    "version_date": "2026-06-25",
+    "verified_date": "2026-11-08",
+    "venue_status": "ICML2026 Foundation Models for Structured Data workshop; model TabPFN-CFM",
+    "code_url": null,
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Joint causal-structure and outcome prediction, optionally conditioned on supplied graph information."
+    ],
+    "context_mechanism": "Observed tabular context; observational, interventional, or counterfactual query type.",
+    "label_compute_budgets": "Synthetic SEM supervision; evaluated fit-sample budgets32,256,1024.",
+    "limitations": "Graph/outcome prediction metrics do not establish budget-constrained uplift-policy performance.",
+    "novelty_relevance": "Our assessment: structural information is another adaptation axis, separate from selecting labeled memory.",
+    "evidence_sections": [
+      "Sections1.1\u20134; AppendixA; Tables14\u201317"
+    ]
+  },
+  {
+    "id": "B10",
+    "title": "Prior-Data Fitted Networks for Causal Inference: a Simulation Study with Real-World Scenarios",
+    "authors": "Francisco Mourao, David Hajage, Daria Bystrova, Bertrand Bouvarel, Nathana\u00ebl Lapidus, Fabrice Carrat, Benjamin Glemain",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2603.15928v2",
+    "version": "arXiv v2",
+    "version_date": "2026-04-13",
+    "verified_date": "2026-11-08",
+    "venue_status": "Preprint; later journal status not verified",
+    "code_url": "https://github.com/franciscomourao/PFNs_Causal_Inference",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Reports biased binary-treatment/binary-outcome ATE estimation and poor CausalPFN interval coverage in two simulated clinical scenarios."
+    ],
+    "context_mechanism": "Standard estimator use; not context selection.",
+    "label_compute_budgets": "Simulation replications; TabPFN uncertainty requires repeated bootstrap fitting.",
+    "limitations": "ATE scope; calibration configuration requires careful interpretation.",
+    "novelty_relevance": "Our assessment: uncertainty-driven selectors need external calibration checks.",
+    "evidence_sections": [
+      "Methods: causal setting, estimators; Results; Discussion"
+    ]
+  },
+  {
+    "id": "B11",
+    "title": "Unit-level aggregation breaks coverage in causal foundation models",
+    "authors": "Gabe Schulman, Lucius E. J. Bynum, Yoav Wald",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2610.22770v1",
+    "version": "arXiv v1",
+    "version_date": "2026-10-16",
+    "verified_date": "2026-11-08",
+    "venue_status": "Preprint; acceptance not verified",
+    "code_url": "https://github.com/gabeschulman-nyu/subset-cate-coverage",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Independent aggregation of unit-level predictions misses shared-SCM covariance; joint neural-process heads improve group-effect coverage."
+    ],
+    "context_mechanism": "Joint group prediction heads on a frozen CausalPFN; not row retrieval.",
+    "label_compute_budgets": "Six benchmarks; existing backbone weights retained.",
+    "limitations": "Improved coverage is not always nominal; no uplift-policy selector demonstrated.",
+    "novelty_relevance": "Our assessment: per-query uncertainty cannot automatically price context value for a whole policy.",
+    "evidence_sections": [
+      "Sections4\u20135; AppendixE; source pinned CausalPFN commit7da4afa"
+    ]
+  },
+  {
+    "id": "B12",
+    "title": "Frequentist Consistency of Prior-Data Fitted Networks for Causal Inference",
+    "authors": "Valentyn Melnychuk, Vahid Balazadeh, Stefan Feuerriegel, Rahul G. Krishnan",
+    "year": 2026,
+    "url": "https://arxiv.org/html/2603.12037v3",
+    "version": "arXiv v3",
+    "version_date": "2026-07-22",
+    "verified_date": "2026-11-08",
+    "venue_status": "ICML2026, PMLR306",
+    "venue_url": "https://proceedings.mlr.press/v306/melnychuk26a.html",
+    "code_url": "https://github.com/Valentyn1997/freq-cons-pfns",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Studies prior-induced confounding bias and develops one-step posterior correction with martingale nuisance posteriors."
+    ],
+    "context_mechanism": "Posterior correction atop PFNs; not support-row optimization.",
+    "label_compute_budgets": "Adds posterior-sampling/correction work to ordinary PFN inference.",
+    "limitations": "ATE frequentist guarantees require stated nuisance/concentration conditions; not general CATE-policy guarantees.",
+    "novelty_relevance": "Our assessment: orthogonal correction itself is prior art and cannot be claimed as a new context method.",
+    "evidence_sections": [
+      "Sections4\u20136; AppendixA, B; Table1"
+    ]
+  },
+  {
+    "id": "B13",
+    "title": "Unveiling Prior-Data Fitted Networks on Causal Effect Estimation: Pre-Training or Fine-Tuning?",
+    "authors": "Haotian Wang, Xinpeng Lv, Hao Zou, Yanghao Xiao, Shanzhi Gu, Yang Shi, Yunxin Mao, Yuanxing Zhang, Mingyang Geng, Shaowu Yang, Haoxuan Li, Wenjing Yang, Peng Cui, Zhouchen Lin",
+    "year": 2026,
+    "url": "https://proceedings.mlr.press/v306/wang26fl.html",
+    "version": "ICML2026 proceedings abstract",
+    "version_date": "2026-09-29",
+    "verified_date": "2026-11-08",
+    "venue_status": "ICML2026, PMLR306:128849\u2013128878",
+    "code_url": null,
+    "evidence_level": "abstract_only",
+    "specific_claims": [
+      "Authors identify prior uncoverage and propose point-wise interventional fine-tuning and budgeted meta-sampling fine-tuning."
+    ],
+    "context_mechanism": "Target-specific weight adaptation, not frozen labeled-memory selection.",
+    "label_compute_budgets": "Budgeted active-learning framing; exact budget not verified from full text.",
+    "limitations": "Full-PDF retrieval failed; theorem scope and required interventional access remain unverified.",
+    "novelty_relevance": "Our assessment: closest modern competing adaptation direction; abstract cannot establish that all frozen selectors must fail.",
+    "evidence_sections": [
+      "Official proceedings abstract only; PDF access failed"
+    ]
+  },
+  {
+    "id": "B14",
+    "title": "Towards Causal Foundation Model: on Duality between Optimal Balancing and Attention",
+    "authors": "Jiaqi Zhang, Joel Jennings, Agrin Hilmkil, Nick Pawlowski, Cheng Zhang, Chao Ma",
+    "year": 2024,
+    "url": "https://proceedings.mlr.press/v235/zhang24x.html",
+    "full_text_url": "https://arxiv.org/html/2310.00809v3",
+    "version": "ICML2024 proceedings; arXiv v3 retains earlier title wording",
+    "version_date": "2024-06-03",
+    "verified_date": "2026-11-08",
+    "venue_status": "ICML2024, PMLR235:59042\u201359065; method CInA",
+    "code_url": "https://github.com/microsoft/causica/tree/main/research_experiments/cina",
+    "code_status": "Paper link; current accessibility not established; official-repository issue113 reports missing directory",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Relates optimal covariate balancing to self-attention and learns causal estimation across unlabeled datasets."
+    ],
+    "context_mechanism": "Attention-derived balancing weights; not discrete K-row retrieval.",
+    "label_compute_budgets": "Meta-training precedes zero-shot inference on new datasets.",
+    "limitations": "Attention/balancing theory does not itself provide a fixed-budget uplift selector.",
+    "novelty_relevance": "Our assessment: causal attention and learned balancing are already established ingredients.",
+    "evidence_sections": [
+      "Sections3\u20134; AppendixE; official proceedings metadata"
+    ]
+  },
+  {
+    "id": "B15",
+    "title": "Black Box Causal Inference: Effect Estimation via Meta Prediction",
+    "authors": "Lucius E. J. Bynum, Aahlad Manas Puli, Diego Herrero-Quevedo, Nhi Nguyen, Carlos Fernandez-Granda, Kyunghyun Cho, Rajesh Ranganath",
+    "year": 2025,
+    "url": "https://arxiv.org/html/2503.05985v1",
+    "version": "arXiv v1",
+    "version_date": "2025-03-07",
+    "verified_date": "2026-11-08",
+    "venue_status": "Preprint; TMLR submission located, acceptance not established",
+    "code_url": null,
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Learns dataset-to-estimand prediction from simulated dataset/effect pairs across several identification settings."
+    ],
+    "context_mechanism": "Permutation-invariant dataset representation; meta-prediction rather than PFN-specific retrieval.",
+    "label_compute_budgets": "Synthetic estimand labels; deployment reuses trained estimator.",
+    "limitations": "Performance depends on generating-family alignment; general uplift-memory scalability is not demonstrated.",
+    "novelty_relevance": "Our assessment: learning causal estimators across tasks predates the current PFN generation.",
+    "evidence_sections": [
+      "Sections2.2\u20132.3, 3.5\u20135; AppendixD"
+    ]
+  },
+  {
+    "id": "B16",
+    "title": "Zero-shot causal learning",
+    "authors": "Hamed Nilforoshan, Michael Moor, Yusuf Roohani, Yining Chen, Anja \u0160urina, Michihiro Yasunaga, Sara Oblak, Jure Leskovec",
+    "year": 2023,
+    "url": "https://arxiv.org/html/2301.12292v4",
+    "version": "arXiv v4",
+    "version_date": "2024-02-23",
+    "verified_date": "2026-11-08",
+    "venue_status": "NeurIPS2023 main conference; method CaML",
+    "venue_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/15ddb1773510075ef44981cdb204330b-Abstract.html",
+    "code_url": "https://github.com/snap-stanford/caml",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Predicts effects of novel interventions using intervention descriptors and individual features."
+    ],
+    "context_mechanism": "Across-intervention meta-model with estimated pseudo-outcomes; not per-query donor retrieval.",
+    "label_compute_budgets": "Many intervention tasks supply training information; unseen interventions require no outcome history.",
+    "limitations": "Intervention-description transfer differs from adapting to a new tabular dataset with labeled support.",
+    "novelty_relevance": "Our assessment: causal meta-learning and pseudo-outcome supervision alone are not new.",
+    "evidence_sections": [
+      "Sections4.1\u20134.4, 6; AppendixC.6"
+    ]
+  },
+  {
+    "id": "B17",
+    "title": "Meta-learning for heterogeneous treatment effect estimation with closed-form solvers",
+    "authors": "Tomoharu Iwata, Yoichi Chikahara",
+    "year": 2024,
+    "url": "https://arxiv.org/html/2305.11353v1",
+    "version": "arXiv v1; journal publication verified on author institution site",
+    "version_date": "2023-05-19",
+    "verified_date": "2026-11-08",
+    "venue_status": "Machine Learning113:6093\u20136114,2024",
+    "venue_url": "https://doi.org/10.1007/s10994-024-06546-7",
+    "code_url": null,
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Learns task-shared representations and differentiable closed-form task-specific CATE adaptation."
+    ],
+    "context_mechanism": "Few-shot support set drives analytic adaptation; large-data estimated CATE supervises meta-training.",
+    "label_compute_budgets": "Multiple data-rich tasks for training; few observed samples at deployment.",
+    "limitations": "Requires related tasks; not frozen-FM row selection or a true-CATE-free guarantee for all tasks.",
+    "novelty_relevance": "Our assessment: teacher-CATE meta-supervision is prior art.",
+    "evidence_sections": [
+      "Sections3.1\u20133.4, 4; NTT institutional publication list"
+    ]
+  },
+  {
+    "id": "B18",
+    "title": "Budgeted Heterogeneous Treatment Effect Estimation",
+    "authors": "Tian Qin, Tian-Zuo Wang, Zhi-Hua Zhou",
+    "year": 2021,
+    "url": "https://proceedings.mlr.press/v139/qin21b.html",
+    "full_text_url": "https://proceedings.mlr.press/v139/qin21b/qin21b.pdf",
+    "version": "ICML2021 proceedings",
+    "version_date": "2021-07-18",
+    "verified_date": "2026-11-08",
+    "venue_status": "ICML2021, PMLR139:8693\u20138702; method QHTE",
+    "code_url": "https://www.lamda.nju.edu.cn/code_QHTE.ashx",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Bounds PEHE using covering radius, fitted losses and arm-distribution discrepancy; selects informative outcome queries."
+    ],
+    "context_mechanism": "Arm-aware coreset in a learned representation, followed by outcome acquisition and estimator training.",
+    "label_compute_budgets": "Budget B counts queried factual outcomes; iterative refitting.",
+    "limitations": "Previously unobserved labels and changing model differ from selecting already-labeled frozen-FM memory.",
+    "novelty_relevance": "Our assessment: causal coreset selection is established prior art.",
+    "evidence_sections": [
+      "Sections3\u20135; Theorem4; equation4; Algorithm1"
+    ]
+  },
+  {
+    "id": "B19",
+    "title": "Causal-BALD: Deep Bayesian Active Learning of Outcomes to Infer Treatment-Effects from Observational Data",
+    "authors": "Andrew Jesson, Panagiotis Tigas, Joost van Amersfoort, Andreas Kirsch, Uri Shalit, Yarin Gal",
+    "year": 2021,
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/ffa4eb0e32349ae57f7a0ee8c7cd7c11-Paper.pdf",
+    "version": "NeurIPS2021 proceedings; arXiv v2 dated2022-02-01",
+    "version_date": "2022-02-01",
+    "verified_date": "2026-11-08",
+    "venue_status": "NeurIPS2021",
+    "code_url": "https://github.com/OATML/causal-bald",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Information-theoretic acquisition accounts for overlap rather than maximizing factual uncertainty alone."
+    ],
+    "context_mechanism": "Queries unknown outcomes from an X,T pool; retrains Bayesian CATE estimator.",
+    "label_compute_budgets": "Warm-start plus sequential outcome-label acquisition; fixed observed treatment.",
+    "limitations": "Acquisition cannot manufacture overlap absent from the pool.",
+    "novelty_relevance": "Our assessment: uncertainty plus arm support is not an original selection criterion.",
+    "evidence_sections": [
+      "Sections2.2\u20133; acquisition objectives; IHDP/CMNIST experiments"
+    ]
+  },
+  {
+    "id": "B20",
+    "title": "Progressive Generalization Risk Reduction for Data-Efficient Causal Effect Estimation",
+    "authors": "Hechuan Wen, Tong Chen, Guanhua Ye, Li Kheng Chai, Shazia Sadiq, Hongzhi Yin",
+    "year": 2025,
+    "url": "https://arxiv.org/html/2411.11256v1",
+    "version": "arXiv v1; accepted KDD2025 per author manuscript",
+    "version_date": "2024-11-18",
+    "verified_date": "2026-11-08",
+    "venue_status": "KDD2025; method MACAL",
+    "code_url": "https://github.com/uqhwen2/MACAL",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Acquisition progressively reduces model uncertainty and treated/control distribution discrepancy."
+    ],
+    "context_mechanism": "Model-agnostic geometric batch selection, including paired acquisition across arms.",
+    "label_compute_budgets": "New factual outcomes are acquired under a labeling budget; estimator retrained.",
+    "limitations": "Paired querying restricts flexibility when one arm alone would be informative.",
+    "novelty_relevance": "Our assessment: paired donor geometry and diversity/balance objectives need comparison against this lineage.",
+    "evidence_sections": [
+      "Section3.1\u20133.2; Algorithm1; AppendixA, C"
+    ]
+  },
+  {
+    "id": "B21",
+    "title": "Enhancing Treatment Effect Estimation via Active Learning: A Counterfactual Covering Perspective",
+    "authors": "Hechuan Wen, Tong Chen, Mingming Gong, Li Kheng Chai, Shazia Sadiq, Hongzhi Yin",
+    "year": 2025,
+    "url": "https://arxiv.org/html/2505.05242v1",
+    "version": "arXiv v1; ICML2025 accepted author manuscript",
+    "version_date": "2025-05-08",
+    "verified_date": "2026-11-08",
+    "venue_status": "ICML2025; method FCCM",
+    "code_url": "https://github.com/uqhwen2/FCCM",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Uses factual and counterfactual covering radii in treatment-effect risk bounds and coverage-maximizing acquisition."
+    ],
+    "context_mechanism": "Greedy geometry-driven selection from observed-X,T/unobserved-Y pool.",
+    "label_compute_budgets": "Outcome-query budget, with CATE-estimator fitting after acquisition.",
+    "limitations": "Bounds require stated smoothness/coverage conditions; no frozen-PFN context-memory theorem.",
+    "novelty_relevance": "Our assessment: effect-aware geometric coverage is a strong competing design, not an empty novelty space.",
+    "evidence_sections": [
+      "Sections3\u20134; AppendicesA, C.5; algorithms1\u20132"
+    ]
+  },
+  {
+    "id": "B22",
+    "title": "Causal-EPIG: Causally Aligned Active CATE Estimation",
+    "authors": "Erdun Gao, Jake Fawkes, Dino Sejdinovic",
+    "year": 2026,
+    "url": "https://proceedings.mlr.press/v306/gao26i.html",
+    "full_text_url": "https://arxiv.org/html/2509.21866v1",
+    "preprint_title": "Causal-EPIG: A Prediction-Oriented Active Learning Framework for CATE Estimation",
+    "version": "ICML2026 final abstract plus arXiv v1 methods",
+    "version_date": "2025-09-26",
+    "verified_date": "2026-11-08",
+    "venue_status": "ICML2026, PMLR306:33151\u201333183",
+    "code_url": "https://github.com/ErdunGAO/Causal-EPIG",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Targets expected uncertainty reduction in joint potential outcomes or CATE over a chosen target distribution."
+    ],
+    "context_mechanism": "Predictive information gain scores unknown-outcome candidates; Bayesian estimator retrained after acquisition.",
+    "label_compute_budgets": "Label budget nB, warm-start and acquisition batches; target covariates available.",
+    "limitations": "Preferred objective depends on estimator/effect structure; tested information gain is not policy-value gain.",
+    "novelty_relevance": "Our assessment: causal objective alignment is explicit prior art.",
+    "evidence_sections": [
+      "PreprintSections2.1, 3\u20134; equation5; Algorithm1; final proceedings abstract"
+    ]
+  },
+  {
+    "id": "B23",
+    "title": "Sample Constrained Treatment Effect Estimation",
+    "authors": "Raghavendra Addanki, David Arbour, Tung Mai, Cameron Musco, Anup Rao",
+    "year": 2022,
+    "url": "https://papers.nips.cc/paper_files/paper/2022/file/240ea1741b205ea295721d55184ac43b-Paper-Conference.pdf",
+    "version": "NeurIPS2022 proceedings",
+    "version_date": "2022-10-12",
+    "verified_date": "2026-11-08",
+    "venue_status": "NeurIPS2022; arXiv2210.06594",
+    "code_url": "https://github.com/raddanki/Sample-Constrained-Treatment-Effect-Estimation",
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Jointly chooses experimental subjects and treatment assignment using leverage sampling/discrepancy ideas under linear effects."
+    ],
+    "context_mechanism": "Experimental design, not selection of already-observed factual rows.",
+    "label_compute_budgets": "Only s of n people may enter the experiment; outcomes then observed.",
+    "limitations": "Guarantees rely on linear-effect assumptions; treatment is controllable.",
+    "novelty_relevance": "Our assessment: contrast-optimal sample design predates causal-PFN retrieval; adaptation requires different assumptions.",
+    "evidence_sections": [
+      "Sections1\u20134; linear-effects setup; ITE/ATE designs"
+    ]
+  },
+  {
+    "id": "B24",
+    "title": "Active Adaptive Experimental Design for Treatment Effect Estimation with Covariate Choices",
+    "authors": "Masahiro Kato, Akihiro Oga, Wataru Komatsubara, Ryo Inokuchi",
+    "year": 2024,
+    "url": "https://arxiv.org/html/2403.03589v2",
+    "version": "arXiv v2",
+    "version_date": "2024-06-18",
+    "verified_date": "2026-11-08",
+    "venue_status": "Preprint; later publication not verified",
+    "code_url": null,
+    "evidence_level": "full_text",
+    "specific_claims": [
+      "Optimizes covariate sampling density and propensity jointly to minimize an ATE efficiency bound."
+    ],
+    "context_mechanism": "Sequentially selects units and assigns treatment, then observes outcomes.",
+    "label_compute_budgets": "Sequential experiment budget; AIPW plus importance-sampling estimation.",
+    "limitations": "ATE variance objective and controllable enrollment differ from CATE ranking with fixed historical donors.",
+    "novelty_relevance": "Our assessment: variance-optimal sampling has established statistical theory; PFN-specific policy claims need additional work.",
+    "evidence_sections": [
+      "Sections2\u20135; efficient probabilities; AppendixE"
+    ]
+  },
+  {
+    "id": "B25",
+    "title": "Improving Treatment Effect Estimation with LLM-Based Data Augmentation",
+    "authors": "Nicolas Huynh, Julianna Piskorz, Jeroen Berrevoets, Max Ruiz Luyten, Mihaela van der Schaar",
+    "year": 2025,
+    "url": "https://openreview.net/pdf?id=2Q3gFNbpAr",
+    "version": "Author workshop manuscript; exact revision date not established",
+    "version_date": null,
+    "verified_date": "2026-11-08",
+    "venue_status": "ICML2025 Foundation Models for Structured Data workshop, verified on author page; not main conference",
+    "venue_url": "https://nicolashuynh.github.io/",
+    "code_url": null,
+    "evidence_level": "full_text",
+    "evidence_access_note": "Indexed primary-PDF method/AppendixF.10 excerpts examined; direct OpenReview PDF/attachment blocked by browser challenge.",
+    "specific_claims": [
+      "GATE augments downstream CATE training with pretrained-generative-model counterfactual outcomes."
+    ],
+    "context_mechanism": "Few-shot observational prompts; opposite-arm kNN versus random prompt selection ablation.",
+    "label_compute_budgets": "AppendixF.10 uses K50 neighbors; generated labels and downstream fitting add cost.",
+    "limitations": "Generated outcomes and imputed counterfactual evaluation differ from factual-row-only retrieval.",
+    "novelty_relevance": "Our assessment: direct adjacent prior for choosing causal-LLM demonstrations, not frozen causal-PFN memory.",
+    "evidence_sections": [
+      "Primary PDF indexed methods and AppendixF.10; author publication list59\u201362"
+    ]
+  }
+]

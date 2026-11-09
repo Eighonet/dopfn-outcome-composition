@@ -1,0 +1,4 @@
+all_metrics.csv: 9 rows matched, 12 unmatched; all numbers equal to 1e-6
+mean_bootstrap_draws.csv: 500 rows matched, 0 unmatched; fm_natural_minus_balanced max|d|=0.0111673, interaction max|d|=0.0111673
+paired_deltas.csv: 9 rows matched, 0 unmatched; high max|d|=0.0107724, delta max|d|=0.00588799, low max|d|=0.0058484
+largest difference: 0.0111673

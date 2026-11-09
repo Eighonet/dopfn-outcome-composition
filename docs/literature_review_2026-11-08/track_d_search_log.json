@@ -1,0 +1,71 @@
+{
+  "cutoff": "2026-11-08",
+  "track": "Uplift estimation, policy learning, evaluation, sampling and calibration",
+  "queries": [
+    "uplift modeling evaluation variance Qini doubly robust policy ranking Rank Learner AUTOC 2025 2026",
+    "uplift modeling undersampling class imbalance case control sampling Nyberg 2021",
+    "policy learning budget constraints doubly robust empirical welfare maximization Athey Wager 2021",
+    "foundation models uplift benchmark TabPFN CausalPFN context selection 2026",
+    "Yadlowsky Fleming Shah Brunskill Wager evaluating treatment prioritization rules RATE rank weighted average treatment effects 2025 journal",
+    "Zhu 2025 Qini uplift curves binary negative outcomes ICML 267",
+    "Bokelmann Lessmann 2022 reducing variance uplift modeling evaluation 2210.02152",
+    "Nyberg Klami Kaski uplift high class imbalance undersampling 2021 PMLR",
+    "\"Policy Learning With Observational Data\" Athey Wager 2021 arxiv",
+    "\"Who Should Be Treated\" \"Empirical Welfare\" Kitagawa Tetenov 2018",
+    "\"Quasi-Oracle Estimation\" \"Treatment\" Nie Wager",
+    "\"Towards optimal doubly robust estimation\" Kennedy 2023",
+    "\"Meta-learners for estimating heterogeneous treatment effects\" Künzel 2019",
+    "\"Double/debiased machine learning for treatment and structural parameters\" 2018",
+    "\"Evaluating Causal Models\" Mahajan 2024 selection surrogate treatment effects",
+    "\"Calibrating Heterogeneous Treatment Effects\" 2023 van der Laan",
+    "\"Orthogonal Statistical Learning\" Foster Syrgkanis 2023",
+    "\"Rank-Learner\" 2026 Arno Frauen",
+    "\"uplift\" \"ranking\" \"Kamran\" 2024",
+    "\"uplift\" \"leverage score\" sampling 2024 2025",
+    "Addanki 2022 leverage sampling uplift modeling paper",
+    "\"uplift\" \"ranking\" \"Vanderschueren\" 2024",
+    "\"uplift\" \"Kamran\" \"2024\" ranking",
+    "\"Exploring uplift modeling with high class imbalance\" Nyberg Klami 2023 full",
+    "\"Learning to Rank for Uplift Modeling\" Devriendt Guns Verbeke",
+    "\"A Literature Survey and Experimental Evaluation\" \"Uplift\"",
+    "\"Estimation and Inference of Heterogeneous Treatment Effects using Random Forests\" Wager Athey 2018",
+    "\"Doubly Robust Policy Evaluation and Learning\" Dudik Langford Li 2011",
+    "\"uplift\" \"TabPFN\" context selection",
+    "\"uplift\" \"foundation model\" context retrieval",
+    "\"treatment effect\" \"in-context learning\" \"selection\" foundation",
+    "\"causal\" \"context selection\" foundation model uplift",
+    "\"Transformers Can Do Bayesian Inference\" 2022 Muller authors ICLR",
+    "Shalit Johansson Sontag 2017 Estimating individual treatment effect generalization bounds algorithms",
+    "Learning Representations for Counterfactual Inference Johansson Shalit Sontag 2016 PMLR"
+  ],
+  "search_interfaces": [
+    "web search primary-source discovery",
+    "direct primary publication/author/arXiv page opens",
+    "Crossref DOI/title metadata API"
+  ],
+  "snowballing": [
+    "Existing project literature map",
+    "References and related work of Rank-Learner, RATE, uplift evaluation and HS-sampling"
+  ],
+  "include": "Methods that change the causal training/evaluation target, sampling distribution or validity of a context-selector comparison.",
+  "exclude": "Unrelated applications, secondary generated summaries, unsupported superiority statements, duplicate preprint/journal versions as separate papers.",
+  "limitations": [
+    "Not a PRISMA search or a citation-database census.",
+    "Abstract-only sources are explicitly tagged; their proofs and implementation are not audited.",
+    "Publisher access failures were handled through author preprints, not bypassed.",
+    "An absent code URL means not verified here, not proof that code does not exist."
+  ],
+  "query_count": 35,
+  "metadata_queries": [
+    "Crossref DOI records listed in track_d_crossref_metadata.json",
+    "Crossref title lookup for journal uplift-evaluation article and empirical welfare maximization"
+  ],
+  "final_primary_opens": [
+    "https://arxiv.org/abs/2607.18225",
+    "https://arxiv.org/html/2607.18225v1",
+    "https://proceedings.mlr.press/v70/shalit17a.html",
+    "https://proceedings.mlr.press/v70/shalit17a/shalit17a.pdf",
+    "https://proceedings.mlr.press/v48/johansson16.html",
+    "https://proceedings.mlr.press/v48/johansson16.pdf"
+  ]
+}

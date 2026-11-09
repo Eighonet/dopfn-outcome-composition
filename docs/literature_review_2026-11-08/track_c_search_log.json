@@ -1,0 +1,121 @@
+{
+  "track": "C",
+  "search_date": "2026-11-08",
+  "cutoff_date": "2026-11-08",
+  "query_count": 56,
+  "actual_search_queries": [
+    "\"Model-to-Match\" causal matching",
+    "\"RetICL\" \"CEIL\" in-context learning retrieval",
+    "\"data valuation\" \"fixed\" \"size\" Shapley swap",
+    "\"distributional\" \"Data Banzhaf\" \"Beta Shapley\"",
+    "\"Is Data Shapley Not Better than Random in Data Selection\"",
+    "\"Data valuation\" \"swap\" Shapley context",
+    "\"RetICL\" Scarlatos Lan 2023",
+    "\"Compositional Exemplars\" CEIL 2023",
+    "site.proceedings.mlr.press \"A Distributional Framework for Data Valuation\"",
+    "site:proceedings.mlr.press \"Beta Shapley\"",
+    "site:proceedings.mlr.press \"Data Banzhaf\"",
+    "site:proceedings.mlr.press \"Data Valuation using Reinforcement Learning\"",
+    "site:aclanthology.org \"Learning To Retrieve Prompts for In-Context Learning\"",
+    "site:aclanthology.org \"Universal Prompt Retrieval\"",
+    "site:aclanthology.org \"Active Example Selection\"",
+    "\"Se2\" \"Sequential\" \"Example Selection\"",
+    "\"MALTS\" JMLR Parikh Rudin Volfovsky",
+    "\"The prognostic analogue of the propensity score\" Hansen 2008",
+    "\"Doubly robust matching\" Antonelli Cefalu Palmer Agniel",
+    "\"Optimal transport weights for causal inference\" Dunipace",
+    "site:proceedings.mlr.press \"Beta Shapley\"",
+    "site:proceedings.mlr.press \"Data Banzhaf\"",
+    "site:proceedings.mlr.press \"Data-OOB\"",
+    "site:aclanthology.org \"Learning To Retrieve Prompts\"",
+    "site:aclanthology.org \"Active Example Selection for In-Context Learning\"",
+    "site:aclanthology.org \"UPRISE\"",
+    "site:aclanthology.org \"Learning to Retrieve\" \"Iterative\" 2024 406",
+    "site:proceedings.mlr.press \"Coresets for Data-efficient Training\"",
+    "\"GLISTER\" \"Killamsetty\" 2021",
+    "site:proceedings.mlr.press \"Grad-Match\"",
+    "\"Super-Samples from Kernel Herding\"",
+    "\"On the Equivalence between Herding and Conditional Gradient\"",
+    "\"Grad-Match: Gradient Matching based Data Subset Selection\"",
+    "\"UPRISE\" prompt retrieval arxiv",
+    "\"Doubly robust matching estimators\" Antonelli",
+    "\"The central role of the propensity score\" Rosenbaum Rubin 1983 pdf",
+    "site:aclanthology.org \"RetICL\" \"2024\"",
+    "site:academic.oup.com/biomet \"The prognostic analogue\"",
+    "site:academic.oup.com/biomet \"The central role\" \"1983\"",
+    "site:arxiv.org \"Optimal transport weights for causal inference\"",
+    "\"Non-monotone Submodular Maximization under Matroid\" Lee Mirrokni 2009",
+    "\"fixed-size\" \"data valuation\" semivalue",
+    "\"constrained\" \"Data Shapley\" coalition",
+    "\"Learning to Select\" \"in-context\" \"swap\"",
+    "\"Rosenbaum\" \"Rubin\" \"1983\" \"strongly ignorable\" site:academic.oup.com/biomet/article-abstract/70",
+    "\"The central role of the propensity score\" site:stat.cmu.edu",
+    "\"The prognostic analogue\" site:umich.edu",
+    "\"Rethinking Data Shapley for Data Selection Tasks\" site:proceedings.mlr.press",
+    "site:mdpi.com/2504-4990/8/10/336 \"Context Selection\"",
+    "\"Context Selection as a Partial Order\"",
+    "\"Bilous\" \"Lytvyn\" \"Pukach\" \"Rybchak\" \"Blackwell\"",
+    "site:mdpi.com/2504-4990/8/10/336 \"Bilous\" \"October\"",
+    "site:mdpi.com/2504-4990/8/10/336 \"Abstract\" \"Blackwell\"",
+    "site:mdpi.com/2504-4990/8/10/336 \"Andriy Bilous\"",
+    "site:mdpi.com/2504-4990/8/10/336 \"Lytvyn\" \"Rybchak\"",
+    "site:mdpi.com/2504-4990/8/10/336 \"17 October 2026\""
+  ],
+  "search_method": "Web search, official publisher/arXiv opening, targeted full-text find, bibliography-following. Query duplicates retained. No completeness theorem or exhaustive systematic-review claim.",
+  "direct_primary_open_from_parent_or_citation": [
+    "https://arxiv.org/abs/2303.02980",
+    "https://arxiv.org/abs/2608.28375",
+    "https://arxiv.org/abs/2602.09326"
+  ],
+  "inclusion_criteria": [
+    "Primary original research with a concrete bridge to causal matching, frozen-model learned set retrieval, marginal utility data valuation or constrained representative selection.",
+    "Published or publicly posted by cutoff; publication and preprint editions distinguished.",
+    "Foundational source or closest conceptual predecessor, with a specific novelty boundary."
+  ],
+  "exclusion_criteria": [
+    "Third-party automated summaries and surveys as evidence for technical claims.",
+    "Ordinary document RAG without demonstration/context subset relevance.",
+    "Generic 2026 improvements of submodular approximation constants: no direct utility-swap/PFN bridge.",
+    "Duplicate versions retained as one source card.",
+    "CRUMB/VIP/Rank-Learner core sources assigned to other tracks.",
+    "Directed-information gamma-cover arXiv2510.00079 supplied by root: adjacent and assigned across tracks; not added beyond the 30-source target here."
+  ],
+  "access_limitations": [
+    {
+      "source": "C01",
+      "issue": "OUP DOI redirect inaccessible; original scanned PDF accessible but body lacks extracted text. Original indexed summary used; abstract_only."
+    },
+    {
+      "source": "C02",
+      "issue": "Publisher abstract indexed; article body redirect inaccessible; abstract_only."
+    },
+    {
+      "source": "C05",
+      "issue": "PMC recaptcha; author-hosted publisher PDF opened successfully."
+    },
+    {
+      "source": "C21",
+      "issue": "PMLR raw-GitHub PDF octet-stream rejected; arXiv v2 full HTML used plus official PMLR metadata."
+    },
+    {
+      "source": "C25",
+      "issue": "AAAI page bot block; arXiv v4 full HTML and arXiv journal-reference used."
+    },
+    {
+      "source": "C30",
+      "issue": "MDPI article/PDF 429 and XML unavailable; primary indexed theorem/scope excerpts and publisher author/date index accessed. Conservative abstract_only."
+    }
+  ],
+  "unresolved": [
+    "Exact priority of the complete query-dependent causal fixed-quota utility-swap selector remains unestablished.",
+    "Later venue status for COT, RetICL and KDSM was not verified; cards cite confirmed preprints.",
+    "Most code links are source-announced only; no reproduction or code audit performed.",
+    "Outcome-dependent versus label-blind deployment inputs need explicit adaptation tests.",
+    "UPRISE Deng author alias and Lee et al. PDF internal date mismatch are recorded, not silently resolved."
+  ],
+  "source_manifest": "track_c_sources.json",
+  "notes": "track_c_notes.md",
+  "experiments_run": false,
+  "historical_files_changed": false,
+  "word_policy": "No quotations. Compact source cards plus comparative notes; source-derived paraphrases targeted below 120 words/card-plus-notes. Root should avoid repeating abstracts when merging."
+}

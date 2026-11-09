@@ -1,0 +1,988 @@
+[
+  {
+    "doi": "10.1089/big.2017.0104",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.1089%2Fbig.2017.0104",
+    "title": [
+      "A Literature Survey and Experimental Evaluation of the State-of-the-Art in Uplift Modeling: A Stepping Stone Toward the Development of Prescriptive Analytics"
+    ],
+    "author": [
+      {
+        "given": "Floris",
+        "family": "Devriendt",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Faculty of Economic and Social Sciences and Solvay Business School, Vrije Universiteit Brussel, Brussels, Belgium."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Darie",
+        "family": "Moldovan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Business Information Systems Department, Babeş-Bolyai University, Cluj-Napoca, Romania."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wouter",
+        "family": "Verbeke",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Economic and Social Sciences and Solvay Business School, Vrije Universiteit Brussel, Brussels, Belgium."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Big Data"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          3
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          3
+        ]
+      ]
+    },
+    "published-online": null,
+    "volume": "6",
+    "issue": "1",
+    "page": "13-41",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1089/big.2017.0104"
+  },
+  {
+    "doi": "10.1073/pnas.1804597116",
+    "status": "metadata_unavailable",
+    "error": "HTTPError"
+  },
+  {
+    "doi": "10.1093/biomet/asaa076",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.1093%2Fbiomet%2Fasaa076",
+    "title": [
+      "Quasi-oracle estimation of heterogeneous treatment effects"
+    ],
+    "author": [
+      {
+        "given": "X",
+        "family": "Nie",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Stanford University, 353 Serra Mall, Stanford, California 94305, U.S.A"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "S",
+        "family": "Wager",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Stanford Graduate School of Business, 655 Knight Way, Stanford, California 94305, U.S.A"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Biometrika"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          9,
+          24
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          5,
+          15
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          9,
+          24
+        ]
+      ]
+    },
+    "volume": "108",
+    "issue": "2",
+    "page": "299-319",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1093/biomet/asaa076"
+  },
+  {
+    "doi": "10.1214/23-EJS2157",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.1214%2F23-EJS2157",
+    "title": [
+      "Towards optimal doubly robust estimation of heterogeneous causal effects"
+    ],
+    "author": [
+      {
+        "given": "Edward H.",
+        "family": "Kennedy",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Statistics & Data Science, Carnegie Mellon University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Electronic Journal of Statistics"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          1
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "volume": "17",
+    "issue": "2",
+    "page": "3008-3049",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1214/23-ejs2157"
+  },
+  {
+    "doi": "10.1111/ectj.12097",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.1111%2Fectj.12097",
+    "title": [
+      "Double/debiased machine learning for treatment and structural parameters"
+    ],
+    "author": [
+      {
+        "given": "Victor",
+        "family": "Chernozhukov",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Massachusetts Institute of Technology, 50 Memorial Drive, Cambridge, MA 02139, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Denis",
+        "family": "Chetverikov",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of California Los Angeles, 315 Portola Plaza, Los Angeles, CA 90095, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mert",
+        "family": "Demirer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Massachusetts Institute of Technology, 50 Memorial Drive, Cambridge, MA 02139, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Esther",
+        "family": "Duflo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Massachusetts Institute of Technology, 50 Memorial Drive, Cambridge, MA 02139, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christian",
+        "family": "Hansen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago, 5807 S. Woodlawn Ave., Chicago, IL 60637, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Whitney",
+        "family": "Newey",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Massachusetts Institute of Technology, 50 Memorial Drive, Cambridge, MA 02139, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James",
+        "family": "Robins",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Harvard University, 677 Huntington Avenue, Boston, MA 02115, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "The Econometrics Journal"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          16
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          2,
+          1
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          1,
+          16
+        ]
+      ]
+    },
+    "volume": "21",
+    "issue": "1",
+    "page": "C1-C68",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1111/ectj.12097"
+  },
+  {
+    "doi": "10.1214/23-AOS2258",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.1214%2F23-AOS2258",
+    "title": [
+      "Orthogonal statistical learning"
+    ],
+    "author": [
+      {
+        "given": "Dylan J.",
+        "family": "Foster",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Microsoft Research, New England"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vasilis",
+        "family": "Syrgkanis",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Management Science and Engineering, Stanford University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "The Annals of Statistics"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          1
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "volume": "51",
+    "issue": "3",
+    "page": "879-908",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1214/23-aos2258"
+  },
+  {
+    "doi": "10.3982/ECTA15732",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.3982%2FECTA15732",
+    "title": [
+      "Policy Learning With Observational Data"
+    ],
+    "author": [
+      {
+        "given": "Susan",
+        "family": "Athey",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Stanford Graduate School of Business, Stanford University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stefan",
+        "family": "Wager",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Stanford Graduate School of Business, Stanford University"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Econometrica"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "published-print": null,
+    "published-online": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "volume": "89",
+    "issue": "1",
+    "page": "133-161",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.3982/ecta15732"
+  },
+  {
+    "doi": "10.1080/01621459.2024.2393466",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.1080%2F01621459.2024.2393466",
+    "title": [
+      "Evaluating Treatment Prioritization Rules via Rank-Weighted Average Treatment Effects"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-4847-7230",
+        "authenticated-orcid": false,
+        "given": "Steve",
+        "family": "Yadlowsky",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Google DeepMind",
+            "place": [
+              "San Francisco"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-6047-7877",
+        "authenticated-orcid": false,
+        "given": "Scott",
+        "family": "Fleming",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Biomedical Data Science, Stanford University",
+            "place": [
+              "Stanford"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9385-7158",
+        "authenticated-orcid": false,
+        "given": "Nigam",
+        "family": "Shah",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Center for Biomedical Informatics Research, Stanford University",
+            "place": [
+              "Stanford"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3971-7127",
+        "authenticated-orcid": false,
+        "given": "Emma",
+        "family": "Brunskill",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, Stanford University",
+            "place": [
+              "Stanford"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7526-9077",
+        "authenticated-orcid": false,
+        "given": "Stefan",
+        "family": "Wager",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Graduate School of Business, Stanford University",
+            "place": [
+              "Stanford"
+            ]
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of the American Statistical Association"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          11
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          1,
+          2
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          11
+        ]
+      ]
+    },
+    "volume": "120",
+    "issue": "549",
+    "page": "38-51",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1080/01621459.2024.2393466"
+  },
+  {
+    "doi": "10.1109/TKDE.2020.3048510",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.1109%2FTKDE.2020.3048510",
+    "title": [
+      "Learning to Rank for Uplift Modeling"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0003-3479-3398",
+        "authenticated-orcid": false,
+        "given": "Floris",
+        "family": "Devriendt",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Data Analytics Laboratory, Solvay Business School, Vrije Universiteit Brussel, Brussels, Belgium"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8527-6860",
+        "authenticated-orcid": false,
+        "given": "Jente",
+        "family": "Van Belle",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Data Analytics Laboratory, Solvay Business School, Vrije Universiteit Brussel, Brussels, Belgium"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tias",
+        "family": "Guns",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Data Analytics Laboratory, Solvay Business School, Vrije Universiteit Brussel, Brussels, Belgium"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8438-0535",
+        "authenticated-orcid": false,
+        "given": "Wouter",
+        "family": "Verbeke",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Faculty of Economics and Business, Katholieke Universiteit Leuven, Leuven, Belgium"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Knowledge and Data Engineering"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          1
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          10,
+          1
+        ]
+      ]
+    },
+    "published-online": null,
+    "volume": "34",
+    "issue": "10",
+    "page": "4888-4904",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1109/tkde.2020.3048510"
+  },
+  {
+    "doi": "10.1007/s10618-023-00917-9",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.1007%2Fs10618-023-00917-9",
+    "title": [
+      "Exploring uplift modeling with high class imbalance"
+    ],
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-8481-9325",
+        "authenticated-orcid": false,
+        "given": "Otto",
+        "family": "Nyberg",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Arto",
+        "family": "Klami",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Data Mining and Knowledge Discovery"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          23
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2023,
+          3
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          23
+        ]
+      ]
+    },
+    "volume": "37",
+    "issue": "2",
+    "page": "736-766",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1007/s10618-023-00917-9"
+  },
+  {
+    "doi": "10.1016/j.ejor.2025.02.030",
+    "status": "metadata_unavailable",
+    "error": "HTTPError"
+  },
+  {
+    "doi": "10.1080/01621459.2017.1319839",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.1080%2F01621459.2017.1319839",
+    "title": [
+      "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests"
+    ],
+    "author": [
+      {
+        "given": "Stefan",
+        "family": "Wager",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Stanford University, Stanford, CA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Susan",
+        "family": "Athey",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Stanford University, Stanford, CA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of the American Statistical Association"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          6,
+          6
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          7,
+          3
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          6,
+          6
+        ]
+      ]
+    },
+    "volume": "113",
+    "issue": "523",
+    "page": "1228-1242",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1080/01621459.2017.1319839"
+  },
+  {
+    "doi": "10.1177/10949968221111083",
+    "status": "verified_crossref_metadata",
+    "source_url": "https://api.crossref.org/works/10.1177%2F10949968221111083",
+    "title": [
+      "Bridging the Gap: A Systematic Benchmarking of Uplift Modeling and Heterogeneous Treatment Effects Methods"
+    ],
+    "author": [
+      {
+        "given": "Jannik",
+        "family": "Rößler",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Detlef",
+        "family": "Schoder",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "container-title": [
+      "Journal of Interactive Marketing"
+    ],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          11
+        ]
+      ]
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          11
+        ]
+      ]
+    },
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          11
+        ]
+      ]
+    },
+    "volume": "57",
+    "issue": "4",
+    "page": "629-650",
+    "type": "journal-article",
+    "URL": "https://doi.org/10.1177/10949968221111083"
+  }
+]

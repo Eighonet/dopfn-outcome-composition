@@ -1,0 +1,4 @@
+all_metrics.csv: 90 rows matched, 0 unmatched; oracle_regret_at_10 max|d|=0.00289246, pehe max|d|=0.000314377
+interactions.csv: 5 rows matched, 0 unmatched; fm_interaction max|d|=0.000299358, fm_specific_interaction max|d|=0.000261967, local_interaction max|d|=0.000143656
+paired_deltas.csv: 10 rows matched, 0 unmatched; fm_cepo_gain_over_effect max|d|=0.000314406, local_cepo_gain_over_effect max|d|=0.000143656
+largest difference: 0.00289246

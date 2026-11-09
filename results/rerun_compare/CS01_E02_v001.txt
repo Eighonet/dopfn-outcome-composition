@@ -1,0 +1,6 @@
+all_metrics.csv: 108 rows matched, 0 unmatched; uplift_10_pp max|d|=2.17144, uplift_5_pp max|d|=1.95363, uplift_30_pp max|d|=1.2904, uplift_20_pp max|d|=0.877161, normalized_qini_auc max|d|=0.0126098, normalized_auuc max|d|=0.00187078
+all_paired_deltas.csv: 504 rows matched, 0 unmatched; high max|d|=3.20877, low max|d|=2.92034, delta max|d|=2.17144
+dataset_summary.csv: 7 rows matched, 2 unmatched; min_delta_qhat max|d|=0.00783638, max_delta_qhat max|d|=0.00229297, mean_delta_qhat max|d|=0.00207798, mean_selector_qhat max|d|=0.0020643, mean_random_query_qhat max|d|=1.36845e-05
+selector_effects.csv: 72 rows matched, 0 unmatched; delta_uplift10_pp max|d|=2.17144, delta_qini max|d|=0.01344
+split_contrasts.csv: 24 rows matched, 0 unmatched; conditional_ci_low max|d|=0.0133301, delta_qhat max|d|=0.0126148, selector_qhat max|d|=0.0126098, conditional_ci_high max|d|=0.00758162, random_query_qhat_max max|d|=7.33659e-05, random_query_qhat_min max|d|=6.61052e-05
+largest difference: 3.20877

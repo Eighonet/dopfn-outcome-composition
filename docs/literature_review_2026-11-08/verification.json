@@ -1,0 +1,14 @@
+{
+  "result": "pass",
+  "sources": 123,
+  "papers": 122,
+  "json_files_parsed": 12,
+  "markdown_files_checked": 7,
+  "local_links_checked": 4,
+  "unique_external_urls_recorded": 173,
+  "external_link_check_scope": "Primary sources were opened during research; no claim that every external endpoint was freshly live-tested.",
+  "bibtex_entries": 123,
+  "main_review_words": 4433,
+  "annotation_files_words": 15492,
+  "errors": []
+}

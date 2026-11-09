@@ -1,0 +1,3 @@
+all_metrics.csv: 48 rows matched, 0 unmatched; inference_seconds max|d|=2405.31
+paired_differences.csv: 8 rows matched, 0 unmatched; all numbers equal to 1e-6
+largest difference: 2405.31

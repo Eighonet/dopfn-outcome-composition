@@ -1,0 +1,3086 @@
+{
+  "title": "Context selection for foundation models in uplift",
+  "cutoff_inclusive": "2026-11-08",
+  "review_type": "Broad targeted narrative review with logged searches and citation snowballing; not PRISMA or an exhaustive citation-database census.",
+  "depth_definition": "Full text means relevant sections inspected, not proof verification or experimental reproduction.",
+  "missing_code_definition": "A null URL means author code availability was not verified here.",
+  "counts": {
+    "sources": 123,
+    "papers": 122,
+    "software": 1,
+    "selected_full_text_sections": 93,
+    "limited_primary_text": 30,
+    "source_records_with_code_link": 53,
+    "tracks": {
+      "A": 37,
+      "B": 25,
+      "C": 30,
+      "D": 31
+    }
+  },
+  "normalization_decisions": [
+    "B25: indexed primary-PDF excerpts classified as limited access, not full-text access."
+  ],
+  "sources": [
+    {
+      "id": "A01",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A01",
+      "title": "TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second",
+      "authors": "Noah Hollmann; Samuel Müller; Katharina Eggensperger; Frank Hutter",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2207.01848v6",
+      "venue_status": "ICLR 2023",
+      "version_date": "v6 2023-09-16; first 2022-07-05",
+      "code_url": "https://github.com/PriorLabs/TabPFN",
+      "code_license": "Current inference code Apache-2.0; checkpoint terms are separate and version-specific, verified in official README.",
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract; submission history"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A01"
+      }
+    },
+    {
+      "id": "A02",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A02",
+      "title": "Accurate predictions on small data with a tabular foundation model",
+      "authors": "Noah Hollmann; Samuel Müller; Lennart Purucker; Arjun Krishnakumar; Max Körfer; Shi Bin Hoo; Robin Tibor Schirrmeister; Frank Hutter",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://www.nature.com/articles/s41586-024-08328-6",
+      "venue_status": "Nature 637, 319–326",
+      "version_date": "Published 2025-01-08",
+      "code_url": "https://github.com/PriorLabs/TabPFN",
+      "code_license": "Current inference code Apache-2.0; checkpoint terms are separate and version-specific, verified in official README.",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Main; Principled in-context learning; Methods"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A02"
+      }
+    },
+    {
+      "id": "A03",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A03",
+      "title": "TabPFN-2.5: Advancing the State of the Art in Tabular Foundation Models",
+      "authors": "Léo Grinsztajn; Klemens Flöge; Oscar Key; Felix Birkel; Philipp Jund; Brendan Roof; Benjamin Jäger; Dominik Safaric; Simone Alessi; Adrian Hayler; Mihir Manium; Rosen Yu; Felix Jablonski; Shi Bin Hoo; Anurag Garg; Jake Robertson; Magnus Bühler; Vladyslav Moroshan; Lennart Purucker; Clara Cornu; Lilly Charlotte Wehrhahn; Alessandro Bonetto; Bernhard Schölkopf; Sauraj Gambhir; Noah Hollmann; Frank Hutter",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2511.08667v2",
+      "venue_status": "Technical report",
+      "version_date": "v2 2026-02-05; first 2025-11-11",
+      "code_url": "https://github.com/PriorLabs/TabPFN",
+      "code_license": "Current inference code Apache-2.0; checkpoint terms are separate and version-specific, verified in official README.",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": "§3; §4.5; Appendix D Table3; §6",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A03"
+      }
+    },
+    {
+      "id": "A04",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A04",
+      "title": "TabPFN-3: Technical Report",
+      "authors": "Léo Grinsztajn; Klemens Flöge; Oscar Key; Felix Birkel; Philipp Jund; Brendan Roof; Mihir Manium; Shi Bin Hoo; Magnus Bühler; Anurag Garg; Dominik Safaric; Jake Robertson; Benjamin Jäger; Simone Alessi; Adrian Hayler; Vladyslav Moroshan; Lennart Purucker; Philipp Singer; Alan Arazi; Julien Siems; Jan Hendrik Metzen; Georg Grab; Nick Erickson; Siyuan Guo; Eliott Kalfon; Simon Bing; David Salinas; Clara Cornu; Lilly Charlotte Wehrhahn; Diana Kriuchkova; Kursat Kaya; Lydia Sidhoum; Marie Salmon; Jerry Chen; Madelon Hulsebos; Yann LeCun; Samuel Müller; Bernhard Schölkopf; Sauraj Gambhir; Noah Hollmann; Frank Hutter",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2605.13986v3",
+      "venue_status": "Technical report",
+      "version_date": "v3 2026-11-03; v2 2026-05-28 also inspected; first 2026-05-13",
+      "code_url": "https://github.com/PriorLabs/TabPFN",
+      "code_license": "Official code repository Apache-2.0; weights TABPFN-3.0 License v1.0 per report §5, with separate commercial restrictions",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": "§2.4; §3.5; Appendix E.1 and Figure 27; §5 (v3)",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A04"
+      }
+    },
+    {
+      "id": "A05",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A05",
+      "title": "TabPFN-3.5: Technical Report",
+      "authors": "Benjamin Jäger; Nick Erickson; Léo Grinsztajn; Felix Birkel; Klemens Flöge; Oscar Key; Kürşat Kaya; Jonas Kübler; Adèle Frankel; Tobias Schröder; Anurag Garg; Jan Hendrik Metzen; David Salinas; Simon Bing; Kristina Collins; Tuana Çelik; Vahid Balazadeh; Lydia Sidhoum; Tomás Pereda; Brendan Roof; Andrej Tschalzev; Siyuan Guo; Philipp Singer; Lennart Purucker; Jake Robertson; Marie Salmon; Philipp Jund; Jerry Chen; Diana Kriuchkova; Arthur Cahu; Eliott Kalfon; Adrian Hayler; Georg Grab; Vitor Monteiro; Lilly Wehrhahn; Dominik Safaric; Clara Cornu; Alan Arazi; Rylee Grace; Simone Alessi; Mihir Manium; Bernhard Schölkopf; Yann LeCun; Madelon Hulsebos; Sauraj Gambhir; Noah Hollmann; Frank Hutter",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2609.17895",
+      "venue_status": "Technical report",
+      "version_date": "First 2026-09-15",
+      "code_url": "https://github.com/PriorLabs/TabPFN",
+      "code_license": "Current inference code Apache-2.0; checkpoint terms are separate and version-specific, verified in official README.",
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract; official repository License"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A05"
+      }
+    },
+    {
+      "id": "A06",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A06",
+      "title": "Scaling TabPFN: Sketching and Feature Selection for Tabular Prior-Data Fitted Networks",
+      "authors": "Benjamin Feuer; Chinmay Hegde; Niv Cohen",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2311.10609v1",
+      "venue_status": "TRL workshop at NeurIPS 2023",
+      "version_date": "v1 2023-11-17",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract; Comments"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A06"
+      }
+    },
+    {
+      "id": "A07",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A07",
+      "title": "In-Context Data Distillation with TabPFN",
+      "authors": "Junwei Ma; Valentin Thomas; Guangwei Yu; Anthony Caterini",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2402.06971v1",
+      "venue_status": "ICLR 2024 ME-FoMo workshop, verified on coauthor website; arXiv preprint",
+      "version_date": "v1 2024-02-10",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section 3, likelihood objective; Section 4"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A07"
+      }
+    },
+    {
+      "id": "A08",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A08",
+      "title": "TuneTables: Context Optimization for Scalable Prior-Data Fitted Networks",
+      "authors": "Benjamin Feuer; Robin Tibor Schirrmeister; Valeriia Cherepanova; Chinmay Hegde; Frank Hutter; Micah Goldblum; Niv Cohen; Colin White",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2402.11137v3",
+      "venue_status": "NeurIPS 2024",
+      "version_date": "v3 2024-10-21; first 2024-02-17",
+      "code_url": "https://github.com/penfever/TuneTables",
+      "code_license": "Apache-2.0 verified in official repository",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section 3; Section 5; Appendices C.4 and D"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A08"
+      }
+    },
+    {
+      "id": "A09",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A09",
+      "title": "Retrieval & Fine-Tuning for In-Context Tabular Models",
+      "authors": "Valentin Thomas; Junwei Ma; Rasa Hosseinzadeh; Keyvan Golestan; Guangwei Yu; Maksims Volkovs; Anthony Caterini",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2406.05207v1",
+      "venue_status": "NeurIPS 2024, official code README",
+      "version_date": "v1 2024-06-07",
+      "code_url": "https://github.com/layer6ai-labs/LoCalPFN",
+      "code_license": "Official repository verified; no explicit license identified in visible root",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Methods; Appendix A.2.2; official README"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A09"
+      }
+    },
+    {
+      "id": "A10",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A10",
+      "title": "Mixture of In-Context Prompters for Tabular PFNs",
+      "authors": "Derek Xu; Olcay Cirit; Reza Asadi; Yizhou Sun; Wei Wang",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/3de60dc2ff7ac8866e805bbf457e2291-Paper-Conference.pdf",
+      "venue_status": "ICLR 2025",
+      "version_date": "Conference 2025; arXiv first 2024-05-25",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 3.2,3.3; implementation appendices"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A10"
+      }
+    },
+    {
+      "id": "A11",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A11",
+      "title": "Towards Localization via Data Embedding for TabPFN",
+      "authors": "Mykhailo Koshil; Thomas Nagler; Matthias Feurer; Katharina Eggensperger",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://openreview.net/pdf?id=LFyQyV5HxQ",
+      "venue_status": "TRL workshop at NeurIPS 2024",
+      "version_date": "TRL@NeurIPS2024 PDF; upload date not verified",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 3,4; implementation note"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A11"
+      }
+    },
+    {
+      "id": "A12",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A12",
+      "title": "TabDPT: Scaling Tabular Foundation Models on Real Data",
+      "authors": "Junwei Ma; Valentin Thomas; Rasa Hosseinzadeh; Alex Labach; Hamidreza Kamkari; Jesse C. Cresswell; Keyvan Golestan; Guangwei Yu; Anthony L. Caterini; Maksims Volkovs",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2410.18164v3",
+      "venue_status": "NeurIPS 2025, verified on coauthor website; revised arXiv",
+      "version_date": "v3 2026-01-17; first 2024-10-23",
+      "code_url": "https://github.com/layer6ai-labs/TabDPT-inference",
+      "code_license": "Apache-2.0 verified",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 3.3,3.4; Appendix D"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A12"
+      }
+    },
+    {
+      "id": "A13",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A13",
+      "title": "TabDPT-Turbo: Efficient In-Context Learning for Tabular Prediction",
+      "authors": "Rasa Hosseinzadeh; Alex Labach; Zexin Xue; Shuyi Han; Valentin Thomas; Anthony L. Caterini",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2608.01400v2",
+      "venue_status": "arXiv; release as TabDPT v1.2",
+      "version_date": "v2 2026-08-25; first 2026-08-02",
+      "code_url": "https://github.com/layer6ai-labs/TabDPT-inference",
+      "code_license": "Apache-2.0 verified",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section 3.4; Section 4"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A13"
+      }
+    },
+    {
+      "id": "A14",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A14",
+      "title": "TabICL: A Tabular Foundation Model for In-Context Learning on Large Data",
+      "authors": "Jingang Qu; David Holzmüller; Gaël Varoquaux; Marine Le Morvan",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2502.05564v2",
+      "venue_status": "ICML2025, arXiv comment/official repository",
+      "version_date": "v2 2025-05-24; first 2025-02-08",
+      "code_url": "https://github.com/soda-inria/tabicl",
+      "code_license": "BSD-3-Clause verified in official LICENSE",
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract; official repository"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A14"
+      }
+    },
+    {
+      "id": "A15",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A15",
+      "title": "TabICLv2: A better, faster, scalable, and open tabular foundation model",
+      "authors": "Jingang Qu; David Holzmüller; Gaël Varoquaux; Marine Le Morvan",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2602.11139v2",
+      "venue_status": "ICML2026, arXiv comment/official repository",
+      "version_date": "v2 2026-09-16; first 2026-02-11",
+      "code_url": "https://github.com/soda-inria/tabicl",
+      "code_license": "BSD-3-Clause verified",
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract; repository; LICENSE"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A15"
+      }
+    },
+    {
+      "id": "A16",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A16",
+      "title": "Localized TabICLv2: Scaling Tabular In-Context Learning through k-NN",
+      "authors": "Beimnet Bekele Guta",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2608.16429v1",
+      "venue_status": "arXiv; ICML FMSD workshop cited by EPIC, independently unverified",
+      "version_date": "v1 2026-08-17",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section3; Section4; Appendices A–G"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A16"
+      }
+    },
+    {
+      "id": "A17",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A17",
+      "title": "TabPFN Unleashed: A Scalable and Effective Solution to Tabular Classification Problems",
+      "authors": "Siyang Liu; Han-Jia Ye",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://proceedings.mlr.press/v267/liu25cn.html",
+      "venue_status": "ICML2025",
+      "version_date": "ICML2025; arXiv first 2025-02-04",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section3; Appendix B.3,B.5"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A17"
+      }
+    },
+    {
+      "id": "A18",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A18",
+      "title": "A Closer Look at TabPFN v2: Understanding Its Strengths and Extending Its Capabilities",
+      "authors": "Han-Jia Ye; Si-Yang Liu; Wei-Lun Chao",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2502.17361v2",
+      "venue_status": "NeurIPS2025 cited by later primary work; proceedings not separately opened",
+      "version_date": "v2 2025-06-11; first 2025-02-24",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections6,7; Abstract"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A18"
+      }
+    },
+    {
+      "id": "A19",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A19",
+      "title": "Drift-Resilient TabPFN: In-Context Learning Temporal Distribution Shifts on Tabular Data",
+      "authors": "Kai Helli; David Schnurr; Noah Hollmann; Samuel Müller; Frank Hutter",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://arxiv.org/abs/2411.10634",
+      "venue_status": "NeurIPS2024",
+      "version_date": "First 2024-11-15",
+      "code_url": "https://github.com/automl/TabPFN-RTD",
+      "code_license": "Project URL known; repository fetch timed out; license unverified",
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A19"
+      }
+    },
+    {
+      "id": "A20",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A20",
+      "title": "Chunked TabPFN: Exact Training-Free In-Context Learning for Long-Context Tabular Data",
+      "authors": "Renat Sergazinov; Shao-An Yin",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2509.00326v2",
+      "venue_status": "arXiv preprint",
+      "version_date": "v2 2025-09-16; first 2025-08-30",
+      "code_url": "https://github.com/mrsergazinov/chunk_tabpfn",
+      "code_license": "Official repository accessible; license not verified",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section2; AppendixA"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A20"
+      }
+    },
+    {
+      "id": "A21",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A21",
+      "title": "TabFlex: Scaling Tabular Learning to Millions with Linear Attention",
+      "authors": "Yuchen Zeng; Tuan Dinh; Wonjun Kang; Andreas C. Mueller",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2506.05584v1",
+      "venue_status": "ICML2025, arXiv comment",
+      "version_date": "v1 2025-06-05",
+      "code_url": "https://github.com/microsoft/ticl",
+      "code_license": "Linked by primary paper; license not inspected",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections4,5,7.2"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A21"
+      }
+    },
+    {
+      "id": "A22",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A22",
+      "title": "VIP-COp: Black-box Context Optimization for Tabular Foundation Models",
+      "authors": "Yilong Chen; Xueying Ding; Leman Akoglu",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2605.12904v2",
+      "venue_status": "arXiv; publication status not primary-verified",
+      "version_date": "v2 2026-09-29; first 2026-05-13",
+      "code_url": "https://anonymous.4open.science/r/VIP-COp",
+      "code_license": "Linked anonymous repository inaccessible to tool; license unverified",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section3; Algorithm1; footnote2"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A22"
+      }
+    },
+    {
+      "id": "A23",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A23",
+      "title": "CRUMB: Efficient Prior Fitted Network Inference via Distributionally Matched Context Batching",
+      "authors": "Jamie Heredge; Mattia J. Villani; Pranav Deshpande; Akshay Seshadri; Niraj Kumar",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2606.11473v1",
+      "venue_status": "arXiv; NeurIPS2026 decision not primary-verified",
+      "version_date": "v1 2026-06-09",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section4; Eqs2–5; AppendicesB–E"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A23"
+      }
+    },
+    {
+      "id": "A24",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A24",
+      "title": "LUCoS: Latent Unsupervised Context Selection for Tabular Foundation Models",
+      "authors": "Oroel Ipas; Guillermo Gomez-Trenado; Rocío Romero-Zaliz; Isaac Triguero",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2605.27254v1",
+      "venue_status": "arXiv preprint",
+      "version_date": "v1 2026-05-26",
+      "code_url": "https://github.com/ari-dasci/S-LUCoS",
+      "code_license": "Official linked repository accessible; license not verified",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section3.1; AppendicesC,E,F"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A24"
+      }
+    },
+    {
+      "id": "A25",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A25",
+      "title": "Active In-Context Learning for Tabular Foundation Models",
+      "authors": "Wilailuck Treerath; Fabrizio Pittorino",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2603.27385v1",
+      "venue_status": "arXiv preprint",
+      "version_date": "v1 2026-03-28",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "SectionsIII-C,IV,VI"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A25"
+      }
+    },
+    {
+      "id": "A26",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A26",
+      "title": "When, Where, How: Active In-Context Learning for Tabular Foundation Models",
+      "authors": "Christian M. M. Frey",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2611.07886v1",
+      "venue_status": "arXiv preprint",
+      "version_date": "v1 2026-11-05",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections3.2–3.4; AppendicesA.2,F"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A26"
+      }
+    },
+    {
+      "id": "A27",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A27",
+      "title": "ARASH: Adaptive Retrieval And Shot Selection for Tabular Prediction",
+      "authors": "Samirasadat Jamalidinan; Yue Xu; Kazem Cheshmi",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2608.17856v1",
+      "venue_status": "arXiv preprint",
+      "version_date": "v1 2026-08-18",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "SectionIII; Algorithm1; SectionV-G"
+      ],
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A27"
+      }
+    },
+    {
+      "id": "A28",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A28",
+      "title": "Task-Aligned Attention Retrieval for Scaling Tabular Foundation Models",
+      "authors": "Anonymous authors in inspected primary PDF",
+      "authorship_status": "anonymous_primary_manuscript",
+      "year": 2026,
+      "url": "https://openreview.net/pdf?id=qBMNsGiE3u",
+      "venue_status": "OpenReview submission; decision and named authors unverified",
+      "version_date": "2026 submission; exact revision/date not independently verified",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": "§2 and §2.3; experiments; primary PDF",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A28"
+      }
+    },
+    {
+      "id": "A29",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A29",
+      "title": "Test-Time Compute for Tabular Foundation Models: Mechanisms, Gains, and Limits",
+      "authors": "Kanghui Ning; Marin Biloš; James T. Wilson; Yilang Zhang; Kashif Rasul; Dongjin Song; Anderson Schneider; Yuriy Nevmyvaka",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2610.12005v1",
+      "venue_status": "arXiv preprint",
+      "version_date": "v1 2026-10-08",
+      "code_url": "https://github.com/kanghui-learning/test-time-compute-for-tabular-foundation-models",
+      "code_license": "Apache-2.0 verified in official repository",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": "§7; Appendix D.2 Algorithm 2; E.4",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A29"
+      }
+    },
+    {
+      "id": "A30",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A30",
+      "title": "BAPS: Balanced Adaptive Prototype Selection for Scalable TabPFN Inference on Large-Scale Tabular Data",
+      "authors": "Mahboobe Jadid; Melika Rezaye Garkani; Ali Mousavi",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2608.12989v1",
+      "venue_status": "arXiv preprint",
+      "version_date": "v1 2026-08-13",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": "§III Algorithm 1; §IV.B",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A30"
+      }
+    },
+    {
+      "id": "A31",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A31",
+      "title": "TabPFN-Wide: Continued Pre-Training for Extreme Feature Counts",
+      "authors": "Christopher Kolberg; Katharina Eggensperger; Nico Pfeifer",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2510.06162",
+      "venue_status": "arXiv preprint",
+      "version_date": "First submitted 2025-10-07; latest revision not verified",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": "arXiv abstract and author metadata",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A31"
+      }
+    },
+    {
+      "id": "A32",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A32",
+      "title": "Tabular Foundation Models Are Effectively Shallow",
+      "authors": "Irene Cannistraci; Julia E. Vogt",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2610.13253",
+      "venue_status": "arXiv preprint",
+      "version_date": "First submitted 2026-10-09; latest revision not verified",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": "arXiv abstract and author metadata",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A32"
+      }
+    },
+    {
+      "id": "A33",
+      "track": "A",
+      "kind": "software",
+      "bibliography_key": "A33",
+      "title": "TabPFN Extensions (official software)",
+      "authors": "Prior Labs and community contributors",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://github.com/PriorLabs/tabpfn-extensions",
+      "venue_status": "Official software; not an independent paper",
+      "version_date": "Repository inspected 2026-11-08; no historical commit pinned",
+      "code_url": "https://github.com/PriorLabs/tabpfn-extensions",
+      "code_license": "Apache-2.0 verified",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": "README module inventory; LICENSE",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A33"
+      }
+    },
+    {
+      "id": "A34",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A34",
+      "title": "LimiX: Unleashing Structured-Data Modeling Capability for Generalist Intelligence",
+      "authors": "Xingxuan Zhang; Gang Ren; Han Yu; Hao Yuan; Hui Wang; Jiansheng Li; Jiayun Wu; Lang Mo; Li Mao; Mingchao Hao; Ningbo Dai; Renzhe Xu; Shuyang Li; Tianyang Zhang; Yue He; Yuanrui Wang; Yunjia Zhang; Zijing Xu; Dongzhe Li; Fang Gao; Hao Zou; Jiandong Liu; Jiashuo Liu; Jiawei Xu; Kaijie Cheng; Kehan Li; Linjun Zhou; Qing Li; Shaohua Fan; Xiaoyu Lin; Xinyan Han; Xuanyue Li; Yan Lu; Yuan Xue; Yuanyuan Jiang; Zimu Wang; Zhenlei Wang; Peng Cui",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2509.03505",
+      "venue_status": "Technical report",
+      "version_date": "First submitted 2025-09-03; inspected HTML version not separately pinned",
+      "code_url": "https://github.com/limix-ldm/LimiX",
+      "code_license": "Paper states Apache-2.0; repository license not independently inspected",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": "§5 retrieval-based ensemble; §7.6 fine-tuning",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A34"
+      }
+    },
+    {
+      "id": "A35",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A35",
+      "title": "Statistical Foundations of Prior-Data Fitted Networks",
+      "authors": "Thomas Nagler",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v202/nagler23a/nagler23a.pdf",
+      "venue_status": "ICML 2023; PMLR 202:25660–25676",
+      "version_date": "ICML 2023 proceedings; arXiv first 2023-05-18",
+      "code_url": "https://gist.github.com/tnagler/62f6ce1f996333c799c81f1aef147e72",
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": "§5; §6.4–6.5; Figure 1",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A35"
+      }
+    },
+    {
+      "id": "A36",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A36",
+      "title": "Scalable In-Context Learning on Tabular Data via Retrieval-Augmented Large Language Models",
+      "authors": "Xumeng Wen; Shun Zheng; Zhen Xu; Yiming Sun; Jiang Bian",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2502.03147v1",
+      "venue_status": "arXiv preprint",
+      "version_date": "v1 2025-02-05",
+      "code_url": null,
+      "code_license": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": "§4; §5.1; Appendix A.1–A.2, D.1",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A36"
+      }
+    },
+    {
+      "id": "A37",
+      "track": "A",
+      "kind": "paper",
+      "bibliography_key": "A37",
+      "title": "Understanding the Surprising Generalization Properties of Tabular Foundation Models",
+      "authors": "Nour Shaheen; Junwei Ma; Alex Labach; Frank Hutter; Valentin Thomas; Anthony L. Caterini",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2608.17957v1",
+      "venue_status": "NeurIPS 2026 stated on coauthor website; inspected arXiv manuscript",
+      "version_date": "v1 2026-08-18; extends arXiv:2511.09665",
+      "code_url": "https://github.com/layer6ai-labs/TabDPT-training",
+      "code_license": "Base training procedure Apache-2.0; dedicated experiment release not verified",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": "§4.1–4.3; Appendix D.4 and E; coauthor publication page https://valthom.github.io/",
+      "annotation_reference": {
+        "file": "track_a_sources.json",
+        "source_id": "A37"
+      }
+    },
+    {
+      "id": "B01",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B01",
+      "title": "CausalPFN: Amortized Causal Effect Estimation via In-Context Learning",
+      "authors": "Vahid Balazadeh, Hamidreza Kamkari, Valentin Thomas, Benson Li, Junwei Ma, Jesse C. Cresswell, Rahul G. Krishnan",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2506.07918v2",
+      "venue_status": "NeurIPS 2025 main conference; venue record independently verified",
+      "venue_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/e3d3db07c1bfb63e1d0b998996de1d12-Abstract-Conference.html",
+      "version": "arXiv v2",
+      "version_date": "2025-10-27",
+      "code_url": "https://github.com/vdblm/CausalPFN",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 4–5; Appendix D.2, D.6; Proposition 1"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B01"
+      }
+    },
+    {
+      "id": "B02",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B02",
+      "title": "Do-PFN: In-Context Learning for Causal Effect Estimation",
+      "authors": "Jake Robertson, Arik Reuter, Siyuan Guo, Noah Hollmann, Frank Hutter, Bernhard Schölkopf",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2506.06039v3",
+      "venue_status": "NeurIPS 2025 main conference; supersedes earlier workshop version",
+      "venue_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/ff997469ac66cf893c4183efeb22212a-Abstract-Conference.html",
+      "version": "arXiv v3",
+      "version_date": "2025-11-20",
+      "code_url": "https://github.com/jr2021/Do-PFN",
+      "code_revision_verified": "90d67433b43c4d52d752dc336070f525ff856e0b, 2025-07-16",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 2–4.4; Appendix C; README line9 at pinned revision"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B02"
+      }
+    },
+    {
+      "id": "B03",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B03",
+      "title": "Foundation Models for Causal Inference via Prior-Data Fitted Networks",
+      "authors": "Yuchen Ma, Dennis Frauen, Emil Javurek, Stefan Feuerriegel",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2506.10914v3",
+      "venue_status": "ICLR 2026 conference paper; initial preprint2025",
+      "venue_url": "https://openreview.net/pdf?id=d2L1ndOKjq",
+      "version": "arXiv v3",
+      "version_date": "2026-02-24",
+      "code_url": "https://github.com/yccm/CausalFM",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 3–6; Appendix A.1, D.2, E.3, E.7"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B03"
+      }
+    },
+    {
+      "id": "B04",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B04",
+      "title": "Causal Foundation Models",
+      "authors": "Christopher Stith, Hossein Rahmani, Jesse C. Cresswell",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2609.03003v1",
+      "venue_status": "Preprint/tutorial; no conference acceptance verified",
+      "version": "arXiv v1",
+      "version_date": "2026-09-02",
+      "code_url": "https://github.com/layer6ai-labs/cfms",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 3, 4.1–4.2, 5; Table3"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B04"
+      }
+    },
+    {
+      "id": "B05",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B05",
+      "title": "A Foundation Model for Policy In-Context Longitudinal Causal Effect Estimation",
+      "authors": "Wenxin Chen, Kyra Gan, Mingyu Lu, Zilin Jing, Fei Wang, Hoifung Poon, Tristan Naumann, Peniel Argaw",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2610.32863v1",
+      "venue_status": "Preprint; model named PICLE-PFN",
+      "version": "arXiv v1",
+      "version_date": "2026-10-23",
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section3, Proposition3.1; Sections4–5; AppendixD.5, E"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B05"
+      }
+    },
+    {
+      "id": "B06",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B06",
+      "title": "Causal Longitudinal Prior-Fitted Networks for Counterfactual Outcome Prediction",
+      "authors": "Amirhossein Zare, Amirhessam Zare, Herlock Rahimi, Reza Salarikia, Mohammad Kashkooli",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2606.05797v2",
+      "venue_status": "Preprint; model named CausalLongPFN",
+      "version": "arXiv v2",
+      "version_date": "2026-06-07",
+      "code_url": "https://github.com/Amirhossein-Zare/causal-long-pfn",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section2.2; Table4; AppendicesB–C, H; code availability"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B06"
+      }
+    },
+    {
+      "id": "B07",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B07",
+      "title": "Causal Foundation Models with Continuous Treatments",
+      "authors": "Christopher Stith, Medha Barath, Vahid Balazadeh, Jesse C. Cresswell, Rahul G. Krishnan",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2605.15133v2",
+      "venue_status": "Preprint; model named CCPFN; workshop mention not independently venue-verified",
+      "version": "arXiv v2",
+      "version_date": "2026-07-13",
+      "code_url": "https://github.com/layer6ai-labs/CCPFN-inference",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections3–4; AppendixA.4; inference-code link"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B07"
+      }
+    },
+    {
+      "id": "B08",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B08",
+      "title": "IV-ICL: Bounding Causal Effects with Instrumental Variables via In-Context Learning",
+      "authors": "Vahid Balazadeh, Hamidreza Kamkari, Medha Barath, Ricardo Silva, Rahul G. Krishnan",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2605.12924v1",
+      "venue_status": "Preprint; acceptance not verified",
+      "version": "arXiv v1",
+      "version_date": "2026-05-13",
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections4–7; prior-data generation; limitations"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B08"
+      }
+    },
+    {
+      "id": "B09",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B09",
+      "title": "A Causal Foundation Model for Structure and Outcome Prediction",
+      "authors": "Max Zhu, Martino Mansoldo, Ching-Hao Wang, Stefan Groha",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2606.26467v1",
+      "venue_status": "ICML2026 Foundation Models for Structured Data workshop; model TabPFN-CFM",
+      "version": "arXiv v1",
+      "version_date": "2026-06-25",
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections1.1–4; AppendixA; Tables14–17"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B09"
+      }
+    },
+    {
+      "id": "B10",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B10",
+      "title": "Prior-Data Fitted Networks for Causal Inference: a Simulation Study with Real-World Scenarios",
+      "authors": "Francisco Mourao, David Hajage, Daria Bystrova, Bertrand Bouvarel, Nathanaël Lapidus, Fabrice Carrat, Benjamin Glemain",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2603.15928v2",
+      "venue_status": "Preprint; later journal status not verified",
+      "version": "arXiv v2",
+      "version_date": "2026-04-13",
+      "code_url": "https://github.com/franciscomourao/PFNs_Causal_Inference",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Methods: causal setting, estimators; Results; Discussion"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B10"
+      }
+    },
+    {
+      "id": "B11",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B11",
+      "title": "Unit-level aggregation breaks coverage in causal foundation models",
+      "authors": "Gabe Schulman, Lucius E. J. Bynum, Yoav Wald",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2610.22770v1",
+      "venue_status": "Preprint; acceptance not verified",
+      "version": "arXiv v1",
+      "version_date": "2026-10-16",
+      "code_url": "https://github.com/gabeschulman-nyu/subset-cate-coverage",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections4–5; AppendixE; source pinned CausalPFN commit7da4afa"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B11"
+      }
+    },
+    {
+      "id": "B12",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B12",
+      "title": "Frequentist Consistency of Prior-Data Fitted Networks for Causal Inference",
+      "authors": "Valentyn Melnychuk, Vahid Balazadeh, Stefan Feuerriegel, Rahul G. Krishnan",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2603.12037v3",
+      "venue_status": "ICML2026, PMLR306",
+      "venue_url": "https://proceedings.mlr.press/v306/melnychuk26a.html",
+      "version": "arXiv v3",
+      "version_date": "2026-07-22",
+      "code_url": "https://github.com/Valentyn1997/freq-cons-pfns",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections4–6; AppendixA, B; Table1"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B12"
+      }
+    },
+    {
+      "id": "B13",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B13",
+      "title": "Unveiling Prior-Data Fitted Networks on Causal Effect Estimation: Pre-Training or Fine-Tuning?",
+      "authors": "Haotian Wang, Xinpeng Lv, Hao Zou, Yanghao Xiao, Shanzhi Gu, Yang Shi, Yunxin Mao, Yuanxing Zhang, Mingyang Geng, Shaowu Yang, Haoxuan Li, Wenjing Yang, Peng Cui, Zhouchen Lin",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://proceedings.mlr.press/v306/wang26fl.html",
+      "venue_status": "ICML2026, PMLR306:128849–128878",
+      "version": "ICML2026 proceedings abstract",
+      "version_date": "2026-09-29",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Official proceedings abstract only; PDF access failed"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B13"
+      }
+    },
+    {
+      "id": "B14",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B14",
+      "title": "Towards Causal Foundation Model: on Duality between Optimal Balancing and Attention",
+      "authors": "Jiaqi Zhang, Joel Jennings, Agrin Hilmkil, Nick Pawlowski, Cheng Zhang, Chao Ma",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://proceedings.mlr.press/v235/zhang24x.html",
+      "venue_status": "ICML2024, PMLR235:59042–59065; method CInA",
+      "version": "ICML2024 proceedings; arXiv v3 retains earlier title wording",
+      "version_date": "2024-06-03",
+      "full_text_url": "https://arxiv.org/html/2310.00809v3",
+      "code_url": "https://github.com/microsoft/causica/tree/main/research_experiments/cina",
+      "code_status": "Paper link; current accessibility not established; official-repository issue113 reports missing directory",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections3–4; AppendixE; official proceedings metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B14"
+      }
+    },
+    {
+      "id": "B15",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B15",
+      "title": "Black Box Causal Inference: Effect Estimation via Meta Prediction",
+      "authors": "Lucius E. J. Bynum, Aahlad Manas Puli, Diego Herrero-Quevedo, Nhi Nguyen, Carlos Fernandez-Granda, Kyunghyun Cho, Rajesh Ranganath",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2503.05985v1",
+      "venue_status": "Preprint; TMLR submission located, acceptance not established",
+      "version": "arXiv v1",
+      "version_date": "2025-03-07",
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections2.2–2.3, 3.5–5; AppendixD"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B15"
+      }
+    },
+    {
+      "id": "B16",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B16",
+      "title": "Zero-shot causal learning",
+      "authors": "Hamed Nilforoshan, Michael Moor, Yusuf Roohani, Yining Chen, Anja Šurina, Michihiro Yasunaga, Sara Oblak, Jure Leskovec",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2301.12292v4",
+      "venue_status": "NeurIPS2023 main conference; method CaML",
+      "venue_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/15ddb1773510075ef44981cdb204330b-Abstract.html",
+      "version": "arXiv v4",
+      "version_date": "2024-02-23",
+      "code_url": "https://github.com/snap-stanford/caml",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections4.1–4.4, 6; AppendixC.6"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B16"
+      }
+    },
+    {
+      "id": "B17",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B17",
+      "title": "Meta-learning for heterogeneous treatment effect estimation with closed-form solvers",
+      "authors": "Tomoharu Iwata, Yoichi Chikahara",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2305.11353v1",
+      "venue_status": "Machine Learning113:6093–6114,2024",
+      "venue_url": "https://doi.org/10.1007/s10994-024-06546-7",
+      "version": "arXiv v1; journal publication verified on author institution site",
+      "version_date": "2023-05-19",
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections3.1–3.4, 4; NTT institutional publication list"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B17"
+      }
+    },
+    {
+      "id": "B18",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B18",
+      "title": "Budgeted Heterogeneous Treatment Effect Estimation",
+      "authors": "Tian Qin, Tian-Zuo Wang, Zhi-Hua Zhou",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2021,
+      "url": "https://proceedings.mlr.press/v139/qin21b.html",
+      "venue_status": "ICML2021, PMLR139:8693–8702; method QHTE",
+      "version": "ICML2021 proceedings",
+      "version_date": "2021-07-18",
+      "full_text_url": "https://proceedings.mlr.press/v139/qin21b/qin21b.pdf",
+      "code_url": "https://www.lamda.nju.edu.cn/code_QHTE.ashx",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections3–5; Theorem4; equation4; Algorithm1"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B18"
+      }
+    },
+    {
+      "id": "B19",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B19",
+      "title": "Causal-BALD: Deep Bayesian Active Learning of Outcomes to Infer Treatment-Effects from Observational Data",
+      "authors": "Andrew Jesson, Panagiotis Tigas, Joost van Amersfoort, Andreas Kirsch, Uri Shalit, Yarin Gal",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2021,
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2021/file/ffa4eb0e32349ae57f7a0ee8c7cd7c11-Paper.pdf",
+      "venue_status": "NeurIPS2021",
+      "version": "NeurIPS2021 proceedings; arXiv v2 dated2022-02-01",
+      "version_date": "2022-02-01",
+      "code_url": "https://github.com/OATML/causal-bald",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections2.2–3; acquisition objectives; IHDP/CMNIST experiments"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B19"
+      }
+    },
+    {
+      "id": "B20",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B20",
+      "title": "Progressive Generalization Risk Reduction for Data-Efficient Causal Effect Estimation",
+      "authors": "Hechuan Wen, Tong Chen, Guanhua Ye, Li Kheng Chai, Shazia Sadiq, Hongzhi Yin",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2411.11256v1",
+      "venue_status": "KDD2025; method MACAL",
+      "version": "arXiv v1; accepted KDD2025 per author manuscript",
+      "version_date": "2024-11-18",
+      "code_url": "https://github.com/uqhwen2/MACAL",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section3.1–3.2; Algorithm1; AppendixA, C"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B20"
+      }
+    },
+    {
+      "id": "B21",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B21",
+      "title": "Enhancing Treatment Effect Estimation via Active Learning: A Counterfactual Covering Perspective",
+      "authors": "Hechuan Wen, Tong Chen, Mingming Gong, Li Kheng Chai, Shazia Sadiq, Hongzhi Yin",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2505.05242v1",
+      "venue_status": "ICML2025; method FCCM",
+      "version": "arXiv v1; ICML2025 accepted author manuscript",
+      "version_date": "2025-05-08",
+      "code_url": "https://github.com/uqhwen2/FCCM",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections3–4; AppendicesA, C.5; algorithms1–2"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B21"
+      }
+    },
+    {
+      "id": "B22",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B22",
+      "title": "Causal-EPIG: Causally Aligned Active CATE Estimation",
+      "authors": "Erdun Gao, Jake Fawkes, Dino Sejdinovic",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://proceedings.mlr.press/v306/gao26i.html",
+      "venue_status": "ICML2026, PMLR306:33151–33183",
+      "version": "ICML2026 final abstract plus arXiv v1 methods",
+      "version_date": "2025-09-26",
+      "preprint_title": "Causal-EPIG: A Prediction-Oriented Active Learning Framework for CATE Estimation",
+      "full_text_url": "https://arxiv.org/html/2509.21866v1",
+      "code_url": "https://github.com/ErdunGAO/Causal-EPIG",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "PreprintSections2.1, 3–4; equation5; Algorithm1; final proceedings abstract"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B22"
+      }
+    },
+    {
+      "id": "B23",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B23",
+      "title": "Sample Constrained Treatment Effect Estimation",
+      "authors": "Raghavendra Addanki, David Arbour, Tung Mai, Cameron Musco, Anup Rao",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2022,
+      "url": "https://papers.nips.cc/paper_files/paper/2022/file/240ea1741b205ea295721d55184ac43b-Paper-Conference.pdf",
+      "venue_status": "NeurIPS2022; arXiv2210.06594",
+      "version": "NeurIPS2022 proceedings",
+      "version_date": "2022-10-12",
+      "code_url": "https://github.com/raddanki/Sample-Constrained-Treatment-Effect-Estimation",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections1–4; linear-effects setup; ITE/ATE designs"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B23"
+      }
+    },
+    {
+      "id": "B24",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B24",
+      "title": "Active Adaptive Experimental Design for Treatment Effect Estimation with Covariate Choices",
+      "authors": "Masahiro Kato, Akihiro Oga, Wataru Komatsubara, Ryo Inokuchi",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2403.03589v2",
+      "venue_status": "Preprint; later publication not verified",
+      "version": "arXiv v2",
+      "version_date": "2024-06-18",
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections2–5; efficient probabilities; AppendixE"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B24"
+      }
+    },
+    {
+      "id": "B25",
+      "track": "B",
+      "kind": "paper",
+      "bibliography_key": "B25",
+      "title": "Improving Treatment Effect Estimation with LLM-Based Data Augmentation",
+      "authors": "Nicolas Huynh, Julianna Piskorz, Jeroen Berrevoets, Max Ruiz Luyten, Mihaela van der Schaar",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://openreview.net/pdf?id=2Q3gFNbpAr",
+      "venue_status": "ICML2025 Foundation Models for Structured Data workshop, verified on author page; not main conference",
+      "venue_url": "https://nicolashuynh.github.io/",
+      "version": "Author workshop manuscript; exact revision date not established",
+      "version_date": null,
+      "code_url": null,
+      "evidence_level": "primary_text_excerpts",
+      "evidence_level_original": "full_text",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_access_note": "Indexed primary-PDF method/AppendixF.10 excerpts examined; direct OpenReview PDF/attachment blocked by browser challenge.",
+      "evidence_sections": [
+        "Primary PDF indexed methods and AppendixF.10; author publication list59–62"
+      ],
+      "annotation_reference": {
+        "file": "track_b_sources.json",
+        "source_id": "B25"
+      }
+    },
+    {
+      "id": "C01",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C01",
+      "title": "The central role of the propensity score in observational studies for causal effects",
+      "authors": "Paul R. Rosenbaum; Donald B. Rubin",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 1983,
+      "url": "https://doi.org/10.1093/biomet/70.1.41",
+      "venue_status": "Biometrika 70(1):41-55",
+      "version_date_verified": {
+        "edition": "April 1983 publisher issue and original-paper summary verified",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        {
+          "url": "https://www.stat.cmu.edu/~ryantibs/journalclub/rosenbaum_1983.pdf",
+          "sections": "Original summary indexed; publisher issue metadata; scanned body not text-accessible"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C01"
+      }
+    },
+    {
+      "id": "C02",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C02",
+      "title": "The prognostic analogue of the propensity score",
+      "authors": "Ben B. Hansen",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2008,
+      "url": "https://doi.org/10.1093/biomet/asn004",
+      "venue_status": "Biometrika 95(2):481-488",
+      "version_date_verified": {
+        "edition": "Publisher publication 2008-06-01",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        {
+          "url": "https://academic.oup.com/biomet/article-abstract/95/2/481/230183?login=false",
+          "sections": "Publisher abstract and publication history"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C02"
+      }
+    },
+    {
+      "id": "C03",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C03",
+      "title": "MALTS: Matching After Learning to Stretch",
+      "authors": "Harsh Parikh; Cynthia Rudin; Alexander Volfovsky",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2022,
+      "url": "https://jmlr.org/papers/v23/21-0053.html",
+      "venue_status": "JMLR 23(240):1-42",
+      "version_date_verified": {
+        "edition": "Published August 2022; revised July 2022",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/almost-matching-exactly/MALTS",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://jmlr.org/papers/volume23/21-0053/21-0053.pdf",
+          "sections": "Section 3 and 3.2; honest training split, PDF pages 7 and 9"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C03"
+      }
+    },
+    {
+      "id": "C04",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C04",
+      "title": "Variable importance matching for causal inference",
+      "authors": "Quinn Lanners; Harsh Parikh; Alexander Volfovsky; Cynthia Rudin; David Page",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v216/lanners23a.html",
+      "venue_status": "UAI 2023, PMLR 216:1174-1184",
+      "version_date_verified": {
+        "edition": "UAI 2023 proceedings PDF",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v216/lanners23a/lanners23a.pdf",
+          "sections": "Sections 3-4; LASSO coefficient construction"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C04"
+      }
+    },
+    {
+      "id": "C05",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C05",
+      "title": "Doubly robust matching estimators for high dimensional confounding adjustment",
+      "authors": "Joseph Antonelli; Matthew Cefalu; Nathan Palmer; Denis Agniel",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2018,
+      "url": "https://doi.org/10.1111/biom.12887",
+      "venue_status": "Biometrics, 2018",
+      "version_date_verified": {
+        "edition": "Accepted March 2018; author-hosted publisher PDF",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://jantonelli111.github.io/files/biom12887.pdf",
+          "sections": "Summary; methodology and asymptotic results"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C05"
+      }
+    },
+    {
+      "id": "C06",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C06",
+      "title": "Optimal transport weights for causal inference",
+      "authors": "Eric Dunipace",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2021,
+      "url": "https://arxiv.org/abs/2109.01991",
+      "venue_status": "arXiv preprint; later journal status not established here",
+      "version_date_verified": {
+        "edition": "arXiv v4, 2022-05-12; first posted 2021-09-05",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/ericdunipace/causalOT",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2109.01991v4",
+          "sections": "Sections 3, 3.7 and 4; treatment targets and MMD relation"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C06"
+      }
+    },
+    {
+      "id": "C07",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C07",
+      "title": "KDSM: An uplift modeling framework based on knowledge distillation and sample matching",
+      "authors": "Chang Sun; Qianying Li; Guanxiang Wang; Sihao Xu; Yitong Liu",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2303.02980",
+      "venue_status": "arXiv preprint; later venue unverified",
+      "version_date_verified": {
+        "edition": "arXiv v1, 2023-03-06",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2303.02980v1",
+          "sections": "Sections 4.3-4.4; real pairs and per-epoch matching"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C07"
+      }
+    },
+    {
+      "id": "C08",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C08",
+      "title": "Learning To Retrieve Prompts for In-Context Learning",
+      "authors": "Ohad Rubin; Jonathan Herzig; Jonathan Berant",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2022,
+      "url": "https://aclanthology.org/2022.naacl-main.191/",
+      "venue_status": "NAACL 2022:2655-2671",
+      "version_date_verified": {
+        "edition": "Proceedings July 10-15, 2022",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://aclanthology.org/2022.naacl-main.191.pdf",
+          "sections": "Abstract; retrieval training and candidate scoring"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C08"
+      }
+    },
+    {
+      "id": "C09",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C09",
+      "title": "Compositional Exemplars for In-context Learning",
+      "authors": "Jiacheng Ye; Zhiyong Wu; Jiangtao Feng; Tao Yu; Lingpeng Kong",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v202/ye23c.html",
+      "venue_status": "ICML 2023, PMLR 202:39818-39833",
+      "version_date_verified": {
+        "edition": "ICML 2023 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/HKUNLP/icl-ceil",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v202/ye23c/ye23c.pdf",
+          "sections": "Sections 3.1-3.3; frozen-LM training description"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C09"
+      }
+    },
+    {
+      "id": "C10",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C10",
+      "title": "Active Example Selection for In-Context Learning",
+      "authors": "Yiming Zhang; Shi Feng; Chenhao Tan",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2022,
+      "url": "https://aclanthology.org/2022.emnlp-main.622/",
+      "venue_status": "EMNLP 2022:9134-9148",
+      "version_date_verified": {
+        "edition": "Proceedings December 7-11, 2022",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/ChicagoHAI/active-example-selection",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://aclanthology.org/2022.emnlp-main.622.pdf",
+          "sections": "Example-selection MDP; reward-shaping discussion, PDF page 5"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C10"
+      }
+    },
+    {
+      "id": "C11",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C11",
+      "title": "RetICL: Sequential Retrieval of In-Context Examples with Reinforcement Learning",
+      "authors": "Alexander Scarlatos; Andrew Lan",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2305.14502",
+      "venue_status": "arXiv preprint; later venue unverified",
+      "version_date_verified": {
+        "edition": "arXiv v2, 2024-04-16; first posted 2023-05-23",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2305.14502v2",
+          "sections": "Sections 3.1-3.3; Appendix C inference-time optimization"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C11"
+      }
+    },
+    {
+      "id": "C12",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C12",
+      "title": "Learning to Retrieve Iteratively for In-Context Learning",
+      "authors": "Yunmo Chen; Tongfei Chen; Harsh Jhamtani; Patrick Xia; Richard Shin; Jason Eisner; Benjamin Van Durme",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://aclanthology.org/2024.emnlp-main.406/",
+      "venue_status": "EMNLP 2024:7156-7168",
+      "version_date_verified": {
+        "edition": "Proceedings November 12-16, 2024",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://aclanthology.org/2024.emnlp-main.406.pdf",
+          "sections": "Sections 3-4; reward equation (8), PDF page 4"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C12"
+      }
+    },
+    {
+      "id": "C13",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C13",
+      "title": "UPRISE: Universal Prompt Retrieval for Improving Zero-Shot Evaluation",
+      "authors": "Daixuan Cheng; Shaohan Huang; Junyu Bi; Yuefeng Zhan; Jianfeng Liu; Yujing Wang; Hao Sun; Furu Wei; Weiwei Deng; Qi Zhang",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://aclanthology.org/2023.emnlp-main.758/",
+      "venue_status": "EMNLP 2023:12318-12337",
+      "version_date_verified": {
+        "edition": "Proceedings December 6-10, 2023",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/microsoft/LMOps",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://aclanthology.org/2023.emnlp-main.758.pdf",
+          "sections": "Abstract; retriever training and cross-task/model evaluation"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C13"
+      }
+    },
+    {
+      "id": "C14",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C14",
+      "title": "Data Shapley: Equitable Valuation of Data for Machine Learning",
+      "authors": "Amirata Ghorbani; James Zou",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2019,
+      "url": "https://proceedings.mlr.press/v97/ghorbani19c.html",
+      "venue_status": "ICML 2019, PMLR 97:2242-2251",
+      "version_date_verified": {
+        "edition": "ICML 2019 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v97/ghorbani19c/ghorbani19c.pdf",
+          "sections": "Section 2; Monte Carlo approximations; experiments"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C14"
+      }
+    },
+    {
+      "id": "C15",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C15",
+      "title": "A Distributional Framework For Data Valuation",
+      "authors": "Amirata Ghorbani; Michael P. Kim; James Zou",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2020,
+      "url": "https://proceedings.mlr.press/v119/ghorbani20a.html",
+      "venue_status": "ICML 2020, PMLR 119:3535-3544",
+      "version_date_verified": {
+        "edition": "ICML 2020 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/amiratag/DistributionalShapley",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v119/ghorbani20a/ghorbani20a.pdf",
+          "sections": "Section 2; subsampling/interpolation pages 5-7; Algorithm 2"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C15"
+      }
+    },
+    {
+      "id": "C16",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C16",
+      "title": "Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning",
+      "authors": "Yongchan Kwon; James Zou",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2022,
+      "url": "https://proceedings.mlr.press/v151/kwon22a.html",
+      "venue_status": "AISTATS 2022, PMLR 151:8780-8802",
+      "version_date_verified": {
+        "edition": "Proceedings March 28-30, 2022",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/ykwon0407/beta_shapley",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v151/kwon22a/kwon22a.pdf",
+          "sections": "Section 4.1, Theorem 2; Section 4.2; Appendix A"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C16"
+      }
+    },
+    {
+      "id": "C17",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C17",
+      "title": "Data Banzhaf: A Robust Data Valuation Framework for Machine Learning",
+      "authors": "Jiachen T. Wang; Ruoxi Jia",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v206/wang23e.html",
+      "venue_status": "AISTATS 2023, PMLR 206:6388-6421",
+      "version_date_verified": {
+        "edition": "AISTATS 2023 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v206/wang23e/wang23e.pdf",
+          "sections": "Safety-margin analysis; MSR estimator, PDF page 6"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C17"
+      }
+    },
+    {
+      "id": "C18",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C18",
+      "title": "Data Valuation using Reinforcement Learning",
+      "authors": "Jinsung Yoon; Sercan O. Arik; Tomas Pfister",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2020,
+      "url": "https://proceedings.mlr.press/v119/yoon20a.html",
+      "venue_status": "ICML 2020, PMLR 119:10842-10851",
+      "version_date_verified": {
+        "edition": "ICML 2020 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/google-research/google-research/tree/master/dvrl",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v119/yoon20a/yoon20a.pdf",
+          "sections": "Training algorithm 1; data-value network inputs; experiments"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C18"
+      }
+    },
+    {
+      "id": "C19",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C19",
+      "title": "Data-OOB: Out-of-bag Estimate as a Simple and Efficient Data Value",
+      "authors": "Yongchan Kwon; James Zou",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v202/kwon23e.html",
+      "venue_status": "ICML 2023, PMLR 202:18135-18152",
+      "version_date_verified": {
+        "edition": "ICML 2023 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/ykwon0407/dataoob",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v202/kwon23e/kwon23e.pdf",
+          "sections": "Method definition; Appendix A implementation and split accounting"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C19"
+      }
+    },
+    {
+      "id": "C20",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C20",
+      "title": "Rethinking Data Shapley for Data Selection Tasks: Misleads and Merits",
+      "authors": "Jiachen T. Wang; Tianji Yang; James Zou; Yongchan Kwon; Ruoxi Jia",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://proceedings.mlr.press/v235/wang24cg.html",
+      "venue_status": "ICML 2024, PMLR 235:52033-52063",
+      "version_date_verified": {
+        "edition": "arXiv v1 2024-05-06; official proceedings verified",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2405.03875v1",
+          "sections": "Sections 3-5; MTM definition 5 and theorem 6"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C20"
+      }
+    },
+    {
+      "id": "C21",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C21",
+      "title": "Is Data Shapley Not Better than Random in Data Selection? Ask NASH",
+      "authors": "Xiao Tian; Jue Fan; Rachael Hwee Ling Sim; Zixuan Wang; Nancy F. Chen; Bryan Kian Hsiang Low",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://proceedings.mlr.press/v306/tian26c.html",
+      "venue_status": "ICML 2026, PMLR 306:120806-120837",
+      "version_date_verified": {
+        "edition": "arXiv v2, 2026-05-12; official proceedings verified",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/snoidetx/nash",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2605.10684v2",
+          "sections": "Section 3.3, definition 3.4/equation 6; Appendix B.2"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C21"
+      }
+    },
+    {
+      "id": "C22",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C22",
+      "title": "Priority-Aware Shapley Value",
+      "authors": "Kiljae Lee; Ziqi Liu; Weijing Tang; Yuan Zhang",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2602.09326",
+      "venue_status": "arXiv preprint",
+      "version_date_verified": {
+        "edition": "arXiv v2, 2026-06-14",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2602.09326v2",
+          "sections": "Sections 2-4; computational-cost discussion"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C22"
+      }
+    },
+    {
+      "id": "C23",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C23",
+      "title": "Localizing Global Discrepancies: Marginal Contributions and Contextual Anomaly Detection",
+      "authors": "Tommaso Dorigo",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2608.28375",
+      "venue_status": "arXiv preprint",
+      "version_date_verified": {
+        "edition": "arXiv v1, 2026-08-28",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2608.28375v1",
+          "sections": "Section 3.2 equations 3-4; Section 4.4; finite-sample discussion"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C23"
+      }
+    },
+    {
+      "id": "C24",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C24",
+      "title": "Coresets for Data-efficient Training of Machine Learning Models",
+      "authors": "Baharan Mirzasoleiman; Jeff Bilmes; Jure Leskovec",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2020,
+      "url": "https://proceedings.mlr.press/v119/mirzasoleiman20a.html",
+      "venue_status": "ICML 2020, PMLR 119:6950-6960",
+      "version_date_verified": {
+        "edition": "ICML 2020 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v119/mirzasoleiman20a/mirzasoleiman20a.pdf",
+          "sections": "Section 3; limited-budget formulation 3.3/equation 14"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C24"
+      }
+    },
+    {
+      "id": "C25",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C25",
+      "title": "GLISTER: Generalization based Data Subset Selection for Efficient and Robust Learning",
+      "authors": "Krishnateja Killamsetty; Durga Sivasubramanian; Ganesh Ramakrishnan; Rishabh Iyer",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2021,
+      "url": "https://doi.org/10.1609/aaai.v35i9.16988",
+      "venue_status": "AAAI 2021, 35(9):8110-8118",
+      "version_date_verified": {
+        "edition": "arXiv v4, 2021-06-11; journal reference verified",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/dssresearch/GLISTER",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2012.10630v4",
+          "sections": "Problem formulation; GLISTER-Online; convergence/assumption analysis"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C25"
+      }
+    },
+    {
+      "id": "C26",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C26",
+      "title": "GRAD-MATCH: Gradient Matching based Data Subset Selection for Efficient Deep Model Training",
+      "authors": "Krishnateja Killamsetty; Durga Sivasubramanian; Ganesh Ramakrishnan; Abir De; Rishabh Iyer",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2021,
+      "url": "https://proceedings.mlr.press/v139/killamsetty21a.html",
+      "venue_status": "ICML 2021, PMLR 139:5464-5474",
+      "version_date_verified": {
+        "edition": "ICML 2021 proceedings; PDF author spelling used",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/decile-team/cords",
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v139/killamsetty21a/killamsetty21a.pdf",
+          "sections": "Section 3.1 OMP; gradient objective and guarantees"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C26"
+      }
+    },
+    {
+      "id": "C27",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C27",
+      "title": "Super-Samples from Kernel Herding",
+      "authors": "Yutian Chen; Max Welling; Alex Smola",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2010,
+      "url": "https://proceedings.mlr.press/r8/chen10a.html",
+      "venue_status": "UAI 2010:117-124; PMLR reissue",
+      "version_date_verified": {
+        "edition": "Original 2010; PMLR reissued 2026-10-04",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://alex.smola.org/papers/2010/CheWelSmo10.pdf",
+          "sections": "Sections 1-3; RKHS moment discrepancy and convergence"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C27"
+      }
+    },
+    {
+      "id": "C28",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C28",
+      "title": "On the Equivalence between Herding and Conditional Gradient Algorithms",
+      "authors": "Francis Bach; Simon Lacoste-Julien; Guillaume Obozinski",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2012,
+      "url": "https://icml.cc/2012/papers/683.pdf",
+      "venue_status": "ICML 2012",
+      "version_date_verified": {
+        "edition": "ICML 2012 proceedings PDF",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://icml.cc/2012/papers/683.pdf",
+          "sections": "Abstract; conditional-gradient reformulation and simulations"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C28"
+      }
+    },
+    {
+      "id": "C29",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C29",
+      "title": "Non-monotone Submodular Maximization under Matroid and Knapsack Constraints",
+      "authors": "Jon Lee; Vahab S. Mirrokni; Viswanath Nagarajan; Maxim Sviridenko",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2009,
+      "url": "https://research.google/pubs/non-monotone-submodular-maximization-under-matroid-and-knapsack/",
+      "venue_status": "STOC 2009:323-332",
+      "version_date_verified": {
+        "edition": "STOC metadata; arXiv v1 dated 2009-02-02; PDF internal date differs",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/pdf/0902.0353",
+          "sections": "Section 2; local-search exchange rule and equal-cardinality swap observation"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C29"
+      }
+    },
+    {
+      "id": "C30",
+      "track": "C",
+      "kind": "paper",
+      "bibliography_key": "C30",
+      "title": "Context Selection as a Partial Order: A Blackwell Framework and Verified LLM Evidence",
+      "authors": "Andriy Bilous; Vasyl Lytvyn; Petro Pukach; Zoriana Rybchak",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://www.mdpi.com/2504-4990/8/10/336",
+      "venue_status": "Machine Learning and Knowledge Extraction 8(10), 336 (2026)",
+      "version_date_verified": {
+        "edition": "Publisher publication indexed 2026-10-17; full-open blocked, indexed sections accessed",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        {
+          "url": "https://www.mdpi.com/2504-4990/8/10/336",
+          "sections": "Publisher-indexed Section 3.3/3.3.1 and scope paragraph; author/date from publisher index"
+        }
+      ],
+      "annotation_reference": {
+        "file": "track_c_sources.json",
+        "source_id": "C30"
+      }
+    },
+    {
+      "id": "D01",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D01",
+      "title": "Causal Inference and Uplift Modelling: A Review of the Literature",
+      "authors": "Pierre Gutierrez and Jean-Yves Gérardy",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2017,
+      "url": "https://proceedings.mlr.press/v67/gutierrez17a.html",
+      "venue_status": "PMLR 67, PAPIs 2017",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D01"
+      }
+    },
+    {
+      "id": "D02",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D02",
+      "title": "A Literature Survey and Experimental Evaluation of the State-of-the-Art in Uplift Modeling: A Stepping Stone Toward the Development of Prescriptive Analytics",
+      "authors": "Floris Devriendt and Darie Moldovan and Wouter Verbeke",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2018,
+      "url": "https://doi.org/10.1089/big.2017.0104",
+      "venue_status": "Big Data 6(1)",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D02"
+      }
+    },
+    {
+      "id": "D03",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D03",
+      "title": "Metalearners for estimating heterogeneous treatment effects using machine learning",
+      "authors": "Sören R. Künzel and Jasjeet S. Sekhon and Peter J. Bickel and Bin Yu",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2019,
+      "url": "https://www.pnas.org/doi/10.1073/pnas.1804597116",
+      "venue_status": "PNAS 116(10), 4156–4165",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Meta-algorithm definitions; X-learner; field experiments"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D03"
+      }
+    },
+    {
+      "id": "D04",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D04",
+      "title": "Quasi-oracle estimation of heterogeneous treatment effects",
+      "authors": "Xinkun Nie and Stefan Wager",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2021,
+      "url": "https://doi.org/10.1093/biomet/asaa076",
+      "venue_status": "Biometrika 108(2), 299–319; online 2020",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D04"
+      }
+    },
+    {
+      "id": "D05",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D05",
+      "title": "Towards optimal doubly robust estimation of heterogeneous causal effects",
+      "authors": "Edward H. Kennedy",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2004.14497",
+      "venue_status": "Electronic Journal of Statistics 17(2), 3008–3049",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D05"
+      }
+    },
+    {
+      "id": "D06",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D06",
+      "title": "Double/debiased machine learning for treatment and structural parameters",
+      "authors": "Victor Chernozhukov and Denis Chetverikov and Mert Demirer and Esther Duflo and Christian Hansen and Whitney Newey and James Robins",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2018,
+      "url": "https://doi.org/10.1111/ectj.12097",
+      "venue_status": "The Econometrics Journal 21(1), C1–C68",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 1-3: regularization bias, sample splitting and orthogonality; Section 5: treatment effects"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D06"
+      }
+    },
+    {
+      "id": "D07",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D07",
+      "title": "Orthogonal statistical learning",
+      "authors": "Dylan J. Foster and Vasilis Syrgkanis",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/1901.09036",
+      "venue_status": "Annals of Statistics 51(3), 879–908",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D07"
+      }
+    },
+    {
+      "id": "D08",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D08",
+      "title": "Doubly Robust Policy Evaluation and Learning",
+      "authors": "Miroslav Dudík and John Langford and Lihong Li",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2011,
+      "url": "https://icml.cc/2011/papers/554_icmlpaper.pdf",
+      "venue_status": "ICML 2011, 1097–1104",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 2-3: direct, IPS and DR policy evaluation; policy learning"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D08"
+      }
+    },
+    {
+      "id": "D09",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D09",
+      "title": "Who Should Be Treated? Empirical Welfare Maximization Methods for Treatment Choice",
+      "authors": "Toru Kitagawa and Aleksey Tetenov",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2018,
+      "url": "https://tetenov.com/Who_should_be_treated_Kitagawa_Tetenov.pdf",
+      "venue_status": "Econometrica 86(2), 591–616",
+      "doi": "10.3982/ECTA13288",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Empirical welfare criterion; capacity-constrained policy section; supplementary capacity analysis"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D09"
+      }
+    },
+    {
+      "id": "D10",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D10",
+      "title": "Policy Learning With Observational Data",
+      "authors": "Susan Athey and Stefan Wager",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2021,
+      "url": "https://arxiv.org/abs/1702.02896",
+      "venue_status": "Econometrica 89(1), 133–161",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D10"
+      }
+    },
+    {
+      "id": "D11",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D11",
+      "title": "Evaluating Treatment Prioritization Rules via Rank-Weighted Average Treatment Effects",
+      "authors": "Steve Yadlowsky and Scott Fleming and Nigam Shah and Emma Brunskill and Stefan Wager",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12002561/",
+      "venue_status": "JASA 120(549), 38–51; online 2024",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Section 2: TOC, RATE, weighted-ATE representation and estimation; Section 2.3 causal scores"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D11"
+      }
+    },
+    {
+      "id": "D12",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D12",
+      "title": "Rank-Learner: Orthogonal Ranking of Treatment Effects",
+      "authors": "Henri Arno and Dennis Frauen and Emil Javurek and Thomas Demeester and Stefan Feuerriegel",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://proceedings.mlr.press/v306/arno26a.html",
+      "venue_status": "ICML 2026, PMLR 306, 3600–3632",
+      "version_date": "2026-05-26",
+      "additional_urls": [
+        "https://arxiv.org/html/2602.03517v2"
+      ],
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 5-6: orthogonal loss and two-stage learner; Appendix F.3: sensitivity to pseudo-label clipping"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D12"
+      }
+    },
+    {
+      "id": "D13",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D13",
+      "title": "Learning to Rank for Uplift Modeling",
+      "authors": "Floris Devriendt and Jente Van Belle and Tias Guns and Wouter Verbeke",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2022,
+      "url": "https://researchportal.vub.be/nl/publications/learning-to-rank-for-uplift-modeling/",
+      "venue_status": "IEEE TKDE 34(10), 4888–4904; preprint 2020 has a different author list",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D13"
+      }
+    },
+    {
+      "id": "D14",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D14",
+      "title": "Improving uplift model evaluation on randomized controlled trial data",
+      "authors": "Björn Bokelmann and Stefan Lessmann",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2210.02152",
+      "venue_status": "European Journal of Operational Research 313(2); preprint 2022",
+      "doi": "10.1016/j.ejor.2023.09.018",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 3-4: evaluation variance and outcome adjustment; Appendix C: metric families"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D14"
+      }
+    },
+    {
+      "id": "D15",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D15",
+      "title": "Uplift Modeling with High Class Imbalance",
+      "authors": "Otto Nyberg and Tomasz Kuśmierczyk and Arto Klami",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2021,
+      "url": "https://proceedings.mlr.press/v157/nyberg21a.html",
+      "venue_status": "ACML 2021, PMLR 157, 315–330",
+      "additional_urls": [
+        "https://proceedings.mlr.press/v157/nyberg21a/nyberg21a.pdf"
+      ],
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 2-4: types of imbalance, undersampling and calibration"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D15"
+      }
+    },
+    {
+      "id": "D16",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D16",
+      "title": "Exploring uplift modeling with high class imbalance",
+      "authors": "Otto Nyberg and Arto Klami",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://doi.org/10.1007/s10618-023-00917-9",
+      "venue_status": "Data Mining and Knowledge Discovery 37, 736–766",
+      "additional_urls": [
+        "https://link.springer.com/article/10.1007/s10618-023-00917-9"
+      ],
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 1-2: distinction between outcome imbalance and treatment imbalance; undersampling and calibration method sections"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D16"
+      }
+    },
+    {
+      "id": "D17",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D17",
+      "title": "Heteroscedasticity-aware stratified sampling to improve uplift modeling",
+      "authors": "Björn Bokelmann and Stefan Lessmann",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2401.14294",
+      "venue_status": "European Journal of Operational Research 325(1), 118-131, 2025; preprint 2024",
+      "doi": "10.1016/j.ejor.2025.02.030",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Sections 3-4: variance components and HS-sampling; Appendix C: evaluation and confidence intervals"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D17"
+      }
+    },
+    {
+      "id": "D18",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D18",
+      "title": "Rethinking Causal Ranking: A Balanced Perspective on Uplift Model Evaluation",
+      "authors": "Minqin Zhu and Zexu Sun and Ruoxuan Xiong and Anpeng Wu and Baohong Li and Caizhi Tang and Jun Zhou and Fei Wu and Kun Kuang",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://proceedings.mlr.press/v267/zhu25s.html",
+      "venue_status": "ICML 2025, PMLR 267, 80134–80154",
+      "code_url": "https://github.com/euzmin/PUC",
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D18"
+      }
+    },
+    {
+      "id": "D19",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D19",
+      "title": "Uplift Model Evaluation with Ordinal Dominance Graphs",
+      "authors": "Brecht Verbeken and Marie-Anne Guerry and Wouter Verbeke and Sam Verboven",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://www.jmlr.org/papers/v26/22-1455.html",
+      "venue_status": "JMLR 26(90), 1–56",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D19"
+      }
+    },
+    {
+      "id": "D20",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D20",
+      "title": "Causal Isotonic Calibration for Heterogeneous Treatment Effects",
+      "authors": "Lars Van Der Laan and Ernesto Ulloa-Perez and Marco Carone and Alex Luedtke",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v202/van-der-laan23a.html",
+      "venue_status": "ICML 2023, PMLR 202, 34831–34854",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D20"
+      }
+    },
+    {
+      "id": "D21",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D21",
+      "title": "Empirical Analysis of Model Selection for Heterogeneous Causal Effect Estimation",
+      "authors": "Divyat Mahajan and Ioannis Mitliagkas and Brady Neal and Vasilis Syrgkanis",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2024,
+      "url": "https://arxiv.org/abs/2211.01939",
+      "venue_status": "ICLR 2024 Spotlight; arXiv v3, 2024-04-29",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D21"
+      }
+    },
+    {
+      "id": "D22",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D22",
+      "title": "Do Contemporary Causal Inference Models Capture Real-World Heterogeneity? Findings from a Large-Scale Benchmark",
+      "authors": "Haining Yu and Yizhou Sun",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2025,
+      "url": "https://arxiv.org/abs/2410.07021v2",
+      "venue_status": "Preprint, v2 2025-02-20",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D22"
+      }
+    },
+    {
+      "id": "D23",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D23",
+      "title": "UpliftBench: Revealing Outcome-Regime and Objective Mismatch in Uplift Evaluation",
+      "authors": "Binshuang Li",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2608.00915",
+      "venue_status": "Preprint, 2026-08-02",
+      "code_url": "https://github.com/binshuangli/uplift-bench",
+      "code_status": "primary arXiv outbound link opened; code not executed",
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D23"
+      }
+    },
+    {
+      "id": "D24",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D24",
+      "title": "Estimation and Inference of Heterogeneous Treatment Effects using Random Forests",
+      "authors": "Stefan Wager and Susan Athey",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2018,
+      "url": "https://doi.org/10.1080/01621459.2017.1319839",
+      "venue_status": "JASA 113(523), 1228–1242",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D24"
+      }
+    },
+    {
+      "id": "D25",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D25",
+      "title": "Bridging the Gap: A Systematic Benchmarking of Uplift Modeling and Heterogeneous Treatment Effects Methods",
+      "authors": "Jannik Rößler and Detlef Schoder",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2022,
+      "url": "https://journals.sagepub.com/doi/10.1177/10949968221111083",
+      "venue_status": "Journal of Interactive Marketing 57(4), 629–650",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Benchmark evaluation protocol; discussion of unscaled Qini and practical targeting"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D25"
+      }
+    },
+    {
+      "id": "D26",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D26",
+      "title": "About evaluation metrics for contextual uplift modeling",
+      "authors": "Christophe Renaudin and Matthieu Martin",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2021,
+      "url": "https://arxiv.org/abs/2107.00537v3",
+      "venue_status": "Technical report/preprint, v3 2021-08-02",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D26"
+      }
+    },
+    {
+      "id": "D27",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D27",
+      "title": "In Search of Insights, Not Magic Bullets: Towards Demystification of the Model Selection Dilemma in Heterogeneous Treatment Effect Estimation",
+      "authors": "Alicia Curth and Mihaela van der Schaar",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2302.02923v2",
+      "venue_status": "ICML 2023; arXiv v2 2023-06-06",
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Abstract and metadata"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D27"
+      }
+    },
+    {
+      "id": "D28",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D28",
+      "title": "Transformers Can Do Bayesian Inference",
+      "authors": "Samuel Müller and Noah Hollmann and Sebastian Pineda Arango and Josif Grabocka and Frank Hutter",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2022,
+      "url": "https://arxiv.org/abs/2112.10510",
+      "venue_status": "ICLR 2022; preprint 2021",
+      "additional_urls": [
+        "https://openreview.net/pdf?id=KSugKcbNf9"
+      ],
+      "code_url": "https://github.com/automl/TransformersCanDoBayesianInference",
+      "evidence_level": "abstract_only",
+      "review_depth": "abstract_or_limited_primary_text",
+      "evidence_sections": [
+        "Original primary abstract and official authors repository BibTeX"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D28"
+      }
+    },
+    {
+      "id": "D29",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D29",
+      "title": "Vector Search As Nearest Neighbor Matching: RAG-based Policy Learning in Causal Inference",
+      "authors": "Masahiro Kato and Taka Kato",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2607.18225",
+      "venue_status": "arXiv preprint",
+      "version": "arXiv v1, submitted 2026-07-20",
+      "full_text_url": "https://arxiv.org/html/2607.18225v1",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "3.1",
+        "4.7",
+        "5",
+        "6.1",
+        "7",
+        "Appendices C, F, G.5-G.7"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D29"
+      }
+    },
+    {
+      "id": "D30",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D30",
+      "title": "Learning Representations for Counterfactual Inference",
+      "authors": "Fredrik Johansson and Uri Shalit and David Sontag",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2016,
+      "url": "https://proceedings.mlr.press/v48/johansson16.html",
+      "venue_status": "ICML 2016; PMLR 48:3020-3029",
+      "full_text_url": "https://proceedings.mlr.press/v48/johansson16.pdf",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Abstract",
+        "Introduction: counterfactual inference as domain adaptation"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D30"
+      }
+    },
+    {
+      "id": "D31",
+      "track": "D",
+      "kind": "paper",
+      "bibliography_key": "D31",
+      "title": "Estimating individual treatment effect: generalization bounds and algorithms",
+      "authors": "Uri Shalit and Fredrik D. Johansson and David Sontag",
+      "authorship_status": "primary_metadata_recorded",
+      "year": 2017,
+      "url": "https://proceedings.mlr.press/v70/shalit17a.html",
+      "venue_status": "ICML 2017; PMLR 70:3076-3085",
+      "full_text_url": "https://proceedings.mlr.press/v70/shalit17a/shalit17a.pdf",
+      "code_url": null,
+      "evidence_level": "full_text_selected_sections",
+      "review_depth": "selected_full_text_sections",
+      "evidence_sections": [
+        "Abstract",
+        "Introduction",
+        "Potential-outcome estimand and assumptions"
+      ],
+      "annotation_reference": {
+        "file": "track_d_sources.json",
+        "source_id": "D31"
+      }
+    }
+  ]
+}

@@ -1,0 +1,885 @@
+{
+  "track": "C",
+  "scope": "Foundational bridges: causal matching, learned ICL set retrieval, data valuation and representative coresets",
+  "cutoff_date": "2026-11-08",
+  "checked_on": "2026-11-08",
+  "source_count": 30,
+  "evidence_policy": "Only primary papers/publisher records support claims. Full_text means methods text accessed; abstract_only marks access-limited original summaries. Null code_url means not verified here, not proof of no implementation.",
+  "negative_search_policy": "Targeted breadth and citation-following, not a proof that no exact predecessor exists.",
+  "sources": [
+    {
+      "id": "C01",
+      "title": "The central role of the propensity score in observational studies for causal effects",
+      "authors": "Paul R. Rosenbaum; Donald B. Rubin",
+      "year": 1983,
+      "url": "https://doi.org/10.1093/biomet/70.1.41",
+      "venue_status": "Biometrika 70(1):41-55",
+      "version_date_verified": {
+        "edition": "April 1983 publisher issue and original-paper summary verified",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "specific_claims": [
+        "Propensity scores reduce observed-covariate adjustment under the stated identification assumptions."
+      ],
+      "mechanism": "Treatment-assignment balancing score; matched sampling and subclassification.",
+      "label_compute_budget": "Treatment and covariates determine scores; outcome-free design is possible.",
+      "limitations": "Observed balance does not remove hidden confounding or assure overlap.",
+      "relevance_novelty": {
+        "our_inference": "Treatment balance and matching are established components, not new context-selection principles."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://www.stat.cmu.edu/~ryantibs/journalclub/rosenbaum_1983.pdf",
+          "sections": "Original summary indexed; publisher issue metadata; scanned body not text-accessible"
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "title": "The prognostic analogue of the propensity score",
+      "authors": "Ben B. Hansen",
+      "year": 2008,
+      "url": "https://doi.org/10.1093/biomet/asn004",
+      "venue_status": "Biometrika 95(2):481-488",
+      "version_date_verified": {
+        "edition": "Publisher publication 2008-06-01",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "specific_claims": [
+        "Prognostic scores summarize covariates through their association with potential responses."
+      ],
+      "mechanism": "Dimension reduction and prognostic balance complementary to propensity scoring.",
+      "label_compute_budget": "Outcome modeling supplies prognostic summaries; full compute budget unverified.",
+      "limitations": "Prognostic adjustment has limitations different from propensity adjustment.",
+      "relevance_novelty": {
+        "our_inference": "Retrieving by predicted outcomes or two CEPOs has clear matching antecedents."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://academic.oup.com/biomet/article-abstract/95/2/481/230183?login=false",
+          "sections": "Publisher abstract and publication history"
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "title": "MALTS: Matching After Learning to Stretch",
+      "authors": "Harsh Parikh; Cynthia Rudin; Alexander Volfovsky",
+      "year": 2022,
+      "url": "https://jmlr.org/papers/v23/21-0053.html",
+      "venue_status": "JMLR 23(240):1-42",
+      "version_date_verified": {
+        "edition": "Published August 2022; revised July 2022",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/almost-matching-exactly/MALTS",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "An outcome-informed metric yields almost-exact matched groups for CATE estimation."
+      ],
+      "mechanism": "Learn interpretable stretches using within-arm outcome prediction on separate training data.",
+      "label_compute_budget": "Honest training/estimation split; supervised metric optimization before matching.",
+      "limitations": "Matching guarantees require causal assumptions; no frozen-FM context optimization studied.",
+      "relevance_novelty": {
+        "our_inference": "Learned causal distances and honest selector fitting require attribution to prior matching work."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://jmlr.org/papers/volume23/21-0053/21-0053.pdf",
+          "sections": "Section 3 and 3.2; honest training split, PDF pages 7 and 9"
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "title": "Variable importance matching for causal inference",
+      "authors": "Quinn Lanners; Harsh Parikh; Alexander Volfovsky; Cynthia Rudin; David Page",
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v216/lanners23a.html",
+      "venue_status": "UAI 2023, PMLR 216:1174-1184",
+      "version_date_verified": {
+        "edition": "UAI 2023 proceedings PDF",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Model-to-Match learns covariate importance from outcome models before forming CATE matched groups."
+      ],
+      "mechanism": "LASSO Coefficient Matching uses sparse absolute coefficients as distance weights.",
+      "label_compute_budget": "Labeled outcome-model fitting followed by matching; no FM calls.",
+      "limitations": "Guarantees require confounder identification conditions, not merely good prediction.",
+      "relevance_novelty": {
+        "our_inference": "Feature-weighted or prognostic retrieval is an existing baseline; distinguish VIM from VIP-COP."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v216/lanners23a/lanners23a.pdf",
+          "sections": "Sections 3-4; LASSO coefficient construction"
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "title": "Doubly robust matching estimators for high dimensional confounding adjustment",
+      "authors": "Joseph Antonelli; Matthew Cefalu; Nathan Palmer; Denis Agniel",
+      "year": 2018,
+      "url": "https://doi.org/10.1111/biom.12887",
+      "venue_status": "Biometrics, 2018",
+      "version_date_verified": {
+        "edition": "Accepted March 2018; author-hosted publisher PDF",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Joint propensity/prognostic matching permits consistent estimation when one score model is correct under stated assumptions."
+      ],
+      "mechanism": "Penalized score estimation followed by low-dimensional matching.",
+      "label_compute_budget": "Observed treatments/outcomes train two score models; matching and calipers follow.",
+      "limitations": "Double robustness is estimator-specific and does not transfer automatically to FM retrieval.",
+      "relevance_novelty": {
+        "our_inference": "Calling an outcome-aware selector doubly robust needs its own proof, not borrowed terminology."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://jantonelli111.github.io/files/biom12887.pdf",
+          "sections": "Summary; methodology and asymptotic results"
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "title": "Optimal transport weights for causal inference",
+      "authors": "Eric Dunipace",
+      "year": 2021,
+      "url": "https://arxiv.org/abs/2109.01991",
+      "venue_status": "arXiv preprint; later journal status not established here",
+      "version_date_verified": {
+        "edition": "arXiv v4, 2022-05-12; first posted 2021-09-05",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/ericdunipace/causalOT",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Causal Optimal Transport balances source and target distributions and imputes missing potential outcomes."
+      ],
+      "mechanism": "Optimal-transport weighting with optional covariate moments and causal estimation.",
+      "label_compute_budget": "Covariates drive balancing; outcome estimation and tuning add supervised computation.",
+      "limitations": "Weighted causal estimation is not finite-memory unweighted context selection.",
+      "relevance_novelty": {
+        "our_inference": "Distribution matching and transport are established; test their value for the frozen FM contrast."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2109.01991v4",
+          "sections": "Sections 3, 3.7 and 4; treatment targets and MMD relation"
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "title": "KDSM: An uplift modeling framework based on knowledge distillation and sample matching",
+      "authors": "Chang Sun; Qianying Li; Guanxiang Wang; Sihao Xu; Yitong Liu",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2303.02980",
+      "venue_status": "arXiv preprint; later venue unverified",
+      "version_date_verified": {
+        "edition": "arXiv v1, 2023-03-06",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Uplift-tree leaves produce real treatment/control pairs for a student distillation objective."
+      ],
+      "mechanism": "Random within-leaf pairing is renewed each epoch alongside supervised student training.",
+      "label_compute_budget": "Teacher and student require labeled RCT data; student parameters are updated.",
+      "limitations": "Pairs are approximate counterfactuals, not identified individual effects or FM contexts.",
+      "relevance_novelty": {
+        "our_inference": "Teacher-guided sample pairing for uplift predates our proposal; frozen context utility differs."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2303.02980v1",
+          "sections": "Sections 4.3-4.4; real pairs and per-epoch matching"
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "title": "Learning To Retrieve Prompts for In-Context Learning",
+      "authors": "Ohad Rubin; Jonathan Herzig; Jonathan Berant",
+      "year": 2022,
+      "url": "https://aclanthology.org/2022.naacl-main.191/",
+      "venue_status": "NAACL 2022:2655-2671",
+      "version_date_verified": {
+        "edition": "Proceedings July 10-15, 2022",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "LM output likelihood supplies supervision for an efficient dense demonstration retriever."
+      ],
+      "mechanism": "Score candidate demonstrations on labeled queries; train positive/negative retrieval.",
+      "label_compute_budget": "Offline labeled examples and many scoring calls; cheap retrieval at deployment.",
+      "limitations": "Primarily individual-example scoring for semantic parsing, not causal set utility.",
+      "relevance_novelty": {
+        "our_inference": "Learning retrieval from frozen-model feedback and amortizing scoring are already known."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://aclanthology.org/2022.naacl-main.191.pdf",
+          "sections": "Abstract; retrieval training and candidate scoring"
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "title": "Compositional Exemplars for In-context Learning",
+      "authors": "Jiacheng Ye; Zhiyong Wu; Jiangtao Feng; Tao Yu; Lingpeng Kong",
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v202/ye23c.html",
+      "venue_status": "ICML 2023, PMLR 202:39818-39833",
+      "version_date_verified": {
+        "edition": "ICML 2023 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/HKUNLP/icl-ceil",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "CEIL learns query-conditioned exemplar sets from frozen-LM subset preferences."
+      ],
+      "mechanism": "Conditional DPP models relevance and inter-example diversity; contrastive training learns preferences.",
+      "label_compute_budget": "Labeled examples and offline subset scoring; DPP MAP retrieval at inference.",
+      "limitations": "DPP structure is a model choice; no causal or quota-coupled policy objective tested.",
+      "relevance_novelty": {
+        "our_inference": "Model-aware set selection, interactions and one final LM evaluation cannot alone establish novelty."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v202/ye23c/ye23c.pdf",
+          "sections": "Sections 3.1-3.3; frozen-LM training description"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "title": "Active Example Selection for In-Context Learning",
+      "authors": "Yiming Zhang; Shi Feng; Chenhao Tan",
+      "year": 2022,
+      "url": "https://aclanthology.org/2022.emnlp-main.622/",
+      "venue_status": "EMNLP 2022:9134-9148",
+      "version_date_verified": {
+        "edition": "Proceedings December 7-11, 2022",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/ChicagoHAI/active-example-selection",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "RL learns sequential demonstration-acquisition policies using marginal utility reward shaping."
+      ],
+      "mechanism": "Reward differences telescope to final task performance with unit discount.",
+      "label_compute_budget": "Active setting acquires labels; training uses task performance and LM calls.",
+      "limitations": "Label acquisition differs from selecting already-labeled donors; larger-model transfer gains diminish.",
+      "relevance_novelty": {
+        "our_inference": "Marginal utility rewards and generalizable selection policies are established components."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://aclanthology.org/2022.emnlp-main.622.pdf",
+          "sections": "Example-selection MDP; reward-shaping discussion, PDF page 5"
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "title": "RetICL: Sequential Retrieval of In-Context Examples with Reinforcement Learning",
+      "authors": "Alexander Scarlatos; Andrew Lan",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2305.14502",
+      "venue_status": "arXiv preprint; later venue unverified",
+      "version_date_verified": {
+        "edition": "arXiv v2, 2024-04-16; first posted 2023-05-23",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "RetICL learns example sequences conditioned on previously retrieved demonstrations."
+      ],
+      "mechanism": "MDP and recurrent retriever trained with reinforcement learning.",
+      "label_compute_budget": "Offline task rewards and LM evaluations train retrieval; deployment uses learned policy.",
+      "limitations": "Math/science NLP evaluations do not establish uplift-policy improvement.",
+      "relevance_novelty": {
+        "our_inference": "A stateful learned selector must be compared with existing sequential retrieval, not just kNN."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2305.14502v2",
+          "sections": "Sections 3.1-3.3; Appendix C inference-time optimization"
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "title": "Learning to Retrieve Iteratively for In-Context Learning",
+      "authors": "Yunmo Chen; Tongfei Chen; Harsh Jhamtani; Patrick Xia; Richard Shin; Jason Eisner; Benjamin Van Durme",
+      "year": 2024,
+      "url": "https://aclanthology.org/2024.emnlp-main.406/",
+      "venue_status": "EMNLP 2024:7156-7168",
+      "version_date_verified": {
+        "edition": "Proceedings November 12-16, 2024",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "An iterative retriever learns from increases in reference-output probability under an LLM."
+      ],
+      "mechanism": "Stateful retrieval and PPO optimize complementary exemplar sequences.",
+      "label_compute_budget": "Offline stepwise LLM feedback and labeled references; learned inference retriever.",
+      "limitations": "NLP likelihood increments are not causal policy-value increments.",
+      "relevance_novelty": {
+        "our_inference": "This is a close structural baseline for a causal-reward learned retriever."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://aclanthology.org/2024.emnlp-main.406.pdf",
+          "sections": "Sections 3-4; reward equation (8), PDF page 4"
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "title": "UPRISE: Universal Prompt Retrieval for Improving Zero-Shot Evaluation",
+      "authors": "Daixuan Cheng; Shaohan Huang; Junyu Bi; Yuefeng Zhan; Jianfeng Liu; Yujing Wang; Hao Sun; Furu Wei; Weiwei Deng; Qi Zhang",
+      "year": 2023,
+      "url": "https://aclanthology.org/2023.emnlp-main.758/",
+      "venue_status": "EMNLP 2023:12318-12337",
+      "version_date_verified": {
+        "edition": "Proceedings December 6-10, 2023",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/microsoft/LMOps",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "A small frozen LM supervises retrieval that transfers across tasks and model scales."
+      ],
+      "mechanism": "Multi-task trained prompt retriever uses a constructed demonstration pool.",
+      "label_compute_budget": "Training tasks and scored prompts supply supervision; unseen tasks use retrieval.",
+      "limitations": "Cross-task NLP transfer does not imply causal donor-bank transfer.",
+      "relevance_novelty": {
+        "our_inference": "Transfer and amortization require stronger novelty claims than moving to unseen donor rows."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://aclanthology.org/2023.emnlp-main.758.pdf",
+          "sections": "Abstract; retriever training and cross-task/model evaluation"
+        }
+      ],
+      "metadata_note": "ACL metadata lists Weiwei Deng; PDF and arXiv show Denvy Deng. Alias discrepancy retained explicitly."
+    },
+    {
+      "id": "C14",
+      "title": "Data Shapley: Equitable Valuation of Data for Machine Learning",
+      "authors": "Amirata Ghorbani; James Zou",
+      "year": 2019,
+      "url": "https://proceedings.mlr.press/v97/ghorbani19c.html",
+      "venue_status": "ICML 2019, PMLR 97:2242-2251",
+      "version_date_verified": {
+        "edition": "ICML 2019 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Data values average marginal changes in predictor utility over training subsets."
+      ],
+      "mechanism": "Cooperative-game Shapley valuation with truncated Monte Carlo and gradient approximations.",
+      "label_compute_budget": "Labeled training data, utility evaluation and many subset-model evaluations.",
+      "limitations": "Fair attribution does not automatically optimize a fixed-size selected subset.",
+      "relevance_novelty": {
+        "our_inference": "Observed model utility for real rows is a valuation antecedent, not a new principle."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v97/ghorbani19c/ghorbani19c.pdf",
+          "sections": "Section 2; Monte Carlo approximations; experiments"
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "title": "A Distributional Framework For Data Valuation",
+      "authors": "Amirata Ghorbani; Michael P. Kim; James Zou",
+      "year": 2020,
+      "url": "https://proceedings.mlr.press/v119/ghorbani20a.html",
+      "venue_status": "ICML 2020, PMLR 119:3535-3544",
+      "version_date_verified": {
+        "edition": "ICML 2020 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/amiratag/DistributionalShapley",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Distributional Shapley values extend beyond a fixed dataset; Algorithm 2 predicts unvalued points by regression."
+      ],
+      "mechanism": "Average marginal utility over sampled backgrounds; subsample and interpolate values.",
+      "label_compute_budget": "Subset utility calls generate regression targets; assumes task and utility fixed.",
+      "limitations": "Stability conditions support interpolation; query-dependent causal quotas are not studied.",
+      "relevance_novelty": {
+        "our_inference": "Transferable value prediction and amortized regression are explicit prior art."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v119/ghorbani20a/ghorbani20a.pdf",
+          "sections": "Section 2; subsampling/interpolation pages 5-7; Algorithm 2"
+        }
+      ]
+    },
+    {
+      "id": "C16",
+      "title": "Beta Shapley: a Unified and Noise-reduced Data Valuation Framework for Machine Learning",
+      "authors": "Yongchan Kwon; James Zou",
+      "year": 2022,
+      "url": "https://proceedings.mlr.press/v151/kwon22a.html",
+      "venue_status": "AISTATS 2022, PMLR 151:8780-8802",
+      "version_date_verified": {
+        "edition": "Proceedings March 28-30, 2022",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/ykwon0407/beta_shapley",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Relaxing efficiency yields semivalues with flexible weights over coalition cardinalities."
+      ],
+      "mechanism": "Beta weighting emphasizes useful size ranges; Monte Carlo estimates contributions.",
+      "label_compute_budget": "Labeled data and held-out utility; many subset evaluations.",
+      "limitations": "Changing cardinality weights does not establish fixed-arm exchange attribution or selection optimality.",
+      "relevance_novelty": {
+        "our_inference": "Fixed-size marginal valuation is related to known semivalue choices, not unprecedented."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v151/kwon22a/kwon22a.pdf",
+          "sections": "Section 4.1, Theorem 2; Section 4.2; Appendix A"
+        }
+      ]
+    },
+    {
+      "id": "C17",
+      "title": "Data Banzhaf: A Robust Data Valuation Framework for Machine Learning",
+      "authors": "Jiachen T. Wang; Ruoxi Jia",
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v206/wang23e.html",
+      "venue_status": "AISTATS 2023, PMLR 206:6388-6421",
+      "version_date_verified": {
+        "edition": "AISTATS 2023 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Banzhaf has optimal safety margin among semivalues under the paper's noisy-utility framework."
+      ],
+      "mechanism": "Uniform coalition weighting and Maximum Sample Reuse reduce estimation cost.",
+      "label_compute_budget": "Subset performance evaluations are reused across many candidate valuations.",
+      "limitations": "Noise robustness is framework-specific; it is not a fixed-budget policy guarantee.",
+      "relevance_novelty": {
+        "our_inference": "Noisy FM feedback should be benchmarked against sample-reuse valuation before novelty claims."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v206/wang23e/wang23e.pdf",
+          "sections": "Safety-margin analysis; MSR estimator, PDF page 6"
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "title": "Data Valuation using Reinforcement Learning",
+      "authors": "Jinsung Yoon; Sercan O. Arik; Tomas Pfister",
+      "year": 2020,
+      "url": "https://proceedings.mlr.press/v119/yoon20a.html",
+      "venue_status": "ICML 2020, PMLR 119:10842-10851",
+      "version_date_verified": {
+        "edition": "ICML 2020 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/google-research/google-research/tree/master/dvrl",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "DVRL learns training-sample selection probabilities from target-task performance feedback."
+      ],
+      "mechanism": "Stochastic data-value network and predictor are optimized jointly using RL.",
+      "label_compute_budget": "Training labels and validation feedback; predictor retraining is part of cost.",
+      "limitations": "Parameters update; outcome-containing value-network inputs differ from label-blind frozen-FM deployment.",
+      "relevance_novelty": {
+        "our_inference": "Learned data utility is known; frozen context-only adaptation needs separate evidence."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v119/yoon20a/yoon20a.pdf",
+          "sections": "Training algorithm 1; data-value network inputs; experiments"
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "title": "Data-OOB: Out-of-bag Estimate as a Simple and Efficient Data Value",
+      "authors": "Yongchan Kwon; James Zou",
+      "year": 2023,
+      "url": "https://proceedings.mlr.press/v202/kwon23e.html",
+      "venue_status": "ICML 2023, PMLR 202:18135-18152",
+      "version_date_verified": {
+        "edition": "ICML 2023 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/ykwon0407/dataoob",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Out-of-bag predictions value data efficiently by reusing trained bagging learners."
+      ],
+      "mechanism": "Aggregate point-specific OOB utility rather than repeatedly fitting arbitrary subsets.",
+      "label_compute_budget": "Training labels; bagging fits reused without an extra valuation validation set.",
+      "limitations": "Bagging-specific surrogate does not directly represent frozen-transformer context interactions.",
+      "relevance_novelty": {
+        "our_inference": "Include efficient valuation as a computational reference, not a faithful context baseline."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v202/kwon23e/kwon23e.pdf",
+          "sections": "Method definition; Appendix A implementation and split accounting"
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "title": "Rethinking Data Shapley for Data Selection Tasks: Misleads and Merits",
+      "authors": "Jiachen T. Wang; Tianji Yang; James Zou; Yongchan Kwon; Ruoxi Jia",
+      "year": 2024,
+      "url": "https://proceedings.mlr.press/v235/wang24cg.html",
+      "venue_status": "ICML 2024, PMLR 235:52033-52063",
+      "version_date_verified": {
+        "edition": "arXiv v1 2024-05-06; official proceedings verified",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Shapley selection need not beat random; monotone-transformed modular utilities admit optimal top-k selection."
+      ],
+      "mechanism": "Analyze selection consistency and fit a utility-structure diagnostic.",
+      "label_compute_budget": "Subset utility observations support theory diagnostics and selection experiments.",
+      "limitations": "Special utility assumptions cannot be presumed for a causal FM.",
+      "relevance_novelty": {
+        "our_inference": "A useful additive row surrogate is not necessarily faithful Shapley attribution or globally optimal."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2405.03875v1",
+          "sections": "Sections 3-5; MTM definition 5 and theorem 6"
+        }
+      ]
+    },
+    {
+      "id": "C21",
+      "title": "Is Data Shapley Not Better than Random in Data Selection? Ask NASH",
+      "authors": "Xiao Tian; Jue Fan; Rachael Hwee Ling Sim; Zixuan Wang; Nancy F. Chen; Bryan Kian Hsiang Low",
+      "year": 2026,
+      "url": "https://proceedings.mlr.press/v306/tian26c.html",
+      "venue_status": "ICML 2026, PMLR 306:120806-120837",
+      "version_date_verified": {
+        "edition": "arXiv v2, 2026-05-12; official proceedings verified",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/snoidetx/nash",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "NASH optimizes nonlinear aggregation of validation-point Shapley-informative utility components."
+      ],
+      "mechanism": "Cardinality-constrained subset objective replaces naive top-m aggregate value ranking.",
+      "label_compute_budget": "Component valuation and held-out utility; extra optimization cost must be counted.",
+      "limitations": "Its assumptions and experiments do not establish a causal fixed-quota selector.",
+      "relevance_novelty": {
+        "our_inference": "A strong nearby alternative to additive global row values; nonlinear aggregation is not new."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2605.10684v2",
+          "sections": "Section 3.3, definition 3.4/equation 6; Appendix B.2"
+        }
+      ]
+    },
+    {
+      "id": "C22",
+      "title": "Priority-Aware Shapley Value",
+      "authors": "Kiljae Lee; Ziqi Liu; Weijing Tang; Yuan Zhang",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2602.09326",
+      "venue_status": "arXiv preprint",
+      "version_date_verified": {
+        "edition": "arXiv v2, 2026-06-14",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "PASV accommodates hard precedence constraints and soft contributor priorities in valuation."
+      ],
+      "mechanism": "Random-order values and adjacent-swap Metropolis-Hastings over valid permutations.",
+      "label_compute_budget": "Utility evaluations and Monte Carlo permutation sampling; structure supplied externally.",
+      "limitations": "Permutation swaps are not donor-context replacements; precedence differs from arm quotas.",
+      "relevance_novelty": {
+        "our_inference": "Restricted coalition notions already exist; do not claim quotas make Shapley-style valuation new."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2602.09326v2",
+          "sections": "Sections 2-4; computational-cost discussion"
+        }
+      ]
+    },
+    {
+      "id": "C23",
+      "title": "Localizing Global Discrepancies: Marginal Contributions and Contextual Anomaly Detection",
+      "authors": "Tommaso Dorigo",
+      "year": 2026,
+      "url": "https://arxiv.org/abs/2608.28375",
+      "venue_status": "arXiv preprint",
+      "version_date_verified": {
+        "edition": "arXiv v1, 2026-08-28",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Expected fixed-size replacement equals centered conditional localization for symmetric statistics."
+      ],
+      "mechanism": "Matched-context subtraction and projection theory isolate marginal contribution with reduced noise.",
+      "label_compute_budget": "Repeated random contexts evaluate statistics; anomaly-detection experiments, not causal labels.",
+      "limitations": "No learned frozen-FM causal policy selector or arm quotas are established.",
+      "relevance_novelty": {
+        "our_inference": "Fixed-size expected replacement utility is prior art; our distinguishing constraints must be explicit."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2608.28375v1",
+          "sections": "Section 3.2 equations 3-4; Section 4.4; finite-sample discussion"
+        }
+      ]
+    },
+    {
+      "id": "C24",
+      "title": "Coresets for Data-efficient Training of Machine Learning Models",
+      "authors": "Baharan Mirzasoleiman; Jeff Bilmes; Jure Leskovec",
+      "year": 2020,
+      "url": "https://proceedings.mlr.press/v119/mirzasoleiman20a.html",
+      "venue_status": "ICML 2020, PMLR 119:6950-6960",
+      "version_date_verified": {
+        "edition": "ICML 2020 proceedings",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "CRAIG selects weighted training subsets approximating the full gradient through submodular optimization."
+      ],
+      "mechanism": "Gradient-space representative coverage and greedy budgeted coreset selection.",
+      "label_compute_budget": "Supervised training gradients and weighted retraining; selection cost is additional.",
+      "limitations": "Convex training guarantees do not transfer to frozen-FM in-context utility.",
+      "relevance_novelty": {
+        "our_inference": "Representative subsets and fixed-budget greedy selection are known building blocks."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v119/mirzasoleiman20a/mirzasoleiman20a.pdf",
+          "sections": "Section 3; limited-budget formulation 3.3/equation 14"
+        }
+      ]
+    },
+    {
+      "id": "C25",
+      "title": "GLISTER: Generalization based Data Subset Selection for Efficient and Robust Learning",
+      "authors": "Krishnateja Killamsetty; Durga Sivasubramanian; Ganesh Ramakrishnan; Rishabh Iyer",
+      "year": 2021,
+      "url": "https://doi.org/10.1609/aaai.v35i9.16988",
+      "venue_status": "AAAI 2021, 35(9):8110-8118",
+      "version_date_verified": {
+        "edition": "arXiv v4, 2021-06-11; journal reference verified",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/dssresearch/GLISTER",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Bilevel subset selection targets validation likelihood while training the predictive model."
+      ],
+      "mechanism": "Online meta approximations and greedy discrete selection alternate with parameter updates.",
+      "label_compute_budget": "Training labels and held-out validation labels; gradients and retraining are counted.",
+      "limitations": "Weak submodularity holds under stated loss assumptions, not arbitrary causal utility.",
+      "relevance_novelty": {
+        "our_inference": "Validation-driven subset optimization is established; replaceable context is the distinct deployment object."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/html/2012.10630v4",
+          "sections": "Problem formulation; GLISTER-Online; convergence/assumption analysis"
+        }
+      ]
+    },
+    {
+      "id": "C26",
+      "title": "GRAD-MATCH: Gradient Matching based Data Subset Selection for Efficient Deep Model Training",
+      "authors": "Krishnateja Killamsetty; Durga Sivasubramanian; Ganesh Ramakrishnan; Abir De; Rishabh Iyer",
+      "year": 2021,
+      "url": "https://proceedings.mlr.press/v139/killamsetty21a.html",
+      "venue_status": "ICML 2021, PMLR 139:5464-5474",
+      "version_date_verified": {
+        "edition": "ICML 2021 proceedings; PDF author spelling used",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": "https://github.com/decile-team/cords",
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Gradient matching selects a weighted subset approximating training or validation gradients."
+      ],
+      "mechanism": "Orthogonal Matching Pursuit optimizes a regularized gradient discrepancy.",
+      "label_compute_budget": "Labeled gradients and repeated training; validation targets are optional.",
+      "limitations": "Training-update approximation is different from a frozen context response.",
+      "relevance_novelty": {
+        "our_inference": "A causal gradient feature or influence approximation needs comparison with gradient matching."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://proceedings.mlr.press/v139/killamsetty21a/killamsetty21a.pdf",
+          "sections": "Section 3.1 OMP; gradient objective and guarantees"
+        }
+      ],
+      "metadata_note": "PMLR abbreviates the second author as Durga S; full PDF gives Durga Sivasubramanian."
+    },
+    {
+      "id": "C27",
+      "title": "Super-Samples from Kernel Herding",
+      "authors": "Yutian Chen; Max Welling; Alex Smola",
+      "year": 2010,
+      "url": "https://proceedings.mlr.press/r8/chen10a.html",
+      "venue_status": "UAI 2010:117-124; PMLR reissue",
+      "version_date_verified": {
+        "edition": "Original 2010; PMLR reissued 2026-10-04",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Deterministic kernel herding approximates a distribution through RKHS expectation matching."
+      ],
+      "mechanism": "Greedy feature-mean discrepancy reduction; Bayesian predictive integration demonstration.",
+      "label_compute_budget": "Kernel expectations and candidate search; no outcome labels inherently required.",
+      "limitations": "Integration error assumptions do not guarantee causal policy quality or finite-bank performance.",
+      "relevance_novelty": {
+        "our_inference": "MMD/herding selection and distribution representation are old; causal usefulness remains empirical."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://alex.smola.org/papers/2010/CheWelSmo10.pdf",
+          "sections": "Sections 1-3; RKHS moment discrepancy and convergence"
+        }
+      ]
+    },
+    {
+      "id": "C28",
+      "title": "On the Equivalence between Herding and Conditional Gradient Algorithms",
+      "authors": "Francis Bach; Simon Lacoste-Julien; Guillaume Obozinski",
+      "year": 2012,
+      "url": "https://icml.cc/2012/papers/683.pdf",
+      "venue_status": "ICML 2012",
+      "version_date_verified": {
+        "edition": "ICML 2012 proceedings PDF",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Herding is a conditional-gradient method minimizing quadratic moment discrepancy."
+      ],
+      "mechanism": "Frank-Wolfe viewpoint yields alternative integration algorithms and convergence analysis.",
+      "label_compute_budget": "Feature expectations and linear-oracle calls; no causal outcome labels required.",
+      "limitations": "Convex moment geometry does not establish submodularity of frozen-FM utility.",
+      "relevance_novelty": {
+        "our_inference": "A greedy RFF discrepancy control inherits a known optimization interpretation."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://icml.cc/2012/papers/683.pdf",
+          "sections": "Abstract; conditional-gradient reformulation and simulations"
+        }
+      ]
+    },
+    {
+      "id": "C29",
+      "title": "Non-monotone Submodular Maximization under Matroid and Knapsack Constraints",
+      "authors": "Jon Lee; Vahab S. Mirrokni; Viswanath Nagarajan; Maxim Sviridenko",
+      "year": 2009,
+      "url": "https://research.google/pubs/non-monotone-submodular-maximization-under-matroid-and-knapsack/",
+      "venue_status": "STOC 2009:323-332",
+      "version_date_verified": {
+        "edition": "STOC metadata; arXiv v1 dated 2009-02-02; PDF internal date differs",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "full_text",
+      "specific_claims": [
+        "Value-oracle local search uses feasible exchanges under matroid constraints for nonnegative submodular objectives."
+      ],
+      "mechanism": "Delete/exchange improvements, structural matroid analysis and approximation algorithms.",
+      "label_compute_budget": "Utility-oracle evaluations; polynomial cost depends on number of constraints.",
+      "limitations": "Our causal objective is not proven nonnegative or submodular; guarantees cannot be imported.",
+      "relevance_novelty": {
+        "our_inference": "Feasible same-arm swaps are standard constrained optimization, not sufficient methodological novelty."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://arxiv.org/pdf/0902.0353",
+          "sections": "Section 2; local-search exchange rule and equal-cardinality swap observation"
+        }
+      ],
+      "metadata_note": "PDF cover internally says October 24, 2018 despite arXiv v1/2009 and STOC2009 record; both retained."
+    },
+    {
+      "id": "C30",
+      "title": "Context Selection as a Partial Order: A Blackwell Framework and Verified LLM Evidence",
+      "authors": "Andriy Bilous; Vasyl Lytvyn; Petro Pukach; Zoriana Rybchak",
+      "year": 2026,
+      "url": "https://www.mdpi.com/2504-4990/8/10/336",
+      "venue_status": "Machine Learning and Knowledge Extraction 8(10), 336 (2026)",
+      "version_date_verified": {
+        "edition": "Publisher publication indexed 2026-10-17; full-open blocked, indexed sections accessed",
+        "verified_on": "2026-11-08"
+      },
+      "code_url": null,
+      "evidence_level": "abstract_only",
+      "specific_claims": [
+        "Blackwell-incomparable sources cannot be universally ranked by a task-independent scalar; realized-model claims require additional conditions."
+      ],
+      "mechanism": "Separate information partial order, task-conditioned decision value and verified fixed-model performance.",
+      "label_compute_budget": "LLM verification battery and repeated-completion confidence bounds; not uplift labels.",
+      "limitations": "The theorem does not rule out arbitrary query-conditioned or set-conditioned scoring.",
+      "relevance_novelty": {
+        "our_inference": "Information-quality improvement is not a general guarantee of realized frozen-FM utility."
+      },
+      "evidence_sections": [
+        {
+          "url": "https://www.mdpi.com/2504-4990/8/10/336",
+          "sections": "Publisher-indexed Section 3.3/3.3.1 and scope paragraph; author/date from publisher index"
+        }
+      ],
+      "access_note": "Direct article/PDF returned 429, XML unavailable; conservative abstract_only flag despite indexed theorem excerpts."
+    }
+  ]
+}

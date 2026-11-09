@@ -1,0 +1,3 @@
+metrics.csv: 6 rows matched, 0 unmatched; ipw_value_20 max|d|=0.0046, aipw_value_20 max|d|=0.00269061, ipw_value_60 max|d|=0.00163333, aipw_value_40 max|d|=0.00140992, aipw_value_60 max|d|=0.00108883, normalized_qini_auc max|d|=0.000991888
+paired_policy.csv: 4 rows matched, 0 unmatched; selection_overlap max|d|=0.00433333, ci_high max|d|=0.00124428, aipw_delta_40 max|d|=0.000798043, ci_low max|d|=0.000690685, ipw_delta_40 max|d|=0.0002
+largest difference: 0.0046

@@ -1,0 +1,5 @@
+all_metrics.csv: 56 rows matched, 0 unmatched; uplift_10_pp max|d|=0.688959, normalized_qini_auc max|d|=0.000408928
+all_timings.csv: 264 rows matched, 0 unmatched; train_size max|d|=43008, seconds max|d|=8083.32, processed_queries max|d|=2944, context_size max|d|=1536
+paired_deltas.csv: 92 rows matched, 0 unmatched; high max|d|=1.41293, delta max|d|=1.20813, low max|d|=1.04075
+qhat_deltas.csv: 92 rows matched, 0 unmatched; delta max|d|=0.000402293
+largest difference: 43008

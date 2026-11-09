@@ -1,0 +1,3 @@
+all_metrics.csv: 7 rows matched, 2 unmatched; all numbers equal to 1e-6
+paired_deltas.csv: 4 rows matched, 0 unmatched; low max|d|=0.0628605, high max|d|=0.0546507, delta max|d|=0.049776
+largest difference: 0.0628605

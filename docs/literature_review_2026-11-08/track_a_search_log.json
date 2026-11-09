@@ -1,0 +1,193 @@
+{
+  "track": "A: Tabular FM context selection, optimization and scaling",
+  "searched_on": "2026-11-08",
+  "publication_cutoff_inclusive": "2026-11-08",
+  "search_method": "Targeted primary-source discovery plus backward/forward citation snowballing. Search engines are discovery tools; claims are supported by primary manuscripts/proceedings, coauthor publication pages for venue metadata, and official repositories. Not a preregistered systematic review or exhaustive database export.",
+  "query_batches": [
+    {
+      "topic": "Backbone releases and early optimization",
+      "queries": [
+        "TabPFN 2.5 technical report arxiv 2025 authors",
+        "TabPFN 3 technical report arxiv 2026",
+        "\"TabPFN Unleashed\" arxiv",
+        "\"Task-Aligned Attention Retrieval\""
+      ]
+    },
+    {
+      "topic": "Retrieval and prompts",
+      "queries": [
+        "\"ARASH\" tabular context retrieval arxiv",
+        "\"TabDPT\" \"arxiv\" \"authors\"",
+        "\"Mixture of In-Context Prompters for Tabular PFNs\"",
+        "\"TuneTables\" arxiv authors"
+      ]
+    },
+    {
+      "topic": "Backbone and exact scaling",
+      "queries": [
+        "\"Accurate predictions on small data with a tabular foundation model\" authors 2025",
+        "\"Drift-resilient TabPFN\" arxiv",
+        "\"Chunked TabPFN\" arxiv authors code",
+        "\"TabDPT-Turbo\" arxiv authors"
+      ]
+    },
+    {
+      "topic": "Official code discovery",
+      "queries": [
+        "\"MixturePFN\" \"github.com\"",
+        "\"LoCalPFN\" \"github.com\"",
+        "\"LUCoS\" \"github.com\"",
+        "\"ARASH\" \"Jamalidinan\" github"
+      ]
+    },
+    {
+      "topic": "Newer selection wrappers",
+      "queries": [
+        "\"Balanced Adaptive Prototype Selection\"",
+        "\"Localized TabICLv2\"",
+        "\"tabular\" \"context pruning\" \"foundation\"",
+        "\"tabular\" \"learned retrieval\" \"PFN\""
+      ]
+    },
+    {
+      "topic": "Architectural alternatives",
+      "queries": [
+        "\"TabFlex\" arxiv",
+        "\"Tabular Foundation Models Are Effectively Shallow\" arxiv",
+        "\"Towards Localization via Data Embedding for TabPFN\" github",
+        "\"TabPFN\" \"context\" \"attention\" \"retrieval\" arxiv 2026"
+      ]
+    },
+    {
+      "topic": "Latest releases and licenses",
+      "queries": [
+        "\"LimiX\" arxiv",
+        "\"TabPFN-3.5\" technical report arxiv",
+        "\"TabPFN-Wide\" authors arxiv",
+        "\"VIP-COp\" \"license\""
+      ]
+    },
+    {
+      "topic": "Theory and adjacent retrieval",
+      "queries": [
+        "\"Statistical Foundations of Prior-Data Fitted Networks\"",
+        "\"tabular\" \"context selection\" \"causal\" \"PFN\"",
+        "\"Scalable In-Context Learning on Tabular Data via Retrieval-Augmented Large Language Models\""
+      ]
+    },
+    {
+      "topic": "Version audit",
+      "queries": [
+        "\"Statistical Foundations of Prior-Data Fitted Networks\"",
+        "\"Scalable In-Context Learning on Tabular Data via Retrieval-Augmented Large Language Models\"",
+        "\"TabPFN-3\" \"28 May\""
+      ]
+    },
+    {
+      "topic": "Final primary-code and causal audit",
+      "queries": [
+        "\"Mixture of In-Context Prompters for Tabular PFNs\" github",
+        "\"In-Context Data Distillation with TabPFN\" github",
+        "\"Task-Aligned Attention Retrieval\" openreview github",
+        "\"TabPFN-2.5\" \"RealCause\""
+      ]
+    }
+  ],
+  "snowballing": [
+    {
+      "seed": "CRUMB full manuscript and bibliography",
+      "leads": "MixturePFN/MICP, TuneTables, ICD, LoCalPFN, TabFlex, Chunked TabPFN."
+    },
+    {
+      "seed": "EPIC/TANN full manuscript and bibliography",
+      "leads": "VIP-COp, LUCoS, localized TabICLv2, acquisition versus labeled-memory distinction."
+    },
+    {
+      "seed": "Test-Time Compute manuscript and official repository",
+      "leads": "Attention retrieval recipe, LimiX, later TabPFN reports, A Closer Look at TabPFNv2."
+    },
+    {
+      "seed": "TabDPT manuscript and coauthor publication page",
+      "leads": "Nagler localization theory, Wen et al. serialized-table RAG, 2608.17957 mechanistic retrieval study."
+    },
+    {
+      "seed": "TabPFN-3 arXiv submission history",
+      "leads": "2026-11-03 v3 discovered and causal §3.5/AppendixE.1 checked; 2026-05-28 v2 also read."
+    },
+    {
+      "seed": "Official software references in primary manuscripts",
+      "leads": "TabPFN, extensions, TuneTables, LoCalPFN, TabDPT, TabICL, S-LUCoS, Chunked TabPFN, test-time-compute repository."
+    }
+  ],
+  "inclusion": [
+    "Primary numeric-tabular FM context selection, optimization, retrieval, batching, or scaling methods relevant to a fixed causal predictor.",
+    "Closely adjacent annotation-acquisition work, explicitly separated from labeled-memory selection.",
+    "Seminal PFN localization theory and controlled retrieval mechanism evidence.",
+    "Backbone releases and compute alternatives needed to assess whether context truncation remains necessary.",
+    "One explicitly labeled software entry, excluded from independent-paper count."
+  ],
+  "exclusion": [
+    "Secondary summaries, AI-generated paper reviews and news as support for scientific claims; used only to discover primary URLs.",
+    "Unverified priority claims or claims of absence based on no search hits.",
+    "Independent duplicate cards for multiple versions of one paper; version differences instead recorded in metadata.",
+    "Generic tabular pretraining, application papers or LLM prompting without a meaningful context-selection/scaling link.",
+    "Sources published after the inclusive cutoff.",
+    "Treating code availability or permissive license as established when only an uninspected link exists."
+  ],
+  "unresolved": [
+    {
+      "source": "TAAR A28",
+      "issue": "Primary PDF anonymous; OpenReview forum/API browser challenge prevented author/decision verification. Secondary named authors/decision intentionally not adopted."
+    },
+    {
+      "source": "CRUMB A23",
+      "issue": "No official code URL confirmed in inspected paper/search; this is not proof that code does not exist."
+    },
+    {
+      "source": "MixturePFN A10",
+      "issue": "Conference PDF promises GitHub release but no official repository confirmed. Abstract language about experts is less precise than §3.2 dataset adapters; base and adapter roles retained."
+    },
+    {
+      "source": "ICD A07",
+      "issue": "Official code release not confirmed; workshop status corroborated on coauthor publication page."
+    },
+    {
+      "source": "VIP-COp A22",
+      "issue": "Anonymous official repository linked in paper; tool access blocked; license and contents not verified."
+    },
+    {
+      "source": "EPIC/TANN A26",
+      "issue": "Paper promises release on acceptance; no current official URL verified."
+    },
+    {
+      "source": "LimiX A34",
+      "issue": "Primary code link found; repository fetch timed out. Paper states Apache-2.0, but repository license not independently inspected; exact HTML version not pinned."
+    },
+    {
+      "source": "BAPS A30",
+      "issue": "Primary Algorithm1 stages and scores insufficiently operationalized for assumption-free reproduction; no official code confirmed."
+    },
+    {
+      "source": "TabPFN-3 A04",
+      "issue": "Direct uplift section describes RCT QINI, meta-learners and up-to50K scale, but inspected section does not specify enough split/context/seed detail for exact independent benchmark reconstruction."
+    },
+    {
+      "source": "Several peripheral entries",
+      "issue": "Abstract-only reading and unverified latest revisions are individually marked. A01/A05/A06/A14/A15/A19/A31/A32 do not support claims beyond their recorded evidence."
+    },
+    {
+      "source": "Scope boundary",
+      "issue": "Causal-specific context/active-learning and ranking literature handled by other tracks. Main review must reconcile overlaps and cannot infer priority from this track alone."
+    }
+  ],
+  "artifacts": {
+    "sources": "track_a_sources.json",
+    "notes": "track_a_notes.md"
+  },
+  "counts": {
+    "scientific_sources": 36,
+    "software_entries": 1
+  },
+  "execution": "No paper code, historical project changes, model runs or cloud jobs performed for this literature task."
+}
+

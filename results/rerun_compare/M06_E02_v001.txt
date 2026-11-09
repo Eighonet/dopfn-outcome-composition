@@ -1,0 +1,4 @@
+all_metrics.csv: 20 rows matched, 0 unmatched; all numbers equal to 1e-6
+diagnostics.csv: 8 rows matched, 0 unmatched; all numbers equal to 1e-6
+paired_interactions.csv: 4 rows matched, 0 unmatched; all numbers equal to 1e-6
+largest difference: 7.58752e-08

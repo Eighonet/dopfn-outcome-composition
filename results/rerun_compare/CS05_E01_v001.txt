@@ -1,0 +1,4 @@
+all_metrics.csv: 21 rows matched, 0 unmatched; all numbers equal to 1e-6
+mean_bootstrap_draws.csv: 500 rows matched, 0 unmatched; all numbers equal to 1e-6
+paired_deltas.csv: 6 rows matched, 0 unmatched; all numbers equal to 1e-6
+largest difference: 4.44089e-16

@@ -1,0 +1,4 @@
+all_metrics.csv: 12 rows matched, 6 unmatched; all numbers equal to 1e-6
+mean_bootstrap_draws.csv: 1000 rows matched, 0 unmatched; fm_minus_t_learner max|d|=0.313286, fm_minus_local_feature_mean max|d|=0.313286, fm_minus_x_learner max|d|=0.313286, fm_minus_s_learner max|d|=0.313286
+paired_deltas.csv: 12 rows matched, 0 unmatched; low max|d|=0.202975, high max|d|=0.185011, delta max|d|=0.15661
+largest difference: 0.313286

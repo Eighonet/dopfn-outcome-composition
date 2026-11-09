@@ -1,0 +1,4 @@
+all_metrics.csv: 96 rows matched, 0 unmatched; uplift_10_pp max|d|=1.31597, normalized_qini_auc max|d|=0.00780451, normalized_auuc max|d|=0.00151504
+dataset_summary.csv: 15 rows matched, 2 unmatched; mean_delta max|d|=0.00207798
+paired_deltas.csv: 48 rows matched, 0 unmatched; high max|d|=0.0118875, low max|d|=0.00965796, delta max|d|=0.00783638
+largest difference: 1.31597

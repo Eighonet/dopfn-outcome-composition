@@ -1,0 +1,5 @@
+all_metrics.csv: 5 rows matched, 0 unmatched; uplift_20_pp max|d|=0.115242, uplift_5_pp max|d|=0.0938547, uplift_10_pp max|d|=0.0784314, uplift_30_pp max|d|=0.0243603, normalized_qini_auc max|d|=0.000974302, normalized_auuc max|d|=0.000123542
+block_deltas.csv: 3 rows matched, 0 unmatched; delta_qhat max|d|=0.00214532
+block_metrics.csv: 12 rows matched, 0 unmatched; uplift_5_pp max|d|=0.454545, uplift_20_pp max|d|=0.237057, uplift_10_pp max|d|=0.161262, uplift_30_pp max|d|=0.100265, normalized_qini_auc max|d|=0.00212454, normalized_auuc max|d|=0.000288889
+paired_deltas.csv: 6 rows matched, 0 unmatched; high max|d|=0.156765, low max|d|=0.129377, delta max|d|=0.11525
+largest difference: 0.454545

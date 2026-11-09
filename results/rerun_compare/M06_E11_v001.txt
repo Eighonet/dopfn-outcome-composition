@@ -1,0 +1,3 @@
+all_metrics.csv: 192 rows matched, 0 unmatched; normalized_regret_at_20 max|d|=0.636676, normalized_pehe max|d|=0.178427, alpha max|d|=0.13, regret_at_20 max|d|=0.129249, pehe max|d|=0.0892134, cate_sd max|d|=0.0892099
+paired_interactions.csv: 8 rows matched, 0 unmatched; all numbers equal to 1e-6
+largest difference: 0.636676

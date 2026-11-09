@@ -1,0 +1,506 @@
+[
+  {
+    "query": "Improving uplift model evaluation on randomized controlled trial data",
+    "source_url": "https://api.crossref.org/works?rows=3&query.title=Improving%20uplift%20model%20evaluation%20on%20randomized%20controlled%20trial%20data",
+    "matches": [
+      {
+        "DOI": "10.1016/j.ejor.2023.09.018",
+        "title": [
+          "Improving uplift model evaluation on randomized controlled trial data"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0001-9049-2755",
+            "authenticated-orcid": false,
+            "given": "Björn",
+            "family": "Bokelmann",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7685-262X",
+            "authenticated-orcid": false,
+            "given": "Stefan",
+            "family": "Lessmann",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              3
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              3
+            ]
+          ]
+        },
+        "published-online": null,
+        "container-title": [
+          "European Journal of Operational Research"
+        ],
+        "volume": "313",
+        "issue": "2",
+        "page": "691-707"
+      },
+      {
+        "DOI": "10.1093/biomet/asae069",
+        "title": [
+          "Improving randomized controlled trial analysis via data-adaptive borrowing"
+        ],
+        "author": [
+          {
+            "ORCID": "https://orcid.org/0000-0002-3850-5587",
+            "authenticated-orcid": false,
+            "given": "Chenyin",
+            "family": "Gao",
+            "sequence": "first",
+            "affiliation": [
+              {
+                "name": "Department of Statistics, North Carolina State University , 2311 Stinson Drive , Raleigh, North Carolina 27695,",
+                "place": [
+                  "USA"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0001-7703-707X",
+            "authenticated-orcid": false,
+            "given": "Shu",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Department of Statistics, North Carolina State University , 2311 Stinson Drive , Raleigh, North Carolina 27695,",
+                "place": [
+                  "USA"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Mingyang",
+            "family": "Shan",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Eli Lilly & Company, Lilly Corporate Center , 893 Delaware Street , Indianapolis, Indiana 46285,",
+                "place": [
+                  "USA"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Wenyu",
+            "family": "Ye",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Eli Lilly & Company, Lilly Corporate Center , 893 Delaware Street , Indianapolis, Indiana 46285,",
+                "place": [
+                  "USA"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Ilya",
+            "family": "Lipkovich",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Eli Lilly & Company, Lilly Corporate Center , 893 Delaware Street , Indianapolis, Indiana 46285,",
+                "place": [
+                  "USA"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Douglas",
+            "family": "Faries",
+            "sequence": "additional",
+            "affiliation": [
+              {
+                "name": "Eli Lilly & Company, Lilly Corporate Center , 893 Delaware Street , Indianapolis, Indiana 46285,",
+                "place": [
+                  "USA"
+                ]
+              }
+            ],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              17
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              3,
+              16
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2024,
+              12,
+              17
+            ]
+          ]
+        },
+        "container-title": [
+          "Biometrika"
+        ],
+        "volume": "112",
+        "issue": "2",
+        "page": null
+      },
+      {
+        "DOI": "10.2196/preprints.71638",
+        "title": [
+          "Evaluation of the Caregiver Support Model: Randomized Controlled Trial (Preprint)"
+        ],
+        "author": [
+          {
+            "given": "Cyrus Lap Kwan",
+            "family": "Leung",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0635-0103",
+            "authenticated-orcid": false,
+            "given": "Kin-Kit",
+            "family": "Li",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "ORCID": "https://orcid.org/0000-0002-0548-0328",
+            "authenticated-orcid": false,
+            "given": "Dannii",
+            "family": "Yeung",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Alice",
+            "family": "Chong",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Marcus",
+            "family": "Chiu",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Xin",
+            "family": "Guan",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Tit Wing",
+            "family": "Lo",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2025,
+              1,
+              23
+            ]
+          ]
+        },
+        "published-print": null,
+        "published-online": null,
+        "container-title": null,
+        "volume": null,
+        "issue": null,
+        "page": null
+      }
+    ]
+  },
+  {
+    "query": "Who Should Be Treated? Empirical Welfare Maximization Methods for Treatment Choice",
+    "source_url": "https://api.crossref.org/works?rows=3&query.title=Who%20Should%20Be%20Treated%3F%20Empirical%20Welfare%20Maximization%20Methods%20for%20Treatment%20Choice",
+    "matches": [
+      {
+        "DOI": "10.1920/wp.cem.2017.2417",
+        "title": [
+          "Who should be treated? Empirical welfare maximization methods for treatment choice"
+        ],
+        "author": [
+          {
+            "given": "Toru",
+            "family": "Kitagawa",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Aleksey",
+            "family": "Tetenov",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2017,
+              5,
+              19
+            ]
+          ]
+        },
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2017,
+              5,
+              19
+            ]
+          ]
+        },
+        "container-title": null,
+        "volume": null,
+        "issue": null,
+        "page": null
+      },
+      {
+        "DOI": "10.3982/ecta13288",
+        "title": [
+          "Who Should Be Treated? Empirical Welfare Maximization Methods for Treatment Choice"
+        ],
+        "author": [
+          {
+            "given": "Toru",
+            "family": "Kitagawa",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          },
+          {
+            "given": "Aleksey",
+            "family": "Tetenov",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "vocabulary": "crossref",
+                "role": "author"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2018
+            ]
+          ]
+        },
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2018
+            ]
+          ]
+        },
+        "container-title": [
+          "Econometrica"
+        ],
+        "volume": "86",
+        "issue": "2",
+        "page": "591-616"
+      },
+      {
+        "DOI": "10.1920/wp.cem.2015.1015",
+        "title": [
+          "Who should be treated? Empirical welfare maximization methods for treatment choice"
+        ],
+        "author": [
+          {
+            "given": "Aleksey",
+            "family": "Tetenov",
+            "sequence": "first",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          },
+          {
+            "given": "Toru",
+            "family": "Kitagawa",
+            "sequence": "additional",
+            "affiliation": [],
+            "role": [
+              {
+                "role": "author",
+                "vocabulary": "crossref"
+              }
+            ]
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2015,
+              3,
+              10
+            ]
+          ]
+        },
+        "published-print": null,
+        "published-online": {
+          "date-parts": [
+            [
+              2015,
+              3,
+              10
+            ]
+          ]
+        },
+        "container-title": null,
+        "volume": null,
+        "issue": null,
+        "page": null
+      }
+    ]
+  }
+]

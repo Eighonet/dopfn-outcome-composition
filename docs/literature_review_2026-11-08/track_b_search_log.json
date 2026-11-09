@@ -1,0 +1,115 @@
+{
+  "track": "B: causal foundation models, causal meta-learning, active acquisition and experimental design",
+  "searched_on": "2026-11-08",
+  "cutoff_inclusive": "2026-11-08",
+  "timezone": "Europe/Moscow",
+  "method": "Targeted web search plus backward reference chaining from primary full texts; no claim of exhaustive systematic coverage.",
+  "actual_queries": [
+    "Do-PFN pretrained foundation model causal treatment effects paper",
+    "CausalPFN 2506.07918 CausalFM 2506.10914",
+    "\"2609.03003\" causal foundation models",
+    "\"PICLE-PFN\"",
+    "\"CausalBALD\" active learning treatment effects",
+    "\"CausalEPIG\"",
+    "\"QHTE\" treatment effect budget",
+    "\"active learning\" \"treatment effects\" \"optimal design\"",
+    "CausalBALD Jesson 2021 NeurIPS arxiv",
+    "\"Causal-EPIG\" arxiv",
+    "MACAL active learning causal treatment effect paper",
+    "\"CausalICL\" OR \"causal in-context\" treatment estimation foundation model",
+    "\"CCPFN\" causal foundation continuous treatment",
+    "\"TabPFN-CFM\" causal",
+    "\"IV-ICL\" causal",
+    "\"causal inference\" \"meta-learning\" \"in-context\" 2024 2025 2026",
+    "\"CCPFN\" \"arxiv\"",
+    "\"CausalLongPFN\"",
+    "\"CausalPFN\" \"coverage\" Mourao",
+    "\"causal\" \"prior-fitted\" \"2026\" \"treatment\"",
+    "\"Unveiling prior-data fitted networks on causal effect estimation\"",
+    "\"Black Box Causal Inference\" \"Meta Prediction\"",
+    "\"Zero-shot causal learning\" NeurIPS 2023",
+    "\"Towards Causal Foundation Model\" \"Attention\"",
+    "\"Unveiling Prior-Data\" \"openreview.net\"",
+    "\"Unveiling Prior-Data\" github",
+    "\"Meta-learning for heterogeneous treatment effect estimation with closed-form solvers\"",
+    "\"Causal-EPIG\" github",
+    "\"Sample Constrained Treatment Effect Estimation\"",
+    "\"Frequentist Consistency of Prior-Data Fitted Networks for Causal Inference\"",
+    "\"Unveiling Prior-Data Fitted Networks\" arxiv",
+    "\"Unveiling Prior-Data Fitted Networks\" \"PWF\"",
+    "site:proceedings.mlr.press \"Towards Causal Foundation Model\"",
+    "site:proceedings.mlr.press \"Causal-EPIG\"",
+    "site:proceedings.mlr.press \"Frequentist Consistency\"",
+    "\"Meta-learning for heterogeneous\" \"6093\"",
+    "site:proceedings.neurips.cc \"CausalPFN\" \"2025\"",
+    "site:proceedings.neurips.cc \"Do-PFN\" \"2025\"",
+    "\"CausalPFN\" \"context selection\" OR \"retrieval\" \"2026\"",
+    "\"causal\" \"in-context\" \"selection\" \"treatment effects\" \"2026\"",
+    "\"Improving Treatment Effect Estimation with LLM-Based Data Augmentation\"",
+    "\"GATE\" \"2Q3gFNbpAr\""
+  ],
+  "inclusion": [
+    "Primary paper, proceedings, author repository or author institution record available.",
+    "Direct causal-FM estimation or a methodological precursor relevant to frozen-context selection.",
+    "Active outcome acquisition or experimental-design work with an explicit treatment-effect objective.",
+    "Publication/version dated no later than cutoff; latest accessible version recorded.",
+    "ATE, CATE/PEHE, uplift-policy, longitudinal CAPO and structural-discovery claims kept distinct."
+  ],
+  "exclusion": [
+    "Secondary AI summaries used only for discovery, not evidentiary claims: Pith, Lacuna, alphaXiv, EmergentMind, HypePaper, Paperium, PaperPeel and similar.",
+    "Unrelated educational active learning, general clinical guidance and unrelated context-stratified epidemiology search hits.",
+    "Pure causal-discovery models without a directly relevant effect-estimation/context mechanism.",
+    "Duplicates of preprint, conference and workshop versions retained as one source card.",
+    "Generic ICL, policy-learning and uplift-metric papers assigned to other review tracks."
+  ],
+  "source_counts": {
+    "included": 25,
+    "full_text_relevant_sections": 23,
+    "indexed_primary_full_text_excerpts_only": 1,
+    "abstract_only": 1
+  },
+  "full_text_access_failures": [
+    {
+      "source_id": "B13",
+      "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wang26fl/wang26fl.pdf",
+      "reason": "Web tool rejected application/octet-stream; direct proceedings PDF path also inaccessible.",
+      "consequence": "Only official abstract claims retained; exact theorem and interventional data access unverified."
+    },
+    {
+      "source_id": "B22",
+      "url": "https://openreview.net/pdf?id=7j2eMymTTP",
+      "reason": "OpenReview forum browser challenge and PDF inaccessible.",
+      "consequence": "Final venue/title/abstract checked at PMLR; detailed methods checked against arXiv v1, with version caveat."
+    },
+    {
+      "source_id": "B25",
+      "url": "https://openreview.net/pdf?id=2Q3gFNbpAr",
+      "reason": "Direct PDF and attachment return browser challenge.",
+      "consequence": "Primary-PDF indexed method/AppendixF.10 excerpts plus author publication list examined; exact revision date unknown."
+    }
+  ],
+  "critical_implementation_audit": {
+    "dopfn_official_main_revision": "90d67433b43c4d52d752dc336070f525ff856e0b",
+    "revision_date": "2025-07-16T18:11:36Z",
+    "verification_source": "https://api.github.com/repos/jr2021/Do-PFN/commits/main",
+    "pinned_readme": "https://raw.githubusercontent.com/jr2021/Do-PFN/90d67433b43c4d52d752dc336070f525ff856e0b/README.md",
+    "pinned_readme_http": 200,
+    "pinned_readme_sha256": "e24c862512fa999a8b75bda71c4efa6417f5c97621bf2e70d7f1911f22b9a9ce",
+    "readme_evidence_location": "line9: documented continuous numerical outcome/covariates, binary treatment",
+    "local_revision_matches": true,
+    "local_dopfn_wrapper": "repro/home/projects/smiles/cpu_smoke/fm_benchmark.py:292\u2013317",
+    "local_causal_pfn_source": "repro/.venv/Lib/site-packages/causalpfn/causal_estimator.py:165\u2013270, package0.1.5",
+    "note": "Local code inspection was read-only; no model run, file edit or experiment was performed in this literature track."
+  },
+  "unresolved": [
+    "Do-PFN released checkpoint identity relative to paper v1/v1.1 must be established separately.",
+    "README scope does not by itself fully characterize probability support of every released checkpoint.",
+    "CausalPFN paper retrieval description differs from installed0.1.5 wrapper; compare pinned implementations, not names.",
+    "PICLE-PFN, IV-ICL and TabPFN-CFM code availability not established from checked primary pages.",
+    "Paper-linked CInA directory accessibility not established; official-repository issue113 reports missing code.",
+    "Absolute absence of prior frozen causal-FM policy-utility retrieval is not established by this search.",
+    "Publication statuses without official venue verification remain explicitly preprint/unknown.",
+    "Potential adjacent Nov4 paper on PFN variable selection was surfaced but not included: assigned topic is causal estimation/acquisition, not generic variable selection.",
+    "TCPFN2606.20889 with FAISS retrieval concerns causal discovery; not counted as a static uplift selector."
+  ]
+}

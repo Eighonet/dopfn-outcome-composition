@@ -1,0 +1,4 @@
+all_metrics.csv: 128 rows matched, 0 unmatched; inference_seconds max|d|=711.299
+diagnostics.csv: 32 rows matched, 0 unmatched; inference_seconds max|d|=711.299
+paired_interactions.csv: 16 rows matched, 0 unmatched; all numbers equal to 1e-6
+largest difference: 711.299

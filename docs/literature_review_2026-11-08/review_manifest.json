@@ -1,0 +1,32 @@
+{
+  "built_at_utc": "2026-11-08T09:53:10.312426+00:00",
+  "cutoff": "2026-11-08",
+  "counts": {
+    "sources": 123,
+    "papers": 122,
+    "software": 1,
+    "selected_full_text_sections": 93,
+    "limited_primary_text": 30,
+    "source_records_with_code_link": 53,
+    "tracks": {
+      "A": 37,
+      "B": 25,
+      "C": 30,
+      "D": 31
+    }
+  },
+  "checks": [
+    "unique IDs and normalized titles",
+    "required primary metadata",
+    "nonfuture publication years",
+    "valid URL schemes",
+    "no Unicode replacement character",
+    "no unfilled review placeholders"
+  ],
+  "sha256": {
+    "track_a_sources.json": "33590fc0d5ce87606852acf03072eb4b29fa0f65ade1b9563ae6c5387ed58ad3",
+    "track_b_sources.json": "a022d35f069dd9493075214352d13eb9a9fa392bc6966898633a7d5444921a2f",
+    "track_c_sources.json": "9df70bd5f25a48d296001e7f75d0c4777323170122f4bcf2989d97fcbc432d93",
+    "track_d_sources.json": "0cb8928ffd313ad9886f84d1dc274386b4c617623160b0a662e1a2299266b6d1"
+  }
+}

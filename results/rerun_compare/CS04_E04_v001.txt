@@ -1,0 +1,3 @@
+all_metrics.csv: 40 rows matched, 0 unmatched; inference_seconds max|d|=2223.82, normalized_qini_auc max|d|=6.63968e-06
+paired_differences.csv: 10 rows matched, 0 unmatched; all numbers equal to 1e-6
+largest difference: 2223.82

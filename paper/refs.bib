@@ -1,7 +1,8 @@
 @inproceedings{hollmann2023tabpfn,
   title     = {{TabPFN}: A Transformer That Solves Small Tabular Classification Problems in a Second},
   author    = {Hollmann, Noah and M{\"u}ller, Samuel and Eggensperger, Katharina and Hutter, Frank},
-  booktitle = {International Conference on Learning Representations (ICLR)},
+  booktitle = {International Conference on Learning Representations},
+  publisher = {OpenReview.net},
   year      = {2023}
 }
 
@@ -17,42 +18,62 @@
 @inproceedings{robertson2025dopfn,
   title     = {{Do-PFN}: In-Context Learning for Causal Effect Estimation},
   author    = {Robertson, Jake and Reuter, Arik and Guo, Siyuan and Hollmann, Noah and Hutter, Frank and Sch{\"o}lkopf, Bernhard},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  booktitle = {Advances in Neural Information Processing Systems},
+  publisher = {Curran Associates, Inc.},
+  volume    = {38},
   year      = {2025}
 }
 
 @inproceedings{balazadeh2025causalpfn,
   title     = {{CausalPFN}: Amortized Causal Effect Estimation via In-Context Learning},
-  author    = {Balazadeh, Vahid and Kamkari, Hamidreza and Thomas, Valentin and Li, Benson and Ma, Junwei and Cresswell, Jesse C. and Krishnan, Rahul G.},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  author    = {Balazadeh, Vahid and Kamkari, Hamidreza and Thomas, Valentin and Ma, Junwei and Li, Bingru and Cresswell, Jesse C. and Krishnan, Rahul G.},
+  booktitle = {Advances in Neural Information Processing Systems},
+  publisher = {Curran Associates, Inc.},
+  volume    = {38},
   year      = {2025}
 }
 
 @inproceedings{thomas2024retrieval,
   title     = {Retrieval \& Fine-Tuning for In-Context Tabular Models},
   author    = {Thomas, Valentin and Ma, Junwei and Hosseinzadeh, Rasa and Golestan, Keyvan and Yu, Guangwei and Volkovs, Maksims and Caterini, Anthony},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  booktitle = {Advances in Neural Information Processing Systems},
+  publisher = {Curran Associates, Inc.},
+  volume    = {37},
   year      = {2024}
 }
 
-@article{mcdowell2026imbalance,
-  title   = {Correcting Class Imbalance in Prior-Data Fitted Networks for Tabular Classification},
-  author  = {McDowell, Samuel and Stromberg, Nathan and Sankar, Lalitha},
-  journal = {arXiv preprint arXiv:2605.21742},
-  year    = {2026}
+@inproceedings{feuer2024tunetables,
+  title     = {{TuneTables}: Context Optimization for Scalable Prior-Data Fitted Networks},
+  author    = {Feuer, Benjamin and Schirrmeister, Robin Tibor and Cherepanova, Valeriia and Hegde, Chinmay and Hutter, Frank and Goldblum, Micah and Cohen, Niv and White, Colin},
+  booktitle = {Advances in Neural Information Processing Systems},
+  publisher = {Curran Associates, Inc.},
+  volume    = {37},
+  year      = {2024}
 }
 
-@article{diemert2021criteo,
-  title   = {A Large Scale Benchmark for Individual Treatment Effect Prediction and Uplift Modeling},
-  author  = {Diemert, Eustache and Betlei, Artem and Renaudin, Christophe and Amini, Massih-Reza and Gregoir, Th{\'e}ophane and Rahier, Thibaud},
-  journal = {arXiv preprint arXiv:2111.10106},
-  year    = {2021}
+@misc{mcdowell2026imbalance,
+  title         = {Correcting Class Imbalance in Prior-Data Fitted Networks for Tabular Classification},
+  author        = {McDowell, Samuel and Stromberg, Nathan and Sankar, Lalitha},
+  year          = {2026},
+  eprint        = {2605.21742},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG}
+}
+
+@misc{diemert2021criteo,
+  title         = {A Large Scale Benchmark for Individual Treatment Effect Prediction and Uplift Modeling},
+  author        = {Diemert, Eustache and Betlei, Artem and Renaudin, Christophe and Amini, Massih-Reza and Gregoir, Th{\'e}ophane and Rahier, Thibaud},
+  year          = {2021},
+  eprint        = {2111.10106},
+  archivePrefix = {arXiv},
+  primaryClass  = {stat.ML}
 }
 
 @inproceedings{zhong2022descn,
   title     = {{DESCN}: Deep Entire Space Cross Networks for Individual Treatment Effect Estimation},
   author    = {Zhong, Kailiang and Xiao, Fengtong and Ren, Yan and Liang, Yaorong and Yao, Wenqing and Yang, Xiaofeng and Cen, Ling},
   booktitle = {Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  publisher = {ACM},
   pages     = {4612--4620},
   year      = {2022}
 }
@@ -61,6 +82,7 @@
   title     = {Causal Inference and Uplift Modelling: A Review of the Literature},
   author    = {Gutierrez, Pierre and G{\'e}rardy, Jean-Yves},
   booktitle = {Proceedings of The 3rd International Conference on Predictive Applications and APIs},
+  publisher = {PMLR},
   series    = {PMLR},
   volume    = {67},
   pages     = {1--13},
@@ -91,6 +113,7 @@
   title     = {Uplift Modeling with High Class Imbalance},
   author    = {Nyberg, Otto and Ku{\'s}mierczyk, Tomasz and Klami, Arto},
   booktitle = {Proceedings of The 13th Asian Conference on Machine Learning},
+  publisher = {PMLR},
   series    = {PMLR},
   volume    = {157},
   pages     = {315--330},
@@ -152,4 +175,14 @@
   journal = {Direct Marketing Analytics Journal},
   pages   = {14--21},
   year    = {2007}
+}
+
+@article{abadie2018endogenous,
+  title   = {Endogenous Stratification in Randomized Experiments},
+  author  = {Abadie, Alberto and Chingos, Matthew M. and West, Martin R.},
+  journal = {The Review of Economics and Statistics},
+  volume  = {100},
+  number  = {4},
+  pages   = {567--580},
+  year    = {2018}
 }

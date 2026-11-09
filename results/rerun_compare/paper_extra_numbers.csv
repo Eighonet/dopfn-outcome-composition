@@ -1,0 +1,52 @@
+quantity,value,low,high,note
+full holdout T seed 42: uplift top 10% (pp),2.300841353019663,,,
+full holdout T seed 42: uplift bottom 10% (pp),2.74681720418877,,,
+full holdout T seed 42: mean prediction (pp),-5.360062156485267,,,
+full holdout T seed 42: median prediction (pp),-0.1689378172159195,,,
+full holdout T seed 42: share of negative predictions,0.9670116021735331,,,
+full holdout T seed 43: uplift top 10% (pp),1.6716171788137932,,,
+full holdout T seed 43: uplift bottom 10% (pp),2.8523420480151356,,,
+full holdout T seed 43: mean prediction (pp),-9.6234786487399,,,
+full holdout T seed 43: median prediction (pp),-0.2885129302740097,,,
+full holdout T seed 43: share of negative predictions,0.9385463041055094,,,
+full holdout T seed 44: uplift top 10% (pp),1.3115062784406237,,,
+full holdout T seed 44: uplift bottom 10% (pp),2.3153490190772534,,,
+full holdout T seed 44: mean prediction (pp),-7.987466886475228,,,
+full holdout T seed 44: median prediction (pp),-0.39656609296798706,,,
+full holdout T seed 44: share of negative predictions,0.9379096984695676,,,
+full holdout TY seed 42: uplift top 10% (pp),2.6869099126693277,,,
+full holdout TY seed 42: uplift bottom 10% (pp),0.6776025128718194,,,
+full holdout TY seed 42: mean prediction (pp),0.7290792654963737,,,
+full holdout TY seed 42: median prediction (pp),0.3552023321390152,,,
+full holdout TY seed 42: share of negative predictions,0.2925496604929133,,,
+full holdout TY seed 43: uplift top 10% (pp),3.978610017306272,,,
+full holdout TY seed 43: uplift bottom 10% (pp),0.2563099758383241,,,
+full holdout TY seed 43: mean prediction (pp),0.9449458097118644,,,
+full holdout TY seed 43: median prediction (pp),0.4467181861400604,,,
+full holdout TY seed 43: share of negative predictions,0.2786861758674408,,,
+full holdout TY seed 44: uplift top 10% (pp),4.0188768382571975,,,
+full holdout TY seed 44: uplift bottom 10% (pp),0.35799483241924085,,,
+full holdout TY seed 44: mean prediction (pp),1.6471200596041995,,,
+full holdout TY seed 44: median prediction (pp),0.9647998958826065,,,
+full holdout TY seed 44: share of negative predictions,0.2141335047504248,,,
+full holdout ATE (pp),1.0106177431507344,,,
+full holdout visit rate,0.047197645753081066,,,
+"full holdout T+Y - T, qhat, Welch",0.09355288176873472,0.06441588646921528,0.12268987706825416,df 3.4
+"full holdout T+Y - T, auuc, Welch",0.03702782732131296,0.025564166096683136,0.04849148854594279,df 3.4
+"full holdout T+Y - T, uplift@10% (pp), Welch",1.799753231134585,0.25135142285221956,3.3481550394169504,df 3.5
+"subsample: ranking by mu0 alone, qhat",0.08072130905212227,,,
+"subsample: ranking by mu0 alone, auuc",0.03189655820462392,,,
+"subsample: ranking by mu0 alone, uplift@10% (pp)",4.335378242136512,,,
+subsample 20%: mean prediction over 10 contexts (pp),6.8171208416187214,5.528927212383598,8.054602315869182,low/high = range
+subsample 20%: median prediction (pp),-0.06131135858595371,-0.09549036622047424,-0.011549890041351318,low/high = range
+"Criteo CV rho(score, mu0), R",-0.7003554145550246,,,
+"Criteo CV rho(score, mu0), 75%",0.12981217463209174,,,
+"LZD CV qhat, 10%",-0.0168806741780604,-0.05504995989463039,0.021288611538509594,rho +0.187
+"LZD CV qhat, 20%",-0.010641637573939593,-0.029075116324583268,0.007791841176704083,rho +0.303
+"LZD CV qhat, 35%",0.002195396107514013,-0.017684164634044403,0.02207495684907243,rho -0.084
+"LZD CV qhat, 75%",-0.010537863005865103,-0.049491733434804244,0.02841600742307404,rho -0.147
+"LZD CV qhat, R",-0.0166478150169719,-0.042447706926413864,0.009152076892470065,rho -0.140
+"LZD CV qhat, T",-0.015818025055707334,-0.047960247590978285,0.016324197479563617,rho -0.181
+"LZD CV qhat, TY",0.015751021581053588,-0.016300830579922907,0.047802873742030086,rho +0.044
+"LZD CV 20% - T+Y, qhat",-0.02639265915499318,-0.0747763558516472,0.021991037541660843,
+"LZD CV T+Y - T, qhat",0.031569046636760925,-0.026549036112946317,0.08968712938646817,

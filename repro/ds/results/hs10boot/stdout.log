@@ -1,0 +1,42 @@
+[2026-11-09 21:20:04] kind=hs10boot host=m2-<id> cpus=32 python=Python 3.11.13
+[2026-11-09 21:20:04] unpack code
+[2026-11-09 21:20:04] unpack state
+part 1: 31 draws
+part 0: 31 draws
+part 11: 31 draws
+part 7: 31 draws
+part 30: 31 draws
+part 9: 31 draws
+part 23: 31 draws
+part 12: 31 draws
+part 19: 31 draws
+part 10: 31 draws
+part 22: 31 draws
+part 4: 31 draws
+part 2: 31 draws
+part 28: 31 draws
+part 5: 31 draws
+part 24: 31 draws
+part 8: 31 draws
+part 27: 31 draws
+part 13: 31 draws
+part 26: 31 draws
+part 18: 31 draws
+part 17: 31 draws
+part 20: 31 draws
+part 31: 31 draws
+part 3: 31 draws
+part 16: 31 draws
+part 14: 31 draws
+part 29: 31 draws
+part 6: 31 draws
+part 21: 31 draws
+part 25: 31 draws
+part 15: 31 draws
+                 contrast  draws    mean     low   high  share_le_0
+           20% - TY, qhat    992  0.0246  0.0054 0.0434      0.0101
+        20% - TY, up10 pp    992  1.1621 -0.1468 2.3928      0.0454
+20% - ref S-learner, qhat    992 -0.0079 -0.0221 0.0064      0.8720
+[2026-11-09 21:23:14] pack repro/rerun_compare/hs10_contrasts.csv
+-rw-r--r-- 1 root root 363 Nov  9 21:23 /job/out_m2h
+[2026-11-09 21:23:14] done

@@ -3,9 +3,9 @@
 # Line A: resume E17 -> compare with the archive -> adopt (no commit) -> E18.
 # Line B: resume E19 in the original clone; after it, LZD: CS01/E04 -> adopt -> CS01/E05 -> adopt -> M01/E03.
 # Nothing is committed: CPU runners are still active and packagers compare the commit.
-R="/c/Users/Eighonet Aerta/Desktop/ai4s/causal_fm_project/repro"; cd "$R"
+R="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"; cd "$R"
 source rerun_env.sh                      # PY, RL, REPRO_DEVICE=cuda, REPRO_BATCH=32 (the batch E17 started with)
-DR='C:\Users\Eighonet Aerta\Desktop\ai4s\causal_fm_project\data_A_cleaned'
+DR="$(winpath "${DATA_ROOT:-$R/../data_A_cleaned}")"
 NL="$RL/night.log"; START=${NIGHT_START:-202611080100}
 say(){ echo "$(date '+%F %T') $*" >> "$NL"; }
 newest(){ ls "$1" | grep -E '^[0-9]{8}T[0-9]{6}_[0-9]+Z$' | grep -v "$2"; }   # the one snapshot id that is not archived

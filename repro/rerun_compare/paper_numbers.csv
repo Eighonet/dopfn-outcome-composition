@@ -1,0 +1,150 @@
+section,quantity,value,paper,ok,source
+Setup,Criteo rows (millions),13.979592,13.98,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+Setup,holdout rows,2093918.0,2093918.0,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+Setup,development rows (millions; 'almost 12M'),11.885674,,,home/projects/smiles/results/fm_holdout/criteo/*.json
+Setup,"features used (12 minus f7, f10)",10.0,10.0,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout",T: q,-0.04560356540546152,-0.046,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout",T: auuc,-0.018106039094809647,-0.018,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout",T: up10,1.7617745031748855,1.76,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout",T+Y: q,0.04794931636327321,0.048,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout",T+Y: auuc,0.018921788226503315,0.019,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout",T+Y: up10,3.5615277343094704,3.56,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout","T+Y - T: q, paired by seed [mean]",0.09355288176873472,0.094,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout","T+Y - T: q, paired by seed [low]",0.03707452060879895,0.037,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout","T+Y - T: q, paired by seed [high]",0.15003124292867048,0.15,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout","T+Y - T: auuc, paired by seed [mean]",0.03702782732131296,0.037,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout","T+Y - T: auuc, paired by seed [low]",0.01472460452666454,0.015,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout","T+Y - T: auuc, paired by seed [high]",0.05933105011596138,0.059,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout","T+Y - T: up10, paired by seed [mean]",1.7997532311345852,1.8,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout","T+Y - T: up10, paired by seed [low]",-1.282207088660115,-1.28,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+"Table 1, full holdout","T+Y - T: up10, paired by seed [high]",4.881713550929286,4.88,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+RQ1,"T: top-10% uplift, lowest seed (pp)",1.3115062784406237,1.3,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+RQ1,"T: top-10% uplift, highest seed (pp)",2.300897802214853,2.3,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+RQ1,"T+Y: top-10% uplift, lowest seed (pp)",2.686960994677952,2.7,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+RQ1,"T+Y: top-10% uplift, highest seed (pp)",4.018946828201613,4.0,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+RQ4,"T: mean predicted effect, closest to zero (pp)",-5.360062156485267,-5.0,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+RQ4,"T: mean predicted effect, farthest from zero (pp)",-9.6234786487399,-10.0,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+Discussion,"context SD of Q-hat, smaller of CausalPFN / TabPFN-T (T, K=4,096)",0.040897954987892775,0.04,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+Discussion,"context SD of Q-hat, larger of CausalPFN / TabPFN-T (T, K=4,096)",0.047067602226630735,0.05,True,home/projects/smiles/results/fm_holdout/criteo/*.json
+Setup,holdout average effect (pp),1.0106177431507344,1.01,True,"(from npz, via rerun_compare/paper_extra_numbers.csv)"
+Introduction,holdout visit rate (%),4.7197645753080995,4.7,True,"(from npz, via rerun_compare/paper_extra_numbers.csv)"
+RQ1,"T: bottom-10% uplift, lowest seed (pp)",2.315349019077253,2.3,True,"(from npz, via rerun_compare/paper_extra_numbers.csv)"
+RQ1,"T: bottom-10% uplift, highest seed (pp)",2.852342048015136,2.9,True,"(from npz, via rerun_compare/paper_extra_numbers.csv)"
+RQ1,"TY: bottom-10% uplift, lowest seed (pp)",0.2563099758383241,0.3,True,"(from npz, via rerun_compare/paper_extra_numbers.csv)"
+RQ1,"TY: bottom-10% uplift, highest seed (pp)",0.6776025128718194,0.7,True,"(from npz, via rerun_compare/paper_extra_numbers.csv)"
+RQ4,20%: mean predicted effect over 10 contexts (pp),6.8171208416187214,6.8,True,"(from npz, via rerun_compare/paper_extra_numbers.csv)"
+"Table 1, subsample",T (n=3): qhat,-0.052803373771241134,-0.053,True,rerun_compare/holdout_share_runs.csv
+"Table 1, subsample",T (n=3): auuc,-0.020984932228112565,-0.021,True,rerun_compare/holdout_share_runs.csv
+"Table 1, subsample",T (n=3): up10,1.4300305656344985,1.43,True,rerun_compare/holdout_share_runs.csv
+"Table 1, subsample",35% (n=3): qhat,-0.007378372042697867,-0.007,True,rerun_compare/holdout_share_runs.csv
+"Table 1, subsample",35% (n=3): auuc,-0.0029374851125381334,-0.003,True,rerun_compare/holdout_share_runs.csv
+"Table 1, subsample",35% (n=3): up10,2.120324169727606,2.12,True,rerun_compare/holdout_share_runs.csv
+"Table 1, subsample",T+Y (n=10): qhat,0.04927289317451945,0.049,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample",T+Y (n=10): auuc,0.01941981465762615,0.019,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample",T+Y (n=10): up10,3.4988631987418657,3.5,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample",20% (n=10): qhat,0.0738059227690759,0.074,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample",20% (n=10): auuc,0.029138772305023587,0.029,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample",20% (n=10): up10,4.672830867304591,4.67,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample","HistGB S-learner, 2M rows (n=1): qhat",0.0816841609473342,0.082,True,rerun_compare/holdout_share_runs.csv
+"Table 1, subsample","HistGB S-learner, 2M rows (n=1): auuc",0.0321448709020314,0.032,True,rerun_compare/holdout_share_runs.csv
+"Table 1, subsample","HistGB S-learner, 2M rows (n=1): up10",5.356964993128504,5.36,True,rerun_compare/holdout_share_runs.csv
+"Table 1, subsample","20% - T+Y: qhat, paired by seed [mean]",0.024533029594556437,0.025,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample","20% - T+Y: qhat, paired by seed [low]",0.014686864685864425,0.015,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample","20% - T+Y: qhat, paired by seed [high]",0.034379194503248445,0.034,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample","20% - T+Y: auuc, paired by seed [mean]",0.00971895764739744,0.01,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample","20% - T+Y: auuc, paired by seed [low]",0.00584558076182418,0.006,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample","20% - T+Y: auuc, paired by seed [high]",0.0135923345329707,0.014,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample","20% - T+Y: up10, paired by seed [mean]",1.1739676685627263,1.17,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample","20% - T+Y: up10, paired by seed [low]",0.3237056641053351,0.32,True,rerun_compare/hs10_runs.csv
+"Table 1, subsample","20% - T+Y: up10, paired by seed [high]",2.0242296730201175,2.02,True,rerun_compare/hs10_runs.csv
+RQ4,contexts where 20% beats T+Y in Q-hat (of 10),10.0,10.0,True,rerun_compare/hs10_runs.csv
+RQ4,20% - T+Y: uplift@10% (pp) [mean],1.1739676685627263,1.2,True,rerun_compare/hs10_runs.csv
+RQ4,20% - T+Y: uplift@10% (pp) [low],0.3237056641053351,0.3,True,rerun_compare/hs10_runs.csv
+RQ4,20% - T+Y: uplift@10% (pp) [high],2.0242296730201175,2.0,True,rerun_compare/hs10_runs.csv
+RQ4,"HistGB S-learner minus 20%: Q-hat, over contexts [mean]",0.007878238178258303,0.008,True,rerun_compare/hs10_runs.csv
+RQ4,"HistGB S-learner minus 20%: Q-hat, over contexts [low]",0.0027528916109438905,0.003,True,rerun_compare/hs10_runs.csv
+RQ4,"HistGB S-learner minus 20%: Q-hat, over contexts [high]",0.013003584745572717,0.013,True,rerun_compare/hs10_runs.csv
+RQ3,"first-check 20% minus 35%: Q-hat, paired by seed [mean]",0.08241390009537054,0.082,True,rerun_compare/holdout_share_runs.csv
+RQ3,"first-check 20% minus 35%: Q-hat, paired by seed [low]",0.058263666529317616,0.058,True,rerun_compare/holdout_share_runs.csv
+RQ3,"first-check 20% minus 35%: Q-hat, paired by seed [high]",0.10656413366142348,0.107,True,rerun_compare/holdout_share_runs.csv
+"Setup, holdout use",first check 20% - T+Y (3 contexts): Q-hat [mean],0.024489302334196467,0.024,True,rerun_compare/holdout_share_runs.csv
+"Setup, holdout use",first check 20% - T+Y (3 contexts): Q-hat [low],-0.003384342399214566,-0.003,True,rerun_compare/holdout_share_runs.csv
+"Setup, holdout use",first check 20% - T+Y (3 contexts): Q-hat [high],0.052362947067607496,0.052,True,rerun_compare/holdout_share_runs.csv
+RQ3,holdout T: contexts with rho < 0 (of 3),3.0,3.0,True,rerun_compare/holdout_share_runs.csv
+RQ3,holdout T: mean rho,-0.4825300095112183,,,rerun_compare/holdout_share_runs.csv
+RQ3,holdout 35%: contexts with rho < 0 (of 3),3.0,3.0,True,rerun_compare/holdout_share_runs.csv
+RQ3,holdout 35%: mean rho,-0.46222447490585833,,,rerun_compare/holdout_share_runs.csv
+RQ3,holdout T and 35% together: mean rho,-0.4723772422085384,-0.47,True,rerun_compare/holdout_share_runs.csv
+RQ3,holdout 20%: contexts with rho > 0 (of 10),10.0,10.0,True,rerun_compare/hs10_runs.csv
+RQ3,holdout 20%: mean rho,0.3932815177340003,0.39,True,rerun_compare/hs10_runs.csv
+"Abstract, RQ4","20% - T+Y: Q-hat, two-level low",0.0053652710113905,0.005,True,"(from npz, via rerun_compare/hs10_contrasts.csv: two-level bootstrap)"
+"Abstract, RQ4","20% - T+Y: Q-hat, two-level high",0.0433773905007947,0.043,True,"(from npz, via rerun_compare/hs10_contrasts.csv: two-level bootstrap)"
+RQ4,"20% - T+Y: uplift@10%, two-level low (pp)",-0.1468321916328193,-0.1,True,"(from npz, via rerun_compare/hs10_contrasts.csv: two-level bootstrap)"
+RQ4,"20% - T+Y: uplift@10%, two-level high (pp)",2.392803324955492,2.4,True,"(from npz, via rerun_compare/hs10_contrasts.csv: two-level bootstrap)"
+RQ4,HistGB S-learner minus 20%: two-level low,-0.0064200515969255,-0.006,True,"(from npz, via rerun_compare/hs10_contrasts.csv: two-level bootstrap)"
+RQ4,HistGB S-learner minus 20%: two-level high,0.0220522849244411,0.022,True,"(from npz, via rerun_compare/hs10_contrasts.csv: two-level bootstrap)"
+RQ4,20%: mean predicted effect from the 10 DataSphere run JSONs (pp),6.8171208416187214,6.8,True,ds/results/hs_*/unpacked/.../holdout_dopfn_share20_*.json
+"RQ1, Fig. 2a","R and T, K 512-4,096: lowest mean Q-hat",-0.08549489426150814,-0.085,True,home18/projects/smiles/results/fm_cv/criteo/fold*_dopfn_*.json
+"RQ1, Fig. 2a","R and T, K 512-4,096: highest mean Q-hat",-0.07190593729895643,-0.072,True,home18/projects/smiles/results/fm_cv/criteo/fold*_dopfn_*.json
+"RQ1, Fig. 2a","T+Y, K 512-4,096: lowest mean Q-hat",0.03737387508111687,0.037,True,home18/projects/smiles/results/fm_cv/criteo/fold*_dopfn_*.json
+"RQ1, Fig. 2a","T+Y, K 512-4,096: highest mean Q-hat",0.055967759953476255,0.056,True,home18/projects/smiles/results/fm_cv/criteo/fold*_dopfn_*.json
+"Abstract, RQ1","Criteo T, K=1,024: Q-hat",-0.07731062657820581,-0.077,True,rerun_compare/mechanism_runs.csv
+Abstract,"Criteo T+Y, K=1,024: Q-hat",0.05576476483298063,0.056,True,rerun_compare/mechanism_runs.csv
+RQ1,Criteo T: folds with negative mean (of 5),5.0,5.0,True,rerun_compare/mechanism_runs.csv
+RQ1,Criteo T: runs with negative Q-hat (of 15),14.0,14.0,True,rerun_compare/mechanism_runs.csv
+"RQ1, Fig. 2b","Criteo Do-PFN T+Y - T, fold level [mean]",0.13307539141118646,0.133,True,rerun_compare/mechanism_runs.csv
+"RQ1, Fig. 2b","Criteo Do-PFN T+Y - T, fold level [low]",0.10169698867144537,0.102,True,rerun_compare/mechanism_runs.csv
+"RQ1, Fig. 2b","Criteo Do-PFN T+Y - T, fold level [high]",0.16445379415092753,0.164,True,rerun_compare/mechanism_runs.csv
+"RQ2, Fig. 2b",CausalPFN T+Y - T,0.005957694564897737,0.006,True,rerun_compare/mechanism_runs.csv
+"RQ2, Fig. 2b",TabPFN-T T+Y - T,-0.009737006477498414,-0.01,True,rerun_compare/mechanism_runs.csv
+RQ2,"Do-PFN gain minus CausalPFN gain, fold level [mean]",0.12711769684628868,0.127,True,rerun_compare/mechanism_runs.csv
+RQ2,"Do-PFN gain minus CausalPFN gain, fold level [low]",0.04417778226445146,0.044,True,rerun_compare/mechanism_runs.csv
+RQ2,"Do-PFN gain minus CausalPFN gain, fold level [high]",0.2100576114281259,0.21,True,rerun_compare/mechanism_runs.csv
+RQ2,"Do-PFN gain minus TabPFN-T gain, fold level [mean]",0.14281239788868488,0.143,True,rerun_compare/mechanism_runs.csv
+RQ2,"Do-PFN gain minus TabPFN-T gain, fold level [low]",0.06228903871870804,0.062,True,rerun_compare/mechanism_runs.csv
+RQ2,"Do-PFN gain minus TabPFN-T gain, fold level [high]",0.2233357570586617,0.223,True,rerun_compare/mechanism_runs.csv
+RQ2,"same-row learners: lowest mean Q-hat (R, T, T+Y)",0.004930826079480826,0.005,True,rerun_compare/mechanism_runs.csv
+RQ2,"same-row learners: highest mean Q-hat (R, T, T+Y)",0.025332599041277038,0.025,True,rerun_compare/mechanism_runs.csv
+RQ2,same-row learners: intervals that include zero (of 6),6.0,6.0,True,rerun_compare/mechanism_runs.csv
+Fig. 2 caption,Do-PFN R and T: folds with negative mean (of 10),10.0,10.0,True,rerun_compare/mechanism_runs.csv
+Fig. 2 caption,"other models, R or T: most folds with negative mean",2.0,2.0,True,rerun_compare/mechanism_runs.csv
+"RQ3, Fig. 1a",Criteo CV Q-hat at share 10%,-0.05069935657883928,-0.051,True,rerun_compare/mechanism_runs.csv
+"RQ3, Fig. 1a",Criteo CV Q-hat at share 20%,0.08721511724444911,0.087,True,rerun_compare/mechanism_runs.csv
+"RQ3, Fig. 1a",Criteo CV Q-hat at share 35%,0.02127217934401927,0.021,True,rerun_compare/mechanism_runs.csv
+"RQ3, Fig. 1a",Criteo CV Q-hat at share TY,0.05576476483298063,0.056,True,rerun_compare/mechanism_runs.csv
+"RQ3, Fig. 1a",Criteo CV Q-hat at share 75%,0.06631324160894084,0.066,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV Do-PFN 20% - T+Y [mean],0.031450352411468485,0.031,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV Do-PFN 20% - T+Y [low],0.006098811324237462,0.006,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV Do-PFN 20% - T+Y [high],0.056801893498699504,0.057,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV logistic T-learner 20% - T+Y,0.0352941407117358,0.035,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV logistic T-learner 20% - T+Y: interval half-width,0.10822380822419377,0.11,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV HistGB S-learner 20% - T+Y,0.0030246928884862696,0.003,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV R: runs with rho < 0 (of 15),15.0,15.0,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV T: runs with rho < 0 (of 15),15.0,15.0,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV 10%: runs with rho < 0 (of 15),15.0,15.0,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV 35%: runs with rho < 0 (of 15),15.0,15.0,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV R: mean rho,-0.7003554145550247,-0.7,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV 20%: runs with rho > 0 (of 15),15.0,15.0,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV 20%: mean rho,0.46955746916151564,0.47,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV 75%: mean rho,0.1298121746320917,0.13,True,rerun_compare/mechanism_runs.csv
+RQ3,Criteo CV T+Y: mean rho ('about 0'),0.0298106234474208,,,rerun_compare/mechanism_runs.csv
+RQ1,LZD T: Q-hat,-0.015818025055707334,-0.016,True,rerun_compare/mechanism_runs.csv
+RQ1,LZD T+Y: Q-hat,0.015751021581053588,0.016,True,rerun_compare/mechanism_runs.csv
+RQ1,"LZD T+Y - T, fold level [mean]",0.031569046636760925,0.032,True,rerun_compare/mechanism_runs.csv
+RQ1,"LZD T+Y - T, fold level [low]",-0.026549036112946317,-0.027,True,rerun_compare/mechanism_runs.csv
+RQ1,"LZD T+Y - T, fold level [high]",0.08968712938646817,0.09,True,rerun_compare/mechanism_runs.csv
+RQ4,"LZD 20% - T+Y, fold level [mean]",-0.02639265915499318,-0.026,True,rerun_compare/mechanism_runs.csv
+RQ4,"LZD 20% - T+Y, fold level [low]",-0.0747763558516472,-0.075,True,rerun_compare/mechanism_runs.csv
+RQ4,"LZD 20% - T+Y, fold level [high]",0.021991037541660843,0.022,True,rerun_compare/mechanism_runs.csv
+RQ3,LZD 10%: mean rho,0.186551076616444,0.19,True,rerun_compare/mechanism_runs.csv
+RQ3,LZD 20%: mean rho,0.30261856871536924,0.3,True,rerun_compare/mechanism_runs.csv
+Setup,"LZD T, K=1,024 (Section 2 quotes -0.016)",-0.015818025055707334,-0.016,True,rerun_compare/mechanism_runs.csv
+"RQ3, Fig. 3a",uplift in decile 9 (pp),2.3786073522216733,2.4,True,paper/figures/fig3_points.csv
+"RQ3, Fig. 3a",uplift in decile 10 (pp),4.335378242136512,4.3,True,paper/figures/fig3_points.csv
+"RQ3, Fig. 3b","top decile, mean score percentile (T)",23.6067279375,24.0,True,paper/figures/fig3_points.csv
+"RQ3, Fig. 3b","top decile, mean score percentile (TY)",62.704749125,63.0,True,paper/figures/fig3_points.csv
+"RQ3, Fig. 3b","top decile, mean score percentile (20%)",87.01177347749999,87.0,True,paper/figures/fig3_points.csv
+"RQ3, Fig. 3b","T+Y deciles 1, 9, 10: lowest percentile",61.39045112000001,61.0,True,paper/figures/fig3_points.csv
+"RQ3, Fig. 3b","T+Y deciles 1, 9, 10: highest percentile",62.704749125,63.0,True,paper/figures/fig3_points.csv
+"RQ3, Fig. 3b",T+Y deciles 6-7: lowest percentile,31.22373317625,31.0,True,paper/figures/fig3_points.csv
+"RQ3, Fig. 3b",T+Y deciles 6-7: highest percentile,33.080592631250006,33.0,True,paper/figures/fig3_points.csv

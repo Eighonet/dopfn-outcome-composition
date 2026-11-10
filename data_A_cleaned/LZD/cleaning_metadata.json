@@ -1,0 +1,12 @@
+{
+  "source": "data/LZD/",
+  "cleaned_at": "2026-07-09",
+  "script": "code/prepare_benchmark_data.py",
+  "task": "task_2026_07_08_020",
+  "audit": "specs/datasets/fable5_eda_audit_2026-07-08/",
+  "changes": [
+    "Filtered to the test split only — the only RCT-randomized split; train has operational-targeting bias. See specs/datasets/datasets_protocols.md ('Lazada / DESCN').",
+    "Dropped 19 near-duplicate/constant features (|Spearman rho| >= 0.99): ['f15', 'f17', 'f25', 'f32', 'f33', 'f36', 'f39', 'f65', 'f67', 'f69', 'f70', 'f71', 'f72', 'f73', 'f74', 'f76', 'f77', 'f78', 'f82']. See fable5-lzd-feature-redundancy.md.",
+    "Row-level duplicate-feature-vector leakage (~2.48% of test-split rows) is NOT fixed here — fixed at split time in run_nir_benchmark.py via a group-safe GroupShuffleSplit, same as Criteo."
+  ]
+}

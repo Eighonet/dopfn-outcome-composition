@@ -1,6 +1,6 @@
 #!/bin/bash
 # Last check on the TabPFN gap: newer scikit-learn and numpy with tabpfn 9.2.0.
-cd "/c/Users/Eighonet Aerta/Desktop/ai4s/causal_fm_project/repro"; source env.sh
+cd "$(dirname "${BASH_SOURCE[0]}")/.."; source env.sh
 export PY="$R/.venv-tab/Scripts/python.exe"
 L=home/projects/smiles/logs/tabpfn_scan3.log; : > "$L"
 "$PY" -m pip install --quiet "tabpfn==9.2.0" >> "$L" 2>&1

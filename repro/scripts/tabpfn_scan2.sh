@@ -1,6 +1,6 @@
 #!/bin/bash
 # Test older tabpfn releases in a separate venv, with their dependencies present.
-cd "/c/Users/Eighonet Aerta/Desktop/ai4s/causal_fm_project/repro"
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
 L=home/projects/smiles/logs/tabpfn_scan2.log; : > "$L"
 [ -d .venv-tab ] || python3 -m venv .venv-tab
 V=.venv-tab/Scripts/python.exe

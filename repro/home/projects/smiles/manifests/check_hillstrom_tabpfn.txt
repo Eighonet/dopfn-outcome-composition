@@ -1,0 +1,15 @@
+hillstrom tabpfn_t 0 42 2048 random 8000
+hillstrom tabpfn_t 0 43 2048 random 8000
+hillstrom tabpfn_t 0 44 2048 random 8000
+hillstrom tabpfn_t 1 42 2048 random 8000
+hillstrom tabpfn_t 1 43 2048 random 8000
+hillstrom tabpfn_t 1 44 2048 random 8000
+hillstrom tabpfn_t 2 42 2048 random 8000
+hillstrom tabpfn_t 2 43 2048 random 8000
+hillstrom tabpfn_t 2 44 2048 random 8000
+hillstrom tabpfn_t 3 42 2048 random 8000
+hillstrom tabpfn_t 3 43 2048 random 8000
+hillstrom tabpfn_t 3 44 2048 random 8000
+hillstrom tabpfn_t 4 42 2048 random 8000
+hillstrom tabpfn_t 4 43 2048 random 8000
+hillstrom tabpfn_t 4 44 2048 random 8000

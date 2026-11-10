@@ -1,6 +1,6 @@
 #!/bin/bash
 # Find the tabpfn release that reproduces the report's TabPFN-T values exactly.
-cd "/c/Users/Eighonet Aerta/Desktop/ai4s/causal_fm_project/repro"; source env.sh
+cd "$(dirname "${BASH_SOURCE[0]}")/.."; source env.sh
 L=home/projects/smiles/logs/tabpfn_scan.log; : > "$L"
 for v in 9.1.0 9.0.0 8.5.0 8.4.0 8.3.0 8.2.0 8.1.0 8.0.8 8.0.0 7.1.1 7.0.1 9.2.0; do
   "$PY" -m pip install --quiet --no-deps "tabpfn==$v" >> "$L" 2>&1

@@ -1,4 +1,20 @@
 __pycache__/
 *.pyc
-*.npz
 .venv*/
+*.npz
+!repro/rerun_compare/holdout_share_cache.npz
+!repro/rerun_compare/hs10_scores.npz
+# created when models are rerun locally (docs/RERUN.md): clones, data links, weights, caches, logs
+repro/rerun_home/
+repro/home*/projects/Do-PFN/
+repro/home*/projects/smiles/data
+repro/home*/projects/smiles/models/
+repro/home*/projects/smiles/logs/
+repro/home*/projects/smiles/cache/*/*.npy
+repro/home*/.cache/
+# written by repro/ds/ds.py; they hold cloud ids
+repro/ds/project_id.txt
+repro/ds/runs.json
+repro/ds/cfg/
+repro/ds/packs/
+**/authorized_key.json

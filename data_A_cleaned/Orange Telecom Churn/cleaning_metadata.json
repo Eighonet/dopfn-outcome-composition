@@ -1,0 +1,10 @@
+{
+  "source": "data/Orange Telecom Churn/",
+  "cleaned_at": "2026-07-09",
+  "script": "code/prepare_benchmark_data.py",
+  "task": "task_2026_07_08_020",
+  "audit": "specs/datasets/fable5_eda_audit_2026-07-08/",
+  "changes": [
+    "No changes. No duplicate-feature-vector or leakage issue was flagged for this dataset by the Fable audit. Copied here only for pipeline uniformity (run_nir_benchmark.py reads every dataset from data_A_cleaned/)."
+  ]
+}

@@ -1,12 +1,12 @@
 #!/bin/bash
 # Reproduce report_FM (CV, holdout, bootstrap) and M01/E19. Safe to restart: finished runs are skipped.
-R0="/c/Users/Eighonet Aerta/Desktop/ai4s/causal_fm_project/repro"; cd "$R0"
+R0="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"; cd "$R0"
 touch keep_awake.flag
-powershell.exe -NoProfile -Command '$k=Add-Type -MemberDefinition "[DllImport(\"kernel32.dll\")] public static extern uint SetThreadExecutionState(uint f);" -Name K -Namespace W -PassThru; [void]$k::SetThreadExecutionState(2147483649); while(Test-Path "C:\Users\Eighonet Aerta\Desktop\ai4s\causal_fm_project\repro\keep_awake.flag"){Start-Sleep 60}' &
+powershell.exe -NoProfile -Command '$k=Add-Type -MemberDefinition "[DllImport(\"kernel32.dll\")] public static extern uint SetThreadExecutionState(uint f);" -Name K -Namespace W -PassThru; [void]$k::SetThreadExecutionState(2147483649); while(Test-Path "'"$(cygpath -w "$R0/keep_awake.flag")"'"){Start-Sleep 60}' &
 source env.sh
-export R_WIN='C:\Users\Eighonet Aerta\Desktop\ai4s\causal_fm_project\repro' CODE_WIN='C:\Users\Eighonet Aerta\Desktop\ai4s\causal_fm_project\repro\home\projects\smiles\cpu_smoke'
+export R_WIN="$(winpath "$R")" CODE_WIN="$(winpath "$CODE")"
 L=home/projects/smiles/logs; M=home/projects/smiles/manifests; DOPY="$R/.venv-dopfn/Scripts/python.exe"
-DR='C:\Users\Eighonet Aerta\Desktop\ai4s\causal_fm_project\data_A_cleaned'
+DR="$(winpath "${DATA_ROOT:-$R/../data_A_cleaned}")"
 say(){ echo "$(date '+%F %T') $*" >> $L/overnight.log; }
 wait_for(){ until grep -q "$2" "$1" 2>/dev/null; do sleep 30; done; }
 wait_for $L/tabpfn_scan.log DONE

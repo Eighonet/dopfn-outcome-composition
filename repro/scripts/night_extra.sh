@@ -2,7 +2,7 @@
 # New experiments for the paper's novelty, next to night_gpu.sh, from 01:00 on 2026-11-08.
 # (b) Do-PFN outcome-share dose-response on the report's CV folds (120 GPU jobs, two shards).
 # (a) FM vs neighbour mean on the 1.3M E17 rows once night_gpu.sh has adopted E17.
-R="/c/Users/Eighonet Aerta/Desktop/ai4s/causal_fm_project/repro"; cd "$R"
+R="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"; cd "$R"
 source env.sh
 RL="$R/home/projects/smiles/logs/rerun"; NL="$RL/night_extra.log"; START=${NIGHT_START:-202611080100}
 say(){ echo "$(date '+%F %T') $*" >> "$NL"; }
@@ -11,7 +11,7 @@ until [ "$(date +%Y%m%d%H%M)" -ge "$START" ]; do sleep 30; done
 
 dose(){
   local H18="$R/home18" M="$R/home18/projects/smiles/manifests" DOPY="$R/.venv-dopfn/Scripts/python.exe"
-  export USERPROFILE='C:\Users\Eighonet Aerta\Desktop\ai4s\causal_fm_project\repro\home18' HOME="$H18" \
+  export USERPROFILE="$(winpath "$H18")" HOME="$H18" \
          FM_OUTPUT="$H18/projects/smiles/results/fm_dose"
   local pids=()
   for s in d0 d1; do "$DOPY" -u scripts/run_dose_cv.py "$M/dose_$s.txt" > "$RL/dose_$s.log" 2>&1 & pids+=($!); done

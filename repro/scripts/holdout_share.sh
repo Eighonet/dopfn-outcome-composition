@@ -1,7 +1,7 @@
 #!/bin/bash
 # Holdout check of the outcome share (protocol: repro/holdout_share_protocol.md): two waves of three GPU runs.
-R="/c/Users/Eighonet Aerta/Desktop/ai4s/causal_fm_project/repro"; cd "$R"
-export USERPROFILE='C:\Users\Eighonet Aerta\Desktop\ai4s\causal_fm_project\repro\home' HOME="$R/home"
+R="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"; cd "$R"
+export USERPROFILE="$(cygpath -w "$R/home" 2>/dev/null || echo "$R/home")" HOME="$R/home"
 export CODE="$R/home/projects/smiles/cpu_smoke" HOLDOUT_OUT="$R/home/projects/smiles/results/fm_holdout_share"
 L="$R/home/projects/smiles/logs/rerun/holdout_share"; mkdir -p "$L"
 for strategy in share20 share35; do

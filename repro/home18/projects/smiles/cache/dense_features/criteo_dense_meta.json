@@ -1,0 +1,39 @@
+{
+  "format": "smiles_dense_numeric_v1",
+  "dataset": "criteo",
+  "n_rows": 13979592,
+  "feature_columns": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f11"
+  ],
+  "dtypes": {
+    "X": "float64",
+    "t": "int8",
+    "y": "int8"
+  },
+  "source_file_stats": {
+    "features.parquet": {
+      "size_bytes": 264611534,
+      "mtime_ns": 1793995780762529600
+    },
+    "outcomes.parquet": {
+      "size_bytes": 65674635,
+      "mtime_ns": 1793995780954801500
+    }
+  },
+  "split_labels_sha256": "98dc399d00ab04d1ff5499efa3969a76d46199387624c0c0804f8882c0df48cf",
+  "file_sha256": {
+    "criteo_X_float64.npy": "7b7710b25c8095df85463183c01afdbc5b00c4ad9f62c095e04bd48e4ae96c16",
+    "criteo_t_int8.npy": "7437fe43b62a24162398002806f9da52eff6a5d19ee527d30fab072cc618c5b1",
+    "criteo_y_int8.npy": "566eab3b7587f3ca7d64e43727935aaf6ac3d34fa784538e8e22a2fa6c05cdb7"
+  },
+  "preprocess_reference_match": true
+}

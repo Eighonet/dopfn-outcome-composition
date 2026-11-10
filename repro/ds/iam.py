@@ -2,7 +2,7 @@
 
   python ds/iam.py check     exchange the key for a token and report only that it worked
   python ds/iam.py projects  list the clouds, DataSphere communities and projects this account can see
-The key file comes from YC_SA_KEY_FILE, default %USERPROFILE%/.yc/authorized_key.json.
+The key file comes from YC_SA_KEY_FILE, default ~/.yc/authorized_key.json (on Windows the real user profile).
 """
 import json
 import os
@@ -16,7 +16,8 @@ import requests
 from datasphere.api import iam_endpoint
 from datasphere.auth import CreateIamTokenRequest, IamTokenServiceStub
 
-KEY = Path(os.environ.get("YC_SA_KEY_FILE", r"C:\Users\Eighonet Aerta\.yc\authorized_key.json"))
+_HOME = Path(os.path.expandvars(r"%SystemDrive%\Users\%USERNAME%")) if os.name == "nt" else Path.home()  # env.sh moves HOME
+KEY = Path(os.environ.get("YC_SA_KEY_FILE", _HOME / ".yc" / "authorized_key.json"))
 _cache = {}
 
 

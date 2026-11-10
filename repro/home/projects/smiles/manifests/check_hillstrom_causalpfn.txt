@@ -1,0 +1,15 @@
+hillstrom causalpfn 0 42 1024 random 8000
+hillstrom causalpfn 0 43 1024 random 8000
+hillstrom causalpfn 0 44 1024 random 8000
+hillstrom causalpfn 1 42 1024 random 8000
+hillstrom causalpfn 1 43 1024 random 8000
+hillstrom causalpfn 1 44 1024 random 8000
+hillstrom causalpfn 2 42 1024 random 8000
+hillstrom causalpfn 2 43 1024 random 8000
+hillstrom causalpfn 2 44 1024 random 8000
+hillstrom causalpfn 3 42 1024 random 8000
+hillstrom causalpfn 3 43 1024 random 8000
+hillstrom causalpfn 3 44 1024 random 8000
+hillstrom causalpfn 4 42 1024 random 8000
+hillstrom causalpfn 4 43 1024 random 8000
+hillstrom causalpfn 4 44 1024 random 8000

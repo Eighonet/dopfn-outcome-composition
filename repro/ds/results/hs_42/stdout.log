@@ -1,0 +1,66 @@
+[2026-11-09 20:39:35] kind=holdout_share host=t4-<id> cpus=4 python=Python 3.11.13
+Tesla T4, 15360 MiB, 535.261.03
+[2026-11-09 20:39:35] unpack code
+[2026-11-09 20:39:35] unpack data
+[2026-11-09 20:39:36] unpack dopfn
+[2026-11-09 20:39:36] unpack cache18
+[2026-11-09 20:39:38] unpack state
+mtime restored Criteo-ITE-v2.1/features.parquet
+mtime restored Criteo-ITE-v2.1/outcomes.parquet
+mtime restored Criteo-ITE-v2.1/features.parquet
+mtime restored Criteo-ITE-v2.1/outcomes.parquet
+mtime restored LZD/features.parquet
+mtime restored LZD/outcomes.parquet
+Verified dense feature cache: criteo rows=13,979,592, columns=10
+Verified grouped-split cache: criteo, fold=0
+criteo: development=11,885,674, locked_holdout=2,093,918, scored=200,000, context=1024 counts={'T0Y0': 410, 'T0Y1': 102, 'T1Y0': 410, 'T1Y1': 102}
+{
+  "dataset": "criteo",
+  "model": "dopfn",
+  "strategy": "share20",
+  "context_size": 1024,
+  "model_seed": 42,
+  "eval_scope": "fixed_stratified_holdout_subset",
+  "n_eval": 200000,
+  "status": "ok",
+  "error": null,
+  "metrics": {
+    "qini_auc_normalized": 0.06785015195265816,
+    "auuc": 0.02675625145775453,
+    "uplift@5%": 0.05531212660533594,
+    "uplift@10%": 0.05273331947620036,
+    "uplift@20%": 0.03565432737436561,
+    "uplift@30%": 0.026082373854090207
+  },
+  "model_time_sec": 327.33938
+}
+Saved: /job/w/causal_fm_project/repro/home18/projects/smiles/results/fm_holdout_share/criteo/holdout_dopfn_share20_ctx1024_seed42_eval200000_cuda0.json
+[2026-11-09 20:45:21] share20:42 rc=0
+Verified dense feature cache: criteo rows=13,979,592, columns=10
+Verified grouped-split cache: criteo, fold=0
+criteo: development=11,885,674, locked_holdout=2,093,918, scored=200,000, context=1024 counts={'T0Y0': 256, 'T0Y1': 256, 'T1Y0': 256, 'T1Y1': 256}
+{
+  "dataset": "criteo",
+  "model": "dopfn",
+  "strategy": "balanced_treatment_outcome",
+  "context_size": 1024,
+  "model_seed": 42,
+  "eval_scope": "fixed_stratified_holdout_subset",
+  "n_eval": 200000,
+  "status": "ok",
+  "error": null,
+  "metrics": {
+    "qini_auc_normalized": 0.0316854644922478,
+    "auuc": 0.012506189916452484,
+    "uplift@5%": 0.027635873959091284,
+    "uplift@10%": 0.027610831171036326,
+    "uplift@20%": 0.02616119706251885,
+    "uplift@30%": 0.020370080353860183
+  },
+  "model_time_sec": 329.345777
+}
+Saved: /job/w/causal_fm_project/repro/home18/projects/smiles/results/fm_holdout_share/criteo/holdout_dopfn_balanced_treatment_outcome_ctx1024_seed42_eval200000_cuda0.json
+[2026-11-09 20:50:56] balanced_treatment_outcome:42 rc=0
+[2026-11-09 20:50:56] pack repro/home18/projects/smiles/results/fm_holdout_share
+-rw-r--r-- 1 root root 2359186 Nov  9 20:50 /job/out_er2
+[2026-11-09 20:50:56] done

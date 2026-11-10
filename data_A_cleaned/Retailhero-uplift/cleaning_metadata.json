@@ -1,0 +1,11 @@
+{
+  "source": "data/Retailhero-uplift/",
+  "cleaned_at": "2026-07-09",
+  "script": "code/prepare_benchmark_data.py",
+  "task": "task_2026_07_08_020",
+  "audit": "specs/datasets/fable5_eda_audit_2026-07-08/",
+  "changes": [
+    "Filtered to the train split with non-null Y — the only split with outcome labels (test is competition-format, unlabeled).",
+    "Dropped `first_redeem_time` and its derivative `issue_redeem_delay` — values extend past the campaign window (partially post-treatment), inflating apparent CATE heterogeneity. See fable5-retailhero-first-redeem-time-post-treatment-leakage.md."
+  ]
+}

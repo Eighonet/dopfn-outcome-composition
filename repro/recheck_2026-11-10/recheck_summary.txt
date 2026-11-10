@@ -1,0 +1,408 @@
+cross-check with the earlier tables, max abs difference: {'q': '0.0e+00', 'risk_q': '0.0e+00', 'mu0_q': '0.0e+00', 'q_between': '1.9e-02', 'q_within': '5.9e-03', 'q_neg': '0.0e+00'}
+  between/within, same mu0-hat, different random tie order: mean abs difference by dataset
+       between          within        
+          mean     max    mean     max
+ds                                    
+criteo  0.0008  0.0053  0.0008  0.0059
+lzd     0.0040  0.0195  0.0006  0.0030
+
+##### Criteo, the paper's folds, K=1024 (all seven designs); Q(mu0) = 0.093, SD over the five eval sets 0.025
+                        q  q_min  q_max  folds_q_neg  negated   risk  folds_below_risk  folds_negated_below_risk  between  within    rho
+model     strategy                                                                                                                      
+dopfn     R        -0.074 -0.087 -0.041            5    0.068  0.084                 5                         3   -0.099   0.037 -0.700
+          T        -0.077 -0.122 -0.048            5    0.072  0.082                 5                         2   -0.093  -0.012 -0.572
+          10%      -0.051 -0.060 -0.033            5    0.046  0.094                 5                         5   -0.100   0.013 -0.576
+          20%       0.087  0.068  0.104            0   -0.094  0.092                 3                         5    0.092   0.014  0.470
+          35%       0.021 -0.004  0.063            1   -0.020  0.092                 5                         5   -0.002   0.042 -0.458
+          TY        0.056  0.029  0.091            0   -0.058  0.096                 5                         5    0.072   0.031  0.030
+          75%       0.066  0.024  0.117            0   -0.071  0.096                 5                         5    0.075   0.009  0.130
+causalpfn R         0.029 -0.050  0.062            1   -0.036  0.084                 5                         5   -0.010   0.021  0.126
+          T         0.023 -0.019  0.072            2   -0.033  0.082                 4                         5    0.014   0.007  0.129
+          TY        0.029 -0.042  0.116            2   -0.025  0.096                 5                         5    0.019   0.009 -0.114
+tabpfn_t  R         0.007 -0.091  0.071            2   -0.012  0.084                 4                         5   -0.000   0.020  0.094
+          T         0.038 -0.014  0.099            2   -0.046  0.082                 4                         5    0.005   0.029  0.064
+          TY        0.029  0.001  0.076            0   -0.028  0.096                 5                         5    0.000   0.015 -0.004
+  fold-level difference to the same-rows risk ranking, mean [95% t-interval]:
+    dopfn      R    -0.158 [-0.222, -0.094]   negated: -0.016 [-0.048, +0.016]
+    dopfn      T    -0.159 [-0.235, -0.084]   negated: -0.010 [-0.053, +0.033]
+    dopfn      10%  -0.144 [-0.190, -0.098]   negated: -0.048 [-0.087, -0.009]
+    dopfn      20%  -0.005 [-0.043, +0.034]   negated: -0.186 [-0.235, -0.137]
+    dopfn      35%  -0.071 [-0.119, -0.023]   negated: -0.112 [-0.156, -0.069]
+    dopfn      TY   -0.040 [-0.080, -0.001]   negated: -0.154 [-0.195, -0.114]
+    dopfn      75%  -0.030 [-0.053, -0.007]   negated: -0.167 [-0.248, -0.086]
+    causalpfn  R    -0.056 [-0.146, +0.035]
+    causalpfn  T    -0.059 [-0.135, +0.017]
+    causalpfn  TY   -0.067 [-0.127, -0.008]
+    tabpfn_t   R    -0.077 [-0.187, +0.032]
+    tabpfn_t   T    -0.044 [-0.124, +0.037]
+    tabpfn_t   TY   -0.067 [-0.102, -0.032]
+  Do-PFN: negated R score against T+Y, by fold: [ 0.057 -0.012  0.005  0.003  0.01 ] -> negated at least as good in 4 of 5; +0.013 [-0.020, +0.045]
+  Do-PFN: negated T score against T+Y, by fold: [ 0.091 -0.025 -0.001  0.011  0.005] -> negated at least as good in 3 of 5; +0.016 [-0.038, +0.071]
+
+##### Criteo, the paper's folds, all K (R, T, T+Y); Q(mu0) = 0.093, SD over the five eval sets 0.025
+                        q  q_min  q_max  folds_q_neg  negated   risk  folds_below_risk  folds_negated_below_risk  between  within    rho
+model     strategy                                                                                                                      
+dopfn     R        -0.079 -0.102 -0.053            5    0.074  0.089                 5                         4   -0.100   0.031 -0.739
+          T        -0.079 -0.109 -0.051            5    0.074  0.083                 5                         3   -0.097  -0.006 -0.598
+          TY        0.051  0.040  0.060            0   -0.052  0.095                 5                         5    0.058   0.030  0.028
+causalpfn R         0.032  0.020  0.043            0   -0.038  0.089                 5                         5    0.025   0.016  0.150
+          T         0.031  0.006  0.047            0   -0.039  0.083                 5                         5    0.022   0.019  0.178
+          TY        0.015 -0.017  0.046            1   -0.014  0.095                 5                         5   -0.010   0.029 -0.106
+tabpfn_t  R         0.022  0.009  0.040            0   -0.026  0.089                 5                         5    0.019   0.012  0.088
+          T         0.047 -0.003  0.082            1   -0.052  0.083                 4                         5    0.025   0.029  0.151
+          TY        0.025  0.011  0.035            0   -0.026  0.095                 5                         5   -0.014   0.029  0.023
+  fold-level difference to the same-rows risk ranking, mean [95% t-interval]:
+    dopfn      R    -0.167 [-0.229, -0.106]   negated: -0.015 [-0.039, +0.010]
+    dopfn      T    -0.162 [-0.222, -0.103]   negated: -0.009 [-0.045, +0.026]
+    dopfn      TY   -0.045 [-0.082, -0.007]   negated: -0.147 [-0.175, -0.120]
+    causalpfn  R    -0.057 [-0.089, -0.024]
+    causalpfn  T    -0.052 [-0.104, +0.000]
+    causalpfn  TY   -0.080 [-0.112, -0.048]
+    tabpfn_t   R    -0.066 [-0.109, -0.024]
+    tabpfn_t   T    -0.036 [-0.100, +0.027]
+    tabpfn_t   TY   -0.070 [-0.108, -0.032]
+  Do-PFN: negated R score against T+Y, by fold: [ 0.055  0.035  0.023 -0.009  0.012] -> negated at least as good in 4 of 5; +0.023 [-0.006, +0.053]
+  Do-PFN: negated T score against T+Y, by fold: [ 0.057  0.017  0.033  0.008 -0.   ] -> negated at least as good in 4 of 5; +0.023 [-0.005, +0.051]
+
+##### Criteo, second fold split, all K; Q(mu0) = 0.093, SD over the five eval sets 0.014
+                        q  q_min  q_max  folds_q_neg  negated   risk  folds_below_risk  folds_negated_below_risk  between  within    rho
+model     strategy                                                                                                                      
+dopfn     R        -0.088 -0.113 -0.068            5    0.076  0.090                 5                         3   -0.106   0.035 -0.731
+          T        -0.073 -0.117 -0.043            5    0.058  0.086                 5                         4   -0.103   0.008 -0.614
+          TY        0.049  0.028  0.061            0   -0.052  0.092                 5                         5    0.057   0.026  0.003
+causalpfn R         0.053  0.022  0.075            0   -0.065  0.090                 5                         5    0.036   0.041  0.173
+          T         0.030 -0.028  0.071            1   -0.046  0.086                 5                         5    0.035   0.022  0.187
+          TY        0.019 -0.017  0.065            1   -0.024  0.092                 5                         5   -0.012   0.029 -0.144
+tabpfn_t  R         0.047  0.020  0.081            0   -0.058  0.090                 5                         5    0.036   0.029  0.153
+          T         0.048  0.028  0.069            0   -0.058  0.086                 5                         5    0.046   0.024  0.147
+          TY        0.029  0.009  0.062            0   -0.032  0.092                 5                         5   -0.021   0.035  0.000
+  fold-level difference to the same-rows risk ranking, mean [95% t-interval]:
+    dopfn      R    -0.178 [-0.194, -0.161]   negated: -0.014 [-0.042, +0.015]
+    dopfn      T    -0.159 [-0.182, -0.136]   negated: -0.028 [-0.071, +0.015]
+    dopfn      TY   -0.043 [-0.060, -0.026]   negated: -0.144 [-0.179, -0.109]
+    causalpfn  R    -0.037 [-0.060, -0.015]
+    causalpfn  T    -0.056 [-0.098, -0.013]
+    causalpfn  TY   -0.074 [-0.100, -0.047]
+    tabpfn_t   R    -0.042 [-0.069, -0.016]
+    tabpfn_t   T    -0.038 [-0.063, -0.013]
+    tabpfn_t   TY   -0.064 [-0.078, -0.049]
+  Do-PFN: negated R score against T+Y, by fold: [0.024 0.01  0.068 0.001 0.031] -> negated at least as good in 5 of 5; +0.027 [-0.005, +0.059]
+  Do-PFN: negated T score against T+Y, by fold: [-0.011 -0.012  0.072 -0.008  0.002] -> negated at least as good in 2 of 5; +0.008 [-0.036, +0.053]
+
+##### LZD, the paper's folds, K=1024 (all seven designs); Q(mu0) = 0.021, SD over the five eval sets 0.041
+                        q  q_min  q_max  folds_q_neg  negated   risk  folds_below_risk  folds_negated_below_risk  between  within    rho
+model     strategy                                                                                                                      
+dopfn     R        -0.017 -0.043  0.014            4    0.016  0.015                 4                         2   -0.000  -0.016 -0.132
+          T        -0.016 -0.049  0.012            3    0.016  0.023                 4                         1   -0.007  -0.012 -0.156
+          10%      -0.017 -0.047  0.032            4    0.017  0.028                 4                         3    0.012  -0.013  0.271
+          20%      -0.011 -0.024  0.013            4    0.010  0.035                 4                         3    0.001  -0.015  0.249
+          35%       0.002 -0.017  0.021            2   -0.001  0.038                 4                         4    0.004   0.001 -0.017
+          TY        0.016 -0.008  0.051            1   -0.016  0.035                 2                         4    0.020   0.015  0.036
+          75%      -0.011 -0.037  0.027            3    0.014  0.035                 4                         4    0.016  -0.013 -0.292
+causalpfn R         0.009 -0.006  0.041            2   -0.008  0.015                 3                         3    0.010   0.008  0.300
+          T         0.007 -0.016  0.021            2   -0.007  0.023                 4                         4    0.011   0.002  0.097
+          TY        0.002 -0.044  0.041            2   -0.004  0.035                 4                         4   -0.000   0.000 -0.109
+tabpfn_t  R         0.000 -0.035  0.024            2    0.001  0.015                 2                         3    0.010   0.006  0.070
+          T         0.007 -0.024  0.036            2   -0.007  0.023                 2                         5    0.007   0.002  0.009
+          TY       -0.006 -0.031  0.017            3    0.005  0.035                 4                         4    0.010  -0.006 -0.098
+  fold-level difference to the same-rows risk ranking, mean [95% t-interval]:
+    dopfn      R    -0.032 [-0.075, +0.011]   negated: +0.001 [-0.051, +0.054]
+    dopfn      T    -0.039 [-0.088, +0.010]   negated: -0.007 [-0.057, +0.042]
+    dopfn      10%  -0.045 [-0.124, +0.033]   negated: -0.011 [-0.067, +0.044]
+    dopfn      20%  -0.046 [-0.085, -0.007]   negated: -0.025 [-0.083, +0.033]
+    dopfn      35%  -0.036 [-0.096, +0.024]   negated: -0.039 [-0.091, +0.013]
+    dopfn      TY   -0.019 [-0.098, +0.060]   negated: -0.051 [-0.101, -0.001]
+    dopfn      75%  -0.045 [-0.122, +0.032]   negated: -0.020 [-0.058, +0.017]
+    causalpfn  R    -0.006 [-0.041, +0.029]
+    causalpfn  T    -0.016 [-0.054, +0.022]
+    causalpfn  TY   -0.032 [-0.088, +0.024]
+    tabpfn_t   R    -0.015 [-0.070, +0.040]
+    tabpfn_t   T    -0.016 [-0.080, +0.049]
+    tabpfn_t   TY   -0.040 [-0.095, +0.014]
+  Do-PFN: negated R score against T+Y, by fold: [-0.029  0.018  0.04  -0.02  -0.005] -> negated at least as good in 2 of 5; +0.001 [-0.034, +0.036]
+  Do-PFN: negated T score against T+Y, by fold: [-0.033 -0.002  0.024  0.011  0.   ] -> negated at least as good in 3 of 5; -0.000 [-0.026, +0.026]
+
+##### LZD, the paper's folds, all K (R, T, T+Y); Q(mu0) = 0.021, SD over the five eval sets 0.041
+                        q  q_min  q_max  folds_q_neg  negated   risk  folds_below_risk  folds_negated_below_risk  between  within    rho
+model     strategy                                                                                                                      
+dopfn     R        -0.020 -0.032 -0.004            5    0.020  0.024                 4                         2   -0.009  -0.015 -0.178
+          T        -0.019 -0.043  0.005            4    0.019  0.026                 4                         2   -0.009  -0.015 -0.155
+          TY        0.016 -0.005  0.048            1   -0.016  0.033                 2                         4    0.017   0.015  0.046
+causalpfn R         0.010 -0.016  0.042            1   -0.007  0.024                 4                         3    0.016   0.004  0.166
+          T         0.011 -0.014  0.029            1   -0.009  0.026                 4                         3    0.003   0.009  0.192
+          TY        0.006 -0.009  0.018            1   -0.006  0.033                 3                         4   -0.001   0.007  0.043
+tabpfn_t  R         0.008 -0.012  0.029            2   -0.008  0.024                 3                         3    0.017   0.006  0.047
+          T         0.007 -0.007  0.013            1   -0.006  0.026                 3                         4   -0.001   0.003  0.076
+          TY        0.002 -0.015  0.010            1   -0.002  0.033                 3                         4    0.003   0.004 -0.018
+  fold-level difference to the same-rows risk ranking, mean [95% t-interval]:
+    dopfn      R    -0.044 [-0.098, +0.009]   negated: -0.005 [-0.057, +0.048]
+    dopfn      T    -0.045 [-0.102, +0.012]   negated: -0.007 [-0.061, +0.047]
+    dopfn      TY   -0.017 [-0.091, +0.058]   negated: -0.050 [-0.096, -0.003]
+    causalpfn  R    -0.015 [-0.054, +0.025]
+    causalpfn  T    -0.015 [-0.058, +0.028]
+    causalpfn  TY   -0.027 [-0.088, +0.035]
+    tabpfn_t   R    -0.016 [-0.069, +0.038]
+    tabpfn_t   T    -0.019 [-0.065, +0.027]
+    tabpfn_t   TY   -0.031 [-0.093, +0.031]
+  Do-PFN: negated R score against T+Y, by fold: [-0.021  0.007  0.022 -0.006  0.014] -> negated at least as good in 3 of 5; +0.003 [-0.018, +0.024]
+  Do-PFN: negated T score against T+Y, by fold: [-0.025 -0.002  0.022  0.008  0.009] -> negated at least as good in 3 of 5; +0.002 [-0.020, +0.025]
+
+##### LZD, second fold split, all K; Q(mu0) = 0.019, SD over the five eval sets 0.041
+                        q  q_min  q_max  folds_q_neg  negated   risk  folds_below_risk  folds_negated_below_risk  between  within    rho
+model     strategy                                                                                                                      
+dopfn     R        -0.030 -0.051 -0.000            5    0.029  0.031                 5                         3   -0.019  -0.020 -0.191
+          T        -0.030 -0.053 -0.007            5    0.029  0.028                 5                         3   -0.018  -0.021 -0.167
+          TY        0.025 -0.023  0.055            1   -0.027  0.029                 3                         4    0.020   0.022  0.068
+causalpfn R        -0.000 -0.010  0.013            3    0.001  0.031                 4                         4   -0.002   0.001  0.138
+          T         0.011 -0.001  0.038            2   -0.011  0.028                 4                         4    0.005   0.007  0.210
+          TY        0.006 -0.002  0.025            2   -0.007  0.029                 4                         4   -0.008   0.009  0.050
+tabpfn_t  R        -0.009 -0.024  0.010            4    0.008  0.031                 4                         4   -0.004  -0.005  0.094
+          T         0.010 -0.008  0.023            1   -0.011  0.028                 4                         4    0.003   0.008  0.086
+          TY        0.001 -0.010  0.013            3   -0.001  0.029                 4                         4   -0.011   0.004 -0.021
+  fold-level difference to the same-rows risk ranking, mean [95% t-interval]:
+    dopfn      R    -0.061 [-0.112, -0.011]   negated: -0.002 [-0.044, +0.040]
+    dopfn      T    -0.059 [-0.102, -0.015]   negated: +0.001 [-0.043, +0.045]
+    dopfn      TY   -0.004 [-0.065, +0.058]   negated: -0.055 [-0.126, +0.015]
+    causalpfn  R    -0.031 [-0.072, +0.009]
+    causalpfn  T    -0.017 [-0.047, +0.013]
+    causalpfn  TY   -0.022 [-0.079, +0.034]
+    tabpfn_t   R    -0.040 [-0.087, +0.007]
+    tabpfn_t   T    -0.018 [-0.062, +0.026]
+    tabpfn_t   TY   -0.028 [-0.091, +0.035]
+  Do-PFN: negated R score against T+Y, by fold: [ 0.018  0.022  0.003 -0.017 -0.007] -> negated at least as good in 3 of 5; +0.004 [-0.017, +0.024]
+  Do-PFN: negated T score against T+Y, by fold: [ 0.017  0.029  0.003 -0.024 -0.005] -> negated at least as good in 3 of 5; +0.004 [-0.021, +0.029]
+
+##### Hillstrom, all K; Q(mu0) = -0.003, SD over the five eval sets 0.011
+                        q  q_min  q_max  folds_q_neg  negated   risk  folds_below_risk  folds_negated_below_risk  between  within    rho
+model     strategy                                                                                                                      
+dopfn     R         0.001 -0.022  0.022            3   -0.001  0.011                 2                         3    0.001   0.002 -0.103
+          T         0.002 -0.007  0.018            2   -0.002  0.011                 2                         3   -0.000   0.003 -0.041
+          TY        0.015 -0.003  0.030            1   -0.015  0.012                 2                         5    0.001   0.016 -0.372
+causalpfn R         0.008 -0.000  0.013            1   -0.009  0.011                 3                         5   -0.001   0.010  0.216
+          T         0.006 -0.007  0.017            2   -0.007  0.011                 3                         4   -0.003   0.008  0.163
+          TY       -0.000 -0.016  0.009            2   -0.000  0.012                 3                         4    0.003  -0.002 -0.433
+tabpfn_t  R         0.009 -0.007  0.025            1   -0.009  0.011                 3                         4   -0.002   0.009  0.077
+          T         0.006 -0.004  0.019            1   -0.006  0.011                 3                         3   -0.002   0.006 -0.010
+          TY        0.002 -0.010  0.011            2   -0.002  0.012                 4                         4    0.003   0.000 -0.362
+  fold-level difference to the same-rows risk ranking, mean [95% t-interval]:
+    dopfn      R    -0.010 [-0.042, +0.021]   negated: -0.013 [-0.038, +0.012]
+    dopfn      T    -0.009 [-0.033, +0.016]   negated: -0.013 [-0.032, +0.005]
+    dopfn      TY   +0.003 [-0.026, +0.032]   negated: -0.026 [-0.043, -0.010]
+    causalpfn  R    -0.004 [-0.021, +0.014]
+    causalpfn  T    -0.005 [-0.025, +0.015]
+    causalpfn  TY   -0.012 [-0.036, +0.012]
+    tabpfn_t   R    -0.003 [-0.021, +0.016]
+    tabpfn_t   T    -0.005 [-0.025, +0.014]
+    tabpfn_t   TY   -0.010 [-0.026, +0.006]
+  Do-PFN: negated R score against T+Y, by fold: [-0.    -0.052 -0.042 -0.012  0.025] -> negated at least as good in 1 of 5; -0.016 [-0.055, +0.023]
+  Do-PFN: negated T score against T+Y, by fold: [-0.004 -0.048 -0.03  -0.014  0.01 ] -> negated at least as good in 1 of 5; -0.017 [-0.045, +0.011]
+
+##### RetailHero, all K; Q(mu0) = 0.002, SD over the five eval sets 0.008
+                        q  q_min  q_max  folds_q_neg  negated   risk  folds_below_risk  folds_negated_below_risk  between  within    rho
+model     strategy                                                                                                                      
+dopfn     R         0.009 -0.000  0.017            1   -0.009 -0.001                 1                         4    0.006   0.007  0.029
+          T         0.010  0.000  0.019            0   -0.010  0.001                 1                         5    0.007   0.007  0.038
+          TY       -0.001 -0.005  0.007            3    0.001  0.001                 3                         1    0.004  -0.002  0.357
+causalpfn R         0.006  0.002  0.011            0   -0.006 -0.001                 0                         4    0.001   0.006 -0.094
+          T         0.006 -0.000  0.012            1   -0.006  0.001                 0                         4    0.001   0.006 -0.065
+          TY        0.007  0.001  0.012            0   -0.007  0.001                 0                         4    0.005   0.006  0.184
+tabpfn_t  R         0.004 -0.002  0.012            1   -0.004 -0.001                 1                         4    0.001   0.004 -0.025
+          T         0.003 -0.001  0.008            1   -0.003  0.001                 1                         3   -0.000   0.003  0.035
+          TY        0.005  0.001  0.009            0   -0.005  0.001                 1                         4    0.003   0.004  0.061
+  fold-level difference to the same-rows risk ranking, mean [95% t-interval]:
+    dopfn      R    +0.010 [-0.002, +0.022]   negated: -0.008 [-0.019, +0.003]
+    dopfn      T    +0.009 [-0.003, +0.020]   negated: -0.011 [-0.023, +0.001]
+    dopfn      TY   -0.001 [-0.010, +0.007]   negated: +0.000 [-0.009, +0.009]
+    causalpfn  R    +0.007 [+0.002, +0.012]
+    causalpfn  T    +0.005 [+0.001, +0.008]
+    causalpfn  TY   +0.006 [+0.001, +0.011]
+    tabpfn_t   R    +0.005 [-0.003, +0.012]
+    tabpfn_t   T    +0.002 [-0.001, +0.006]
+    tabpfn_t   TY   +0.004 [-0.002, +0.010]
+  Do-PFN: negated R score against T+Y, by fold: [-0.016 -0.009 -0.007 -0.013  0.004] -> negated at least as good in 1 of 5; -0.008 [-0.018, +0.002]
+  Do-PFN: negated T score against T+Y, by fold: [-0.014 -0.014 -0.007 -0.013  0.003] -> negated at least as good in 1 of 5; -0.009 [-0.018, -0.000]
+
+##### Orange, all K; Q(mu0) = -0.003, SD over the five eval sets 0.001
+                        q  q_min  q_max  folds_q_neg  negated   risk  folds_below_risk  folds_negated_below_risk  between  within    rho
+model     strategy                                                                                                                      
+dopfn     R         0.005 -0.001  0.012            1   -0.005 -0.002                 1                         4   -0.001   0.005  0.004
+          T         0.005 -0.002  0.013            1   -0.005 -0.002                 1                         4   -0.001   0.005  0.014
+          TY        0.003  0.000  0.007            0   -0.003 -0.003                 0                         1    0.000   0.003  0.031
+causalpfn R        -0.002 -0.004 -0.001            5    0.002 -0.002                 2                         1   -0.000  -0.002  0.046
+          T        -0.001 -0.006  0.003            2    0.001 -0.002                 2                         1   -0.000  -0.001 -0.036
+          TY       -0.003 -0.010  0.007            3    0.004 -0.003                 3                         1   -0.003  -0.003  0.194
+tabpfn_t  R        -0.003 -0.007  0.001            4    0.004 -0.002                 3                         1   -0.000  -0.003  0.016
+          T        -0.003 -0.008  0.005            3    0.003 -0.002                 3                         2    0.001  -0.003 -0.042
+          TY       -0.005 -0.014  0.002            4    0.006 -0.003                 4                         1   -0.003  -0.005  0.169
+  fold-level difference to the same-rows risk ranking, mean [95% t-interval]:
+    dopfn      R    +0.008 [-0.003, +0.018]   negated: -0.003 [-0.009, +0.003]
+    dopfn      T    +0.007 [-0.006, +0.020]   negated: -0.002 [-0.008, +0.003]
+    dopfn      TY   +0.006 [+0.001, +0.010]   negated: +0.000 [-0.008, +0.009]
+    causalpfn  R    +0.000 [-0.004, +0.004]
+    causalpfn  T    +0.001 [-0.005, +0.007]
+    causalpfn  TY   -0.001 [-0.005, +0.004]
+    tabpfn_t   R    -0.001 [-0.004, +0.003]
+    tabpfn_t   T    -0.000 [-0.008, +0.008]
+    tabpfn_t   TY   -0.002 [-0.007, +0.002]
+  Do-PFN: negated R score against T+Y, by fold: [-0.013 -0.005 -0.01  -0.008 -0.003] -> negated at least as good in 0 of 5; -0.008 [-0.013, -0.003]
+  Do-PFN: negated T score against T+Y, by fold: [-0.014 -0.004 -0.011 -0.006 -0.002] -> negated at least as good in 0 of 5; -0.007 [-0.014, -0.001]
+
+##### Do-PFN against the same-rows risk ranking by context size (fold means over three context seeds)
+                                 q  negated   risk  folds_q_neg  folds_below_risk  folds_negated_below_risk
+ds     tree   strategy K                                                                                   
+criteo home   R        512  -0.094    0.081  0.087            5                 5                         3
+                       1024 -0.083    0.072  0.089            5                 5                         4
+                       2048 -0.089    0.078  0.092            5                 5                         3
+                       4096 -0.086    0.074  0.092            5                 5                         3
+              T        512  -0.052    0.039  0.079            5                 5                         4
+                       1024 -0.070    0.056  0.084            5                 5                         4
+                       2048 -0.080    0.065  0.090            5                 5                         4
+                       4096 -0.091    0.072  0.091            5                 5                         3
+              TY       512   0.025   -0.027  0.092            1                 5                         5
+                       1024  0.051   -0.052  0.090            0                 5                         5
+                       2048  0.063   -0.067  0.094            0                 4                         5
+                       4096  0.059   -0.063  0.093            0                 5                         5
+       home18 R        512  -0.078    0.072  0.086            5                 5                         3
+                       1024 -0.074    0.068  0.084            5                 5                         3
+                       2048 -0.081    0.078  0.092            5                 5                         4
+                       4096 -0.083    0.078  0.092            5                 5                         4
+              T        512  -0.072    0.068  0.077            5                 5                         4
+                       1024 -0.077    0.072  0.082            5                 5                         2
+                       2048 -0.085    0.079  0.086            5                 5                         2
+                       4096 -0.083    0.076  0.086            5                 5                         2
+              TY       512   0.037   -0.035  0.095            1                 5                         5
+                       1024  0.056   -0.058  0.096            0                 5                         5
+                       2048  0.054   -0.055  0.095            0                 4                         5
+                       4096  0.056   -0.059  0.096            0                 4                         5
+lzd    home   R        512  -0.033    0.031  0.035            4                 5                         4
+                       1024 -0.032    0.031  0.020            5                 5                         3
+                       2048 -0.028    0.026  0.032            5                 5                         3
+                       4096 -0.029    0.027  0.037            5                 5                         3
+              T        512  -0.028    0.027  0.020            5                 5                         2
+                       1024 -0.033    0.032  0.029            5                 5                         3
+                       2048 -0.029    0.027  0.025            4                 5                         2
+                       4096 -0.032    0.030  0.038            5                 5                         3
+              TY       512   0.025   -0.027  0.034            1                 3                         4
+                       1024  0.023   -0.024  0.028            1                 3                         4
+                       2048  0.028   -0.030  0.029            1                 3                         4
+                       4096  0.024   -0.027  0.024            1                 3                         4
+       home18 R        512  -0.019    0.018  0.016            4                 4                         3
+                       1024 -0.017    0.016  0.015            4                 4                         2
+                       2048 -0.023    0.022  0.031            5                 4                         2
+                       4096 -0.022    0.022  0.035            5                 4                         3
+              T        512  -0.018    0.017  0.021            4                 4                         2
+                       1024 -0.016    0.016  0.023            3                 4                         1
+                       2048 -0.022    0.022  0.024            5                 4                         2
+                       4096 -0.020    0.020  0.036            4                 4                         2
+              TY       512   0.018   -0.018  0.031            1                 2                         5
+                       1024  0.016   -0.016  0.035            1                 2                         4
+                       2048  0.017   -0.017  0.030            2                 2                         4
+                       4096  0.015   -0.015  0.037            1                 2                         4
+
+##### Criteo final holdout
+                                        contexts      q   q_sd  negated   risk    mu0  below_risk    rho  ate_hat      z  between  within
+n_eval  source model     strategy K                                                                                                      
+200000  ds     dopfn     20%      1024        10  0.074  0.007   -0.086  0.075  0.081           5  0.401    0.068  2.731    0.078   0.022
+                         TY       1024        10  0.049  0.011   -0.053  0.077  0.081          10  0.053    0.013  0.412    0.062   0.028
+        home   dopfn     20%      1024         3  0.075  0.006   -0.088  0.076  0.081           1  0.369    0.067  2.693    0.077   0.031
+                         35%      1024         3 -0.007  0.007    0.007  0.075  0.081           3 -0.466   -0.036 -1.198   -0.027   0.021
+2093918 home   causalpfn T        4096         3  0.003  0.041   -0.010  0.073  0.079           3  0.306    0.001 -1.000    0.023  -0.010
+               dopfn     T        1024         3 -0.046  0.009    0.038  0.072  0.079           3 -0.494   -0.077 -6.441   -0.094   0.012
+                         TY       1024         3  0.048  0.014   -0.051  0.077  0.079           3  0.003    0.011  0.354    0.065   0.029
+               tabpfn_t  T        4096         3  0.006  0.047   -0.013  0.073  0.079           3  0.226    0.004 -0.432    0.022  -0.003
+
+##### Equal-share designs, K=1024, the paper's folds: the context carries no treatment-outcome contrast; Do-PFN's predicted average effect
+                 contexts  ctx_pos  max_abs_contrast  ate_hat  ate_min  ate_max  positive  median_row  flagged    rho      q
+ds     strategy                                                                                                             
+criteo 10%             15    0.100               0.0   -0.033   -0.048   -0.014         0      -0.005        5 -0.576 -0.051
+       20%             15    0.199               0.0    0.067    0.048    0.088        15      -0.001       14  0.470  0.087
+       35%             15    0.350               0.0   -0.056   -0.091   -0.027         0      -0.002        5 -0.458  0.021
+       TY              15    0.500               0.0    0.015   -0.008    0.031        13       0.008        0  0.030  0.056
+       75%             15    0.750               0.0   -0.069   -0.105   -0.034         0      -0.050       12  0.130  0.066
+lzd    10%             15    0.100               0.0    0.029    0.019    0.052        15       0.012        1  0.271 -0.017
+       20%             15    0.199               0.0    0.140    0.095    0.189        15       0.081       15  0.249 -0.011
+       35%             15    0.350               0.0   -0.034   -0.047   -0.022         0      -0.026        0 -0.017  0.002
+       TY              15    0.500               0.0    0.034    0.006    0.061        15       0.033        0  0.036  0.016
+       75%             15    0.750               0.0    0.018    0.002    0.030        15       0.015        0 -0.292 -0.011
+
+##### Context check on natural contexts (R, T), both fold splits: |predicted average effect - context difference in means| > 2 SE
+                      runs  flagged  flagged_wrong_sign  wrong_sign  out_of_range  ate_hat  ctx_dm   ratio      q  runs_q_neg  fold_cells  cells_mostly_flagged  cells_all_wrong_sign  cells_q_neg
+ds         model                                                                                                                                                                                  
+criteo     dopfn       240    1.000               0.800       1.000          1.00   -0.183   0.010  17.286 -0.080       0.975          10                    10                    10           10
+           causalpfn   240    0.042               0.017       0.379          0.00    0.003   0.010   0.626  0.036       0.296          10                     0                     0            0
+           tabpfn_t    240    0.012               0.004       0.292          0.00    0.004   0.010   0.721  0.041       0.271          10                     0                     0            0
+lzd        dopfn       240    0.925               0.667       1.000          0.95   -0.045   0.004  12.016 -0.025       0.858          10                    10                    10            9
+           causalpfn   240    0.000               0.000       0.400          0.00    0.003   0.004   2.103  0.008       0.421          10                     0                     0            2
+           tabpfn_t    240    0.000               0.000       0.379          0.00    0.002   0.004   1.654  0.004       0.467          10                     0                     0            3
+hillstrom  dopfn       120    0.517               0.000       0.008          0.00    0.026   0.061   0.420  0.002       0.442           5                     4                     0            2
+           causalpfn   120    0.000               0.000       0.000          0.00    0.057   0.061   0.937  0.007       0.358           5                     0                     0            2
+           tabpfn_t    120    0.000               0.000       0.008          0.00    0.053   0.061   0.893  0.007       0.358           5                     0                     0            1
+retailhero dopfn       120    0.250               0.008       0.042          0.00    0.069   0.036   2.218  0.009       0.175           5                     0                     0            1
+           causalpfn   120    0.000               0.000       0.067          0.00    0.038   0.036   1.122  0.006       0.267           5                     0                     0            0
+           tabpfn_t    120    0.000               0.000       0.108          0.00    0.037   0.036   1.128  0.003       0.400           5                     0                     0            1
+orange     dopfn       120    0.000               0.000       0.058          0.00    0.000   0.003   0.070  0.005       0.208           5                     0                     0            1
+           causalpfn   120    0.000               0.000       0.575          0.00   -0.001   0.003   1.392 -0.002       0.575           5                     0                     0            4
+           tabpfn_t    120    0.000               0.000       0.342          0.00    0.003   0.003   2.514 -0.003       0.667           5                     0                     0            4
+
+##### Natural contexts, all models: runs flagged by either check (|z| > 2 or a value outside [-1, 1]) against Q-hat
+                              runs      q  runs_q_neg    rho  wrong_sign
+ds         model     either                                             
+criteo     dopfn     True    240.0 -0.080       0.975 -0.670       1.000
+           causalpfn False   230.0  0.037       0.291  0.165       0.378
+                     True     10.0  0.031       0.400  0.337       0.400
+           tabpfn_t  False   237.0  0.041       0.270  0.133       0.291
+                     True      3.0  0.027       0.333  0.301       0.333
+lzd        dopfn     False     5.0 -0.011       0.600 -0.085       1.000
+                     True    235.0 -0.025       0.864 -0.175       1.000
+           causalpfn False   240.0  0.008       0.421  0.176       0.400
+           tabpfn_t  False   240.0  0.004       0.467  0.075       0.379
+hillstrom  dopfn     False    58.0  0.002       0.448 -0.065       0.017
+                     True     62.0  0.002       0.435 -0.078       0.000
+           causalpfn False   120.0  0.007       0.358  0.189       0.000
+           tabpfn_t  False   120.0  0.007       0.358  0.034       0.008
+retailhero dopfn     False    90.0  0.010       0.167  0.020       0.056
+                     True     30.0  0.008       0.200  0.075       0.000
+           causalpfn False   120.0  0.006       0.267 -0.079       0.067
+           tabpfn_t  False   120.0  0.003       0.400  0.005       0.108
+orange     dopfn     False   120.0  0.005       0.208  0.009       0.058
+           causalpfn False   120.0 -0.002       0.575  0.005       0.575
+           tabpfn_t  False   120.0 -0.003       0.667 -0.013       0.342
+
+##### The same for the range check alone
+                                  runs      q  runs_q_neg    rho
+ds         model     flag_range                                 
+criteo     dopfn     True        240.0 -0.080       0.975 -0.670
+           causalpfn False       240.0  0.036       0.296  0.172
+           tabpfn_t  False       240.0  0.041       0.271  0.135
+lzd        dopfn     False        12.0 -0.018       0.667 -0.087
+                     True        228.0 -0.025       0.868 -0.177
+           causalpfn False       240.0  0.008       0.421  0.176
+           tabpfn_t  False       240.0  0.004       0.467  0.075
+hillstrom  dopfn     False       120.0  0.002       0.442 -0.072
+           causalpfn False       120.0  0.007       0.358  0.189
+           tabpfn_t  False       120.0  0.007       0.358  0.034
+retailhero dopfn     False       120.0  0.009       0.175  0.034
+           causalpfn False       120.0  0.006       0.267 -0.079
+           tabpfn_t  False       120.0  0.003       0.400  0.005
+orange     dopfn     False       120.0  0.005       0.208  0.009
+           causalpfn False       120.0 -0.002       0.575  0.005
+           tabpfn_t  False       120.0 -0.003       0.667 -0.013
+
+##### Predicted effects outside [-1, 1] on a 0/1 outcome, natural contexts
+                      runs  rows_above1  runs_with_any  max_abs    mean  median
+ds         model                                                               
+criteo     dopfn       240       0.0449           1.00  75.5106 -0.1831 -0.0108
+           causalpfn   240       0.0000           0.00   0.8872  0.0029 -0.0014
+           tabpfn_t    240       0.0000           0.00   0.8942  0.0045 -0.0001
+lzd        dopfn       240       0.0026           0.95  40.5963 -0.0453 -0.0143
+           causalpfn   240       0.0000           0.00   0.7183  0.0029  0.0015
+           tabpfn_t    240       0.0000           0.00   0.9486  0.0023  0.0006
+hillstrom  dopfn       120       0.0000           0.00   0.9354  0.0264  0.0175
+           causalpfn   120       0.0000           0.00   0.5336  0.0572  0.0506
+           tabpfn_t    120       0.0000           0.00   0.6199  0.0533  0.0516
+retailhero dopfn       120       0.0000           0.00   0.4230  0.0693  0.0630
+           causalpfn   120       0.0000           0.00   0.3054  0.0381  0.0368
+           tabpfn_t    120       0.0000           0.00   0.5815  0.0369  0.0378
+orange     dopfn       120       0.0000           0.00   0.0113  0.0002  0.0001
+           causalpfn   120       0.0000           0.00   0.5166 -0.0010 -0.0008
+           tabpfn_t    120       0.0000           0.00   0.8926  0.0034  0.0010

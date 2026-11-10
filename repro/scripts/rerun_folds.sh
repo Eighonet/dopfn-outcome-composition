@@ -1,7 +1,7 @@
 #!/bin/bash
 # Redo LZD and Criteo CV on scikit-learn 1.8 folds, the ones the report used. Finished runs are skipped.
-R0="/c/Users/Eighonet Aerta/Desktop/ai4s/causal_fm_project/repro"; cd "$R0"; source env.sh
-H18="$R/home18"; export USERPROFILE='C:\Users\Eighonet Aerta\Desktop\ai4s\causal_fm_project\repro\home18' HOME="$H18"
+R0="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"; cd "$R0"; source env.sh
+H18="$R/home18"; export USERPROFILE="$(winpath "$H18")" HOME="$H18"
 L="$H18/projects/smiles/logs"; M="$H18/projects/smiles/manifests"; mkdir -p "$M"
 V="$R/.venv-tab/Scripts/python.exe"; DOPY="$R/.venv-dopfn/Scripts/python.exe"
 say(){ echo "$(date '+%F %T') $*" >> "$L/rerun.log"; }

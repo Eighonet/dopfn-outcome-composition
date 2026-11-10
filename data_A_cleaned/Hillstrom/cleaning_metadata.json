@@ -1,0 +1,10 @@
+{
+  "source": "data/Hillstrom/",
+  "cleaned_at": "2026-07-09",
+  "script": "code/prepare_benchmark_data.py",
+  "task": "task_2026_07_08_020",
+  "audit": "specs/datasets/fable5_eda_audit_2026-07-08/",
+  "changes": [
+    "No changes. Fable found ~12.17% duplicate rows but attributed them to a coarse 8-feature grid (distinct customers colliding), not a leakage risk — explicitly recommended against deduplication. See fable5-hillstrom-duplicate-rows-are-grid-collision-not-defect.md."
+  ]
+}

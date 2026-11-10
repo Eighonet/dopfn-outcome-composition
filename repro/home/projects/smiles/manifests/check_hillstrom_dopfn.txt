@@ -1,0 +1,15 @@
+hillstrom dopfn 0 42 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 0 43 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 0 44 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 1 42 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 1 43 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 1 44 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 2 42 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 2 43 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 2 44 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 3 42 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 3 43 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 3 44 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 4 42 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 4 43 4096 balanced_treatment_outcome 8000
+hillstrom dopfn 4 44 4096 balanced_treatment_outcome 8000

@@ -1,0 +1,77 @@
+{
+  "dataset": "criteo",
+  "created_utc": "2026-11-06T20:41:20.289650+00:00",
+  "n_rows": 13979592,
+  "n_features": 10,
+  "features": [
+    "f0",
+    "f1",
+    "f2",
+    "f3",
+    "f4",
+    "f5",
+    "f6",
+    "f8",
+    "f9",
+    "f11"
+  ],
+  "source_file_stats": {
+    "features.parquet": {
+      "size_bytes": 264611534,
+      "mtime_ns": 1793995780762529600
+    },
+    "outcomes.parquet": {
+      "size_bytes": 65674635,
+      "mtime_ns": 1793995780954801500
+    }
+  },
+  "grouping": "pandas.util.hash_pandas_object(X[features], index=False), uint64",
+  "group_hash_sha256": "db7b96f424b11c69b41bd983babf7a29077bce21cf1febc9e3e4dc72320544a3",
+  "n_groups": 12332979,
+  "final_fraction_requested": 0.15,
+  "final_split_seed": 42,
+  "outer_folds": 5,
+  "outer_seed": 42,
+  "n_final_holdout": 2093918,
+  "final_holdout_hash": "d3115dc79fda846227ab8e150d92088430505cba9ceb762239ce61f5b29461a1",
+  "folds": [
+    {
+      "fold": 0,
+      "n_train": 9511759,
+      "n_eval_full": 2373915,
+      "train_sha256": "cfde276e3952f63d7ac1e523d53582d8c6a601250792c66ca21120a234e32ba4",
+      "eval_sha256": "4171e11cc47b24d74ad3719ca12f231be30ee05c0a6608247d3772758ac4cc52"
+    },
+    {
+      "fold": 1,
+      "n_train": 9511848,
+      "n_eval_full": 2373826,
+      "train_sha256": "3914489b5107de7105d89e922b0654343afff4b641a25082610e7e887bffc427",
+      "eval_sha256": "b8a845778c5f9a0a02402a4d4de36bd1f28df575607804fb7995d7019bc05d13"
+    },
+    {
+      "fold": 2,
+      "n_train": 9512954,
+      "n_eval_full": 2372720,
+      "train_sha256": "5ae1dbb705a3c8d155798f78c45f18a7232d350387217f17368488d43c9e890c",
+      "eval_sha256": "fe280475a0c5d9e7847ac5195e2a881797e75cc9fc14aa3e086e547a6f8a7e0c"
+    },
+    {
+      "fold": 3,
+      "n_train": 9511910,
+      "n_eval_full": 2373764,
+      "train_sha256": "080ae9ec2f66afb5f0ab7aaf4f15220b000f77e41e532c4bf67766038d3c198c",
+      "eval_sha256": "d31f317bca05d14f9c384f00f4606a85682fdb5f75da32d7e9ad408896b4cf04"
+    },
+    {
+      "fold": 4,
+      "n_train": 9494225,
+      "n_eval_full": 2391449,
+      "train_sha256": "cdbbf0cfc408aacd59f8e538fa24f458acce61f1c6ea0ad2841036394e81cdbf",
+      "eval_sha256": "925c9c90026b0824363720e5126b3e7fdf2c31ca5014e8f3b28a6ec9dc07479f"
+    }
+  ],
+  "labels_encoding": "-1 final holdout, 0..4 CV eval fold, every other non-final fold is training",
+  "labels_sha256": "014e8643dd42c117e94f6542566cc34847a2a98034c8c7a7f77dca3d07e86c3e",
+  "script_version": 1
+}

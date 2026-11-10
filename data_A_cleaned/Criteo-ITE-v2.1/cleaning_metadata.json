@@ -1,0 +1,11 @@
+{
+  "source": "data/Criteo-ITE-v2.1/",
+  "cleaned_at": "2026-07-09",
+  "script": "code/prepare_benchmark_data.py",
+  "task": "task_2026_07_08_020",
+  "audit": "specs/datasets/fable5_eda_audit_2026-07-08/",
+  "changes": [
+    "Dropped 2 near-duplicate/constant features (|Spearman rho| >= 0.99): ['f10', 'f7']. See fable5-criteo-feature-redundancy.md.",
+    "Row-level duplicate-feature-vector leakage (~15.2% of rows) is NOT fixed here — all rows are kept. It's fixed at train/test split time in run_nir_benchmark.py via a group-safe GroupShuffleSplit (grouped by a hash of the full feature vector), since the right fix is 'never split a duplicate pair across train/test', not 'drop the duplicate'. See fable5-criteo-duplicate-feature-vectors-inflate-metrics.md."
+  ]
+}

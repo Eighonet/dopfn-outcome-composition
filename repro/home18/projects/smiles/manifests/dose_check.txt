@@ -1,0 +1,2 @@
+criteo dopfn 0 42 1024 share10 8000
+lzd dopfn 0 42 1024 share75 8000

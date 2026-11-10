@@ -1,0 +1,31 @@
+diff --git a/model/layer.py b/model/layer.py
+index f651d06..f68e895 100644
+--- a/model/layer.py
++++ b/model/layer.py
+@@ -743,7 +743,7 @@ class PerFeatureEncoderLayer(Module):
+             if not self.save_peak_mem_factor:
+                 src = self.norm1(src + src_)
+             else:
+-                src.set_(self.norm1(src_))
++                src = self.norm1(src_).to(src.dtype)
+         else:
+             src = src + src_
+ 
+@@ -765,7 +765,7 @@ class PerFeatureEncoderLayer(Module):
+             if not self.save_peak_mem_factor:
+                 src = self.norm2(src + src_)
+             else:
+-                src.set_(self.norm2(src_))
++                src = self.norm2(src_).to(src.dtype)
+         else:
+             src = src + src_
+         # print('max memory after norm2', torch.cuda.max_memory_allocated() / 1024 / 1024 / 1024, 'GB')
+@@ -778,7 +778,7 @@ class PerFeatureEncoderLayer(Module):
+             if not self.save_peak_mem_factor:
+                 src = self.norm3(src + src_)
+             else:
+-                src.set_(self.norm3(src_))
++                src = self.norm3(src_).to(src.dtype)
+         else:
+             src = src + src_
+         # print('max memory after nrom3', torch.cuda.max_memory_allocated() / 1024 / 1024 / 1024, 'GB')
